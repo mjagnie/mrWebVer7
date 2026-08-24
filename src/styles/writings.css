@@ -1,0 +1,333 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/MyFont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------- WRITINGS PANEL ---------------- */
+
+.writingsRoot {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  font-family:
+    "MyFont",
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+.writingsContent {
+  padding: 60px clamp(26px, 4vw, 50px) 40px;
+  box-sizing: border-box;
+}
+
+/* ---------------- BOOK CAROUSEL ---------------- */
+
+.bookCarousel {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 540px;
+
+  padding: 18px 70px 30px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.bookCarouselTrack {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding-top: 25px;
+
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  scroll-padding-left: 50%;
+  scroll-padding-right: 50%;
+}
+
+.bookCarouselTrack::before {
+  content: "";
+  flex: 0 0 10%;
+}
+
+.bookCarouselTrack::after {
+  content: "";
+  flex: 0 0 50%;
+}
+
+.bookCarouselTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.bookCarouselItem {
+  flex: 0 0 auto;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  opacity: 0.48;
+  filter: grayscale(75%);
+  transform: scale(0.9);
+
+  transition:
+    transform 820ms ease,
+    opacity 820ms ease,
+    filter 820ms ease;
+}
+
+.bookCarouselItem:hover {
+  opacity: 0.75;
+}
+
+.bookCarouselItem--active {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1);
+}
+
+.bookCarouselItem--active:hover {
+  opacity: 1;
+}
+
+.bookCarouselItem:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 8px;
+}
+
+.bookCarouselCover {
+  display: block;
+
+  width: auto;
+  height: clamp(500px, 55vw, 620px);
+
+  object-fit: contain;
+}
+
+.bookCarouselCover--wide {
+  height: clamp(420px, 48vw, 510px);
+}
+
+/* ---------------- CAROUSEL ARROWS ---------------- */
+
+.bookCarouselArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  transform: translateY(-50%);
+
+  display: grid;
+  place-items: center;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 0;
+
+  background: none;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.bookCarouselArrow:hover {
+  background: none;
+}
+
+.bookCarouselArrow--left {
+  left: 12px;
+}
+
+.bookCarouselArrow--right {
+  right: 12px;
+}
+
+/* ---------------- SELECTED BOOK DETAIL ---------------- */
+
+.bookDetail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: start;
+
+  
+}
+
+.bookDetailText {
+  min-width: 0;
+  max-width: 55ch;
+  margin: 0 auto;
+}
+
+/* ---------------- BOOK TYPOGRAPHY ---------------- */
+
+.bookAuthor {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bookTitle {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-family:
+    "MyFont",
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+.bookInfo {
+  margin-bottom: 12px;
+
+  font-size: 17px;
+  text-align: center;
+}
+
+.bookDescription {
+  margin-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: bold;
+
+  text-align: left;
+}
+
+.bookDetails {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+/* ---------------- REVIEWS ---------------- */
+
+.bookReviewsInline {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.bookReviewsInline strong {
+  font-size: 15px;
+  font-weight: 600;
+
+  opacity: 0.75;
+  letter-spacing: 0.03em;
+}
+
+.reviewLogoLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.reviewLogo {
+  display: block;
+
+  width: auto;
+  height: 25px;
+}
+
+.reviewLogoLink:hover {
+  opacity: 0.7;
+}
+
+/* ---------------- BACK BUTTON ---------------- */
+
+.viewerBackBtn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.viewerBackBtn:hover {
+  opacity: 0.7;
+}
+
+/* ---------------- SMALL SCREENS ---------------- */
+
+@media (max-width: 900px) {
+  .bookCarousel {
+    min-height: 460px;
+    padding: 15px 52px 25px;
+  }
+
+  .bookCarouselTrack {
+    gap: 14px;
+  }
+
+  .bookCarouselCover {
+    width: min(72vw, 340px);
+  }
+
+  .bookCarouselArrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .bookCarouselArrow--left {
+    left: 6px;
+  }
+
+  .bookCarouselArrow--right {
+    right: 6px;
+  }
+
+  .writingsContent {
+    padding: 55px 22px 30px;
+  }
+
+  .bookDetail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

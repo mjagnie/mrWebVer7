@@ -1,0 +1,691 @@
+/* ---------------- MUSIC PANEL ---------------- */
+
+.musicPanel {
+  width: 100%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  font-family:
+    "MyFont",
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* ---------------- MAIN TWO-COLUMN LAYOUT ---------------- */
+
+.musicMainLayout {
+  display: grid;
+
+  /* left video / right menu */
+  grid-template-columns: 68% 32%;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  align-items: start;
+}
+
+
+/* ==========================================================
+   LEFT SIDE — VIDEO
+   ========================================================== */
+
+.musicMainLeft {
+  width: 100%;
+  height: 100vh;
+  min-width: 0;
+}
+
+
+.musicVideoWrap {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Main video */
+
+.musicMainVideo {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* ---------------- BAND NAME OVER VIDEO ---------------- */
+
+.musicVideoTitle {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 80%;
+  height: auto;
+
+  transform: translateX(-50%);
+
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+
+/* ---------------- VIDEO PLAY BUTTON ---------------- */
+
+.musicVideoPlayBtn {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 180ms ease,
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.musicVideoPlayBtn:hover {
+  background: rgba(0, 0, 0, 0.45);
+
+  transform:
+    translate(-50%, -50%)
+    scale(1.06);
+}
+
+
+/* ==========================================================
+   SOCIAL LINKS OVER VIDEO
+   ========================================================== */
+
+/*
+  The wrapper covers the whole video.
+
+  Individual logos are positioned separately,
+  like in your original Music layout.
+*/
+
+.musicVideoSocials {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 30;
+
+  pointer-events: none;
+}
+
+
+.musicVideoSocials a {
+  pointer-events: auto;
+}
+
+
+/* General logo style */
+
+.musicVideoSocial {
+  position: absolute;
+
+  display: block;
+
+  height: auto;
+
+  cursor: pointer;
+
+  transition:
+    transform 160ms ease,
+    opacity 160ms ease;
+}
+
+
+.musicVideoSocial:hover {
+  transform: scale(1.09);
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+
+.musicVideoFb {
+  width: 48px;
+
+  top: 91.5%;
+  left: 11%;
+}
+
+
+/* Spotify */
+
+.musicVideoSpotify {
+  width: 48px;
+
+  top: 91.5%;
+  left: 28%;
+}
+
+
+/* Vimeo */
+
+.musicVideoVimeo {
+  width: 95px;
+
+  top: 93%;
+  left: 43%;
+
+  background: #000;
+
+  padding: 5px 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* Bandzone */
+
+.musicVideoBandzone {
+  width: 148px;
+
+  top: 93.5%;
+  left: 64%;
+
+  background: #000;
+
+  padding: 5px 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   RIGHT SIDE
+   ========================================================== */
+
+.musicMainRight {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 0px;
+
+  
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* ---------------- GENERAL MENU ITEMS ---------------- */
+
+.musicMenuItem {
+  display: block;
+
+  width: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+
+  color: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+
+.musicMenuItem img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+.musicMenuItem:hover {
+  opacity: 0.75;
+}
+
+
+/* ---------------- BLACK BACKGROUND MENU ITEM ---------------- */
+
+.musicMenuItemDark {
+  background: #000;
+
+  padding: 10px 14px;
+}
+
+
+.musicMenuItemDark img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ---------------- TEXT BUTTON FALLBACK ---------------- */
+
+/*
+  You may eventually not need this if every menu item
+  becomes an image.
+*/
+
+.musicMenuItem span {
+  display: block;
+
+  width: 100%;
+
+  padding: 10px 0;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* =========================
+   ALBUMS + TEXTS VIEW
+   ========================= */
+
+/*
+.musicAlbumsView {
+  position: relative;
+
+  width: 100%;
+
+  padding: 60px 30px 40px;
+
+  box-sizing: border-box;
+}
+
+
+.musicAlbumsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+
+  width: 100%;
+}
+
+
+.musicAlbumLink {
+  display: block;
+
+  text-decoration: none;
+}
+
+
+.musicAlbumCover {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+
+.musicAlbum:hover .musicAlbumCover {
+  transform: scale(1.025);
+  opacity: 0.85;
+}
+*/
+
+.musicAlbumsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.musicAlbumTile {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.musicAlbumTile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.musicAlbumTile:hover img {
+  transform: scale(1.025);
+  opacity: 0.85;
+}
+
+
+.musicAlbumTile:last-child {
+  grid-column: 1 / -1;
+}
+
+/* ==========================================================
+   GALLERY VIEW
+   ========================================================== */
+
+.musicGalleryView {
+  position: relative;
+
+  width: 100%;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 70px 40px;
+
+  box-sizing: border-box;
+}
+
+
+.musicGalleryImage {
+  display: block;
+
+  max-width: 100%;
+  max-height: 75vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  cursor: zoom-in;
+}
+
+
+/* ---------------- GALLERY ARROWS ---------------- */
+
+.galleryArrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 5;
+
+  display: grid;
+  place-items: center;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+
+  font-size: 16px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+.galleryArrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.galleryArrow.left {
+  left: 6px;
+}
+
+
+.galleryArrow.right {
+  right: 6px;
+}
+
+
+/* ==========================================================
+   BACK BUTTON
+   ========================================================== */
+
+.musicBackBtn {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  z-index: 10;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  font-size: 22px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+.musicBackBtn:hover {
+  opacity: 0.7;
+}
+
+
+/* ==========================================================
+   FULLSCREEN GALLERY
+   ========================================================== */
+
+.galleryFullscreen {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.95);
+}
+
+
+.galleryFullscreenImg {
+  display: block;
+
+  max-width: 92vw;
+  max-height: 92vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+/* simple arrows */
+
+.galleryArrowSimple {
+  position: fixed;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 100000;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.galleryArrowSimple:hover {
+  opacity: 0.65;
+}
+
+.galleryArrowLeft {
+  left: 24px;
+}
+
+.galleryArrowRight {
+  right: 24px;
+}
+
+.galleryClose {
+  position: fixed;
+
+  top: 12px;
+  right: 20px;
+
+  z-index: 100001;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  color: white;
+
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.galleryClose:hover {
+  opacity: 0.7;
+}
+
+
+
+.sroubyMirrorImg {
+  width: 100%;
+
+  margin-top: auto;
+}
+
+.sroubyMirrorImg img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* ==========================================================
+   RESPONSIVE — later we can redesign this properly
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+  .musicMainLayout {
+    grid-template-columns: 1fr;
+
+    height: auto;
+
+    overflow: visible;
+  }
+
+
+  .musicMainLeft {
+    height: 100vh;
+  }
+
+
+  .musicMainRight {
+    padding: 20px 22px 30px;
+  }
+
+
+  .musicAlbumsGrid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .musicGalleryView {
+    min-height: 420px;
+
+    padding:
+      55px
+      52px
+      30px;
+  }
+
+
+  .galleryArrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 28px;
+  }
+
+
+  .galleryArrow.left {
+    left: 8px;
+  }
+
+
+  .galleryArrow.right {
+    right: 8px;
+  }
+}
