@@ -19,75 +19,95 @@ export default function HeaderBlock({
 
       {/* Name / About */}
       <button
-        className="nameLink" 
-        onClick={onOpenAbout} 
+        className="menuBtn menuBtn--name"
+        onClick={onOpenAbout}
         type="button"
         aria-label="About"
       >
         <img
-          src={menuRysavyImg} 
-          alt="About" 
-          className="nameImg"
+          src={menuRysavyImg}
+          alt="About"
+          className="menuImg menuImg--name"
         />
       </button>
 
 
-      {/* Main menu */}
+      {/* Menu */}
       <div className="menuRow">
+
+        {/* writings */}
         <button
-          className="menuBtn"
+          className="menuBtn menuBtn--writings"
           onClick={onOpenWritings}
           type="button"
           aria-label="Writings"
         >
-          <img 
-            src={menuWritingsImg} 
-            alt="Writings" 
-            className="menuImg menuImg--writings" 
+          <img
+            src={menuWritingsImg}
+            alt="Writings"
+            className="menuImg menuImg--writings"
           />
         </button>
 
+        {/* articles */}
         <button
-          className="menuBtn"
+          className="menuBtn menuBtn--articles"
           onClick={onOpenArticles}
           type="button"
           aria-label="Articles"
         >
-          <img 
-            src={menuArticlesImg} 
-            alt="Articles" 
-            className="menuImg menuImg--articles" 
+          <img
+            src={menuArticlesImg}
+            alt="Articles"
+            className="menuImg menuImg--articles"
           />
         </button>
 
+        {/* film */}
         <button
           className="menuBtn menuBtn--film"
           onClick={onOpenFilm}
           type="button"
           aria-label="Film"
         >
-          <img 
-            src={menuFilmImg} 
-            alt="Film" 
-            className="menuImg menuImg--film" 
+          <img
+            src={menuFilmImg}
+            alt="Film"
+            className="menuImg menuImg--film"
           />
         </button>
 
-        <button 
-          className="menuBtn" 
-          onClick={onOpenMusic} 
+        {/* music */}
+        <button
+          className="menuBtn menuBtn--music"
+          onClick={onOpenMusic}
           type="button"
           aria-label="Music"
         >
-          <img 
-            src={menuMusicImg} 
-            alt="Music" 
-            className="menuImg menuImg--music" 
+          <img
+            src={menuMusicImg}
+            alt="Music"
+            className="menuImg menuImg--music"
           />
         </button>
+
+        {/* contact */}
+        <button
+          className="menuBtn menuBtn--contact"
+          onClick={onOpenContact}
+          type="button"
+          aria-label="Contact"
+        >
+          <img
+            src={menuContactImg}
+            alt="Contact"
+            className="menuImg menuImg--contact"
+          />
+        </button>
+
       </div>
 
-      {/* Contact */}
+      {/* Contact
       <div className="contactRow">
         <button 
           className="contactBtn"
@@ -101,7 +121,7 @@ export default function HeaderBlock({
             className="contactImg contactImg--contact"
           />
         </button>
-      </div>
+      </div> */}
 
     </div>
   );

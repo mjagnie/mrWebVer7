@@ -168,8 +168,6 @@ export default function MusicPanel() {
   return (
     <div className="musicPanel">
 
-      <div className="musicCollage">
-
         <div className="musicMainLayout">
           {/* LEFT SIDE */}
           <div className="musicMainLeft">
@@ -368,7 +366,6 @@ export default function MusicPanel() {
         </div>
 
       </div>
-    </div>
 
   );
 }

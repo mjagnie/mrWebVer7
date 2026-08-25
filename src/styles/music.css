@@ -1,8 +1,14 @@
 /* ---------------- MUSIC PANEL ---------------- */
 
 .musicPanel {
+
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   box-sizing: border-box;
   overflow: hidden;
@@ -23,13 +29,13 @@
   display: grid;
 
   /* left video / right menu */
-  grid-template-columns: 68% 32%;
+  grid-template-columns: auto 1fr;
+  gap: 0;
 
-  width: 100%;
+  width: min(100%, 810px);
   height: 100vh;
 
   overflow: hidden;
-
   align-items: start;
 }
 
@@ -39,9 +45,8 @@
    ========================================================== */
 
 .musicMainLeft {
-  width: 100%;
+  width: auto;
   height: 100vh;
-  min-width: 0;
 }
 
 
@@ -242,12 +247,13 @@
   flex-direction: column;
   align-items: stretch;
 
-  gap: 0px;
+  height: 100vh;
 
-  
+  gap: 0;
   padding: 0;
 
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 
@@ -268,7 +274,6 @@
   text-decoration: none;
 
   cursor: pointer;
-
   box-sizing: border-box;
 }
 

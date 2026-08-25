@@ -1,5 +1,3 @@
-
-
 .page {
   min-height: 100vh;
   position: relative;
@@ -13,7 +11,7 @@
 .mainFootprintDecoration {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 70px;
 
   width: 700px;
   height: auto;
@@ -35,10 +33,11 @@
   gap: 5px;
 }
 
+/*
 .headerBlock {
   position: absolute;
   top: 75px;
-  left: 30px;
+  left: 110px;
 
   z-index: 999;
 
@@ -46,13 +45,13 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 
-  column-gap: 25px;
+  column-gap: 0px;
   row-gap: 0;
 
   align-items: start;
 }
-
-/* NAME — top left */
+*/
+/* NAME — top left 
 .nameLink {
   grid-column: 1;
   grid-row: 1;
@@ -62,9 +61,9 @@
   padding: 0;
   display: inline-block;
   cursor: pointer;
-}
+}*/
 
-/* MENU — right side */
+/* MENU — right side 
 .menuRow {
   grid-column: 2;
   grid-row: 1 / 3;
@@ -75,18 +74,43 @@
 
   gap: 0px;
   margin: 0;
-}
+}*/
 
 
-/* CONTACT — directly under name */
+/* CONTACT — directly under name 
 .contactRow {
   grid-column: 1;
   grid-row: 2;
 
   transform: translate(135px, -9px);
+} */
+
+.headerBlock {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+
+  width: 700px;
+  height: 420px;
+
+  z-index: 999;
 }
 
+/*
+.nameLink {
+  position: absolute;
+  left: 190px;
+  top: 110px;
+}
+
+.menuRow {
+  position: absolute;
+  inset: 0;
+} */
+
+
 .menuBtn {
+  position: absolute;
   background: transparent;
   border: none;
   padding: 0;
@@ -99,6 +123,8 @@
   width: auto;
   height: auto;
 }
+
+
 
 /* Hide ugly focus ring for mouse focus */
 .menuBtn:focus,
@@ -120,11 +146,75 @@
 }
 
 /* Per-button sizing */
-.menuImg--writings { height: 46px; }
-.menuImg--articles { height: 55px; }
-.menuImg--film     { height: 48px; }
-.menuImg--music    { height: 36px; }
-.menuImg--contact  { height: px; }
+.menuImg--name {
+  width: 230px;
+  height: auto;
+}
+.menuBtn--name {
+  left: 300px;
+  top: 10px;
+}
+
+.menuImg--writings {
+  height: 55px;
+}
+.menuBtn--writings {
+  left: 149px;
+  top: 5px;
+  transform: rotate(3deg);
+}
+
+.menuImg--articles {
+  height: 55px;
+}
+.menuBtn--articles {
+  left: 560px;
+  top: -14px;
+  transform: rotate(-3deg);
+}
+
+.menuImg--film {
+  height: 60px;
+}
+.menuBtn--film {
+  left: 165px;
+  top: 80px;
+  transform: rotate(-3deg);
+}
+
+.menuImg--music {
+  height: 42px;
+}
+.menuBtn--music {
+  left: 569px;
+  top: 65px;
+  transform: rotate(1deg);
+}
+
+.menuImg--contact {
+  height: 45px;
+}
+.menuBtn--contact {
+  left: 545px;
+  top: 125px;
+  transform: rotate(2deg);
+}
+
+.menuBtn,
+.contactBtn {
+  position: absolute;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 /* ---------------- LANGUAGE TUNING ---------------- */
 
@@ -135,6 +225,7 @@
   margin-top: -21px;
   transform: none;
 }
+
 .lang-en .contactRow {
   transform: translate(119px, -3px);
 }
@@ -145,6 +236,7 @@
   margin-top: -28px;
   transform: none;
 }
+
 .lang-cs .contactRow {
   transform: translate(145px, 0px);
 }
@@ -152,24 +244,42 @@
 
 .lang-ru .menuRow {
   margin-top: -22px;
-  gap: 8px; 
+  gap: 8px;
 }
+
 .lang-ru .contactRow {
   transform: translate(129px, 12px);
 }
 
 
-/* per-button adjustments */
-.lang-cs .menuImg--writings { height: 53px; }
-.lang-ru .menuImg--writings { height: 34px; }
+/* per-button adjustments 
+.lang-cs .menuImg--writings {
+  height: 23px;
+}
 
-.lang-cs .menuImg--film { height: 48px;}
-.lang-ru .menuImg--film { height: 30px; }
+.lang-ru .menuImg--writings {
+  height: 34px;
+}
 
-.lang-cs .menuImg--music { height: 42px; }
-.lang-ru .menuImg--music { height: 43px; }
+.lang-cs .menuImg--film {
+  height: 48px;
+}
 
-.lang-ru .menuImg--articles { height: 35px;}
+.lang-ru .menuImg--film {
+  height: 30px;
+}
+
+.lang-cs .menuImg--music {
+  height: 42px;
+}
+
+.lang-ru .menuImg--music {
+  height: 43px;
+}
+
+.lang-ru .menuImg--articles {
+  height: 35px;
+}
 
 .lang-cs .menuBtn--film {
   position: relative;
@@ -238,9 +348,17 @@
 }
 
 /* -------- CONTACT LANGUAGE TUNING -------- */
-.lang-en .contactImg { height: 39px; }
-.lang-cs .contactImg { height: 34px; }
-.lang-ru .contactImg { height: 26px; }
+.lang-en .contactImg {
+  height: 39px;
+}
+
+.lang-cs .contactImg {
+  height: 34px;
+}
+
+.lang-ru .contactImg {
+  height: 26px;
+}
 
 
 /* ---------------- RESPONSIVE YOU ALREADY HAD ---------------- */
@@ -296,4 +414,3 @@
     margin-top: 0px;
   }
 }
-

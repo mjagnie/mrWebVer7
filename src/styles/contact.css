@@ -5,12 +5,12 @@
   justify-content: center;
 
   gap: 18px;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 
 .contactPanelImg {
-  width: clamp(360px, 40%, 780px);
+  width: 360px;
   max-width: 40%;
   height: auto;
   display: block;

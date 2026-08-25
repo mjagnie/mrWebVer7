@@ -1,5 +1,9 @@
 .articles-panel {
-  padding: 2rem;
+  width: min(780px, 100%);
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  box-sizing: border-box;
 }
 
 .articles-list {

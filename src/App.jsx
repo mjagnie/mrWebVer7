@@ -314,32 +314,36 @@ export default function App() {
       className={`page lang-${lang}`}
       style={{ backgroundImage: `url(${bgImg})` }}
     >
+
+      {/*
       <img
         src={footprintImg}
         alt=""
         className="mainFootprintDecoration"
-      />
+      />*/}
+      {!panelOpen && (
+        <>
+          <div className="langBar">
+            <FlagSwitcher lang={lang} />
+          </div>
 
-      <div className="langBar">
-        <FlagSwitcher lang={lang} />
-      </div>
-
-      <HeaderBlock
-        menuRysavyImg={ui.menuRysavyImg}
-        menuWritingsImg={ui.menuWritingsImg}
-        menuArticlesImg={ui.menuArticlesImg}
-        menuMusicImg={ui.menuMusicImg}
-        menuFilmImg={ui.menuFilmImg}
-        menuContactImg={ui.menuContactImg}
-        onOpenAbout={openAbout}
-        onOpenWritings={openWritings}
-        onOpenArticles={openArticles}
-        onOpenFilm={openFilm}
-        onOpenMusic={openMusic}
-        onOpenContact={openContact}
-        lang={lang}
-      />
-
+          <HeaderBlock
+            menuRysavyImg={ui.menuRysavyImg}
+            menuWritingsImg={ui.menuWritingsImg}
+            menuArticlesImg={ui.menuArticlesImg}
+            menuMusicImg={ui.menuMusicImg}
+            menuFilmImg={ui.menuFilmImg}
+            menuContactImg={ui.menuContactImg}
+            onOpenAbout={openAbout}
+            onOpenWritings={openWritings}
+            onOpenArticles={openArticles}
+            onOpenFilm={openFilm}
+            onOpenMusic={openMusic}
+            onOpenContact={openContact}
+            lang={lang}
+          />
+        </>
+      )}
       <RightPanel open={panelOpen} onClose={closePanel}>
 
         {activePanel === "about" && (
