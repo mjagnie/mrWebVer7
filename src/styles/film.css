@@ -1,5 +1,5 @@
 .filmGridWrap {
-  width: min(600px, 100%);
+  width: min(810px, 100%);
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
 
 .filmTile {
   position: relative;
-  height: 290px;
+  height: 367px;
   width: 100%;
   background: transparent;
   border-radius: 10px;

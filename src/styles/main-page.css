@@ -145,12 +145,12 @@
   /*background: rgba(255, 0, 0, 0.2); */
 }
 
-/* Per-button sizing */
+/* Per-button sizing and position ENGLISH */
 .menuImg--name {
   width: 230px;
   height: auto;
 }
-.menuBtn--name {
+.lang-en .menuBtn--name {
   left: 300px;
   top: 10px;
 }
@@ -158,7 +158,7 @@
 .menuImg--writings {
   height: 55px;
 }
-.menuBtn--writings {
+.lang-en .menuBtn--writings {
   left: 149px;
   top: 5px;
   transform: rotate(3deg);
@@ -167,7 +167,7 @@
 .menuImg--articles {
   height: 55px;
 }
-.menuBtn--articles {
+.lang-en .menuBtn--articles {
   left: 560px;
   top: -14px;
   transform: rotate(-3deg);
@@ -176,7 +176,7 @@
 .menuImg--film {
   height: 60px;
 }
-.menuBtn--film {
+.lang-en .menuBtn--film {
   left: 165px;
   top: 80px;
   transform: rotate(-3deg);
@@ -185,7 +185,7 @@
 .menuImg--music {
   height: 42px;
 }
-.menuBtn--music {
+.lang-en .menuBtn--music {
   left: 569px;
   top: 65px;
   transform: rotate(1deg);
@@ -194,11 +194,124 @@
 .menuImg--contact {
   height: 45px;
 }
-.menuBtn--contact {
+.lang-en .menuBtn--contact {
   left: 545px;
   top: 125px;
   transform: rotate(2deg);
 }
+
+/* Per-button sizing and position CZECH */
+.lang-cs .menuImg--name {
+  width: 200px;
+  height: auto;
+}
+.lang-cs .menuBtn--name {
+  left: 337px;
+  top: 33px;
+}
+
+.lang-cs .menuImg--writings {
+  height: 47px;
+}
+.lang-cs .menuBtn--writings {
+  left: 248px;
+  top: 9px;
+  transform: rotate(-27deg);
+}
+
+.lang-cs .menuImg--film {
+  height: 43px;
+}
+.lang-cs .menuBtn--film {
+  left: 344px;
+  top: -22px;
+  transform: rotate(-8deg);
+}
+
+.lang-cs .menuImg--music {
+  height: 40px;
+}
+.lang-cs .menuBtn--music {
+  left: 434px;
+  top: -23px;
+  transform: rotate(5deg);
+}
+
+.lang-cs .menuImg--articles {
+  height: 52px;
+}
+.lang-cs .menuBtn--articles {
+  left: 540px;
+  top: 8px;
+  transform: rotate(25deg);
+}
+
+.lang-cs .menuImg--contact {
+  height: 36px;
+}
+.lang-cs .menuBtn--contact {
+  left: 429px;
+  top: 166px;
+  transform: rotate(0deg);
+}
+
+/* Per-button sizing and position RUSSIAN */
+.lang-ru .menuImg--name {
+  width: 215px;
+  height: auto;
+}
+.lang-ru .menuBtn--name {
+  left: 340px;
+  top: 35px;
+}
+
+.lang-ru .menuImg--contact {
+  height: 26px;
+}
+.lang-ru .menuBtn--contact {
+  left: 444px;
+  top: 175px;
+  transform: rotate(0deg);
+}
+
+.lang-ru .menuImg--writings {
+  height: 29px;
+}
+.lang-ru .menuBtn--writings {
+  left: 225px;
+  top: 39px;
+  transform: rotate(-30deg);
+}
+
+.lang-ru .menuImg--film {
+  height: 27px;
+}
+.lang-ru .menuBtn--film {
+  left: 344px;
+  top: 2px;
+  transform: rotate(-7deg);
+}
+
+.lang-ru .menuImg--music {
+  height: 41px;
+}
+.lang-ru .menuBtn--music {
+  left: 445px;
+  top: -2px;
+  transform: rotate(10deg);
+}
+
+.lang-ru .menuImg--articles {
+  height: 31px;
+}
+.lang-ru .menuBtn--articles {
+  left: 580px;
+  top: 44px;
+  transform: rotate(29deg);
+}
+
+
+
 
 .menuBtn,
 .contactBtn {

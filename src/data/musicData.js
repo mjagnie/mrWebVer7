@@ -7,6 +7,8 @@ import gatyarandasImg from "../assets/music/albums/gatyarandas.png";
 import textyImg from "../assets/music/bouchaci-srouby-texty-cerveny.png";
 import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 
+import fakirImg from "../assets/music/fakir3.png";
+
 export const musicTiles = [
   {
     id: "bouchaci-srouby-2012",
@@ -50,4 +52,12 @@ export const musicTiles = [
     image: textyImg,
     url: bouchaciSroubyTextyPdf,
   },
+ 
+  {
+    id: "decoration",
+    type: "image",
+    title: "Fakir",
+    image: fakirImg,
+  },
+
 ];

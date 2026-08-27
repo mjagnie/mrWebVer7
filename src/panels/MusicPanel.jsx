@@ -8,10 +8,10 @@ import Video1 from "../assets/music/video1.mp4";
 
 import bouchaciSroubyLogoImg from "../assets/music/bouchaci-srouby-name1.png";
 import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
-import albaImg from "../assets/music/alba.png";
 import albaATextyImg from "../assets/music/alba-a-texty.png";
 import galleryImg from "../assets/music/gallery.png";
 import sroubyMirrorImg from "../assets/music/srouby-mirror.png"
+import sroubaImg from "../assets/music/srouba.png";
 
 import bandzoneImg from "../assets/music/logo/bz-logo-cerne-pozadi.png";
 import fbImg from "../assets/music/logo/fb-logo.png";
@@ -119,6 +119,25 @@ export default function MusicPanel() {
             </a>
           ))}
         </div>
+        
+        <img
+          src={sroubaImg}
+          alt=""
+          className="musicDecoration"
+        />
+
+        <img
+          src={sroubaImg}
+          alt=""
+          className="musicDecoration1"
+        />
+
+        <img
+          src={sroubaImg}
+          alt=""
+          className="musicDecoration2"
+        />
+
       </div>
     );
   }
@@ -168,204 +187,204 @@ export default function MusicPanel() {
   return (
     <div className="musicPanel">
 
-        <div className="musicMainLayout">
-          {/* LEFT SIDE */}
-          <div className="musicMainLeft">
-            <div className="musicVideoWrap">
-              <div className="musicVideoSocials">
-                {/* Facebook */}
-                <a
-                  href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={fbImg}
-                    className="musicVideoSocial musicVideoFb"
-                    alt="Facebook"
-                  />
-                </a>
-
-                {/* Spotify */}
-                <a
-                  href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={spotifyImg}
-                    className="musicVideoSocial musicVideoSpotify"
-                    alt="Spotify"
-                  />
-                </a>
-
-                {/* Vimeo */}
-                <a
-                  href="YOUR_VIMEO_LINK"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={vimeoImg}
-                    className="musicVideoSocial musicVideoVimeo"
-                    alt="Vimeo"
-                  />
-                </a>
-
-                {/* Bandzone */}
-                <a
-                  href="https://bandzone.cz/bouchacisrouby"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={bandzoneImg}
-                    className="musicVideoSocial musicVideoBandzone"
-                    alt="Bandzone"
-                  />
-                </a>
-              </div>
-
-              <img
-                className="musicVideoTitle"
-                src={bouchaciSroubyLogoImg}
-                alt="Bouchaci srouby"
-              />
-              <video
-                ref={videoRef}
-                className="musicMainVideo"
-                autoPlay
-                muted
-                playsInline
-                onPlay={() => setVideoPlaying(true)}
-                onEnded={() => {
-                  if (videoRef.current) {
-                    videoRef.current.currentTime = 0;
-                  }
-
-                  setVideoPlaying(false);
-                }}
-              >
-                <source src={Video1} type="video/mp4" />
-              </video>
-
-              {!videoPlaying && (
-                <button
-                  className="musicVideoPlayBtn"
-                  type="button"
-                  onClick={() => {
-                    if (videoRef.current) {
-                      videoRef.current.currentTime = 0;
-                      videoRef.current.play();
-                    }
-                  }}
-                >
-                  ▶
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="musicMainRight">
-
-            {/* Newspaper article */}
-            <a
-              className="musicMenuItem"
-              href={articlePageImg}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={articleButtonImg}
-                alt="Newspaper article"
-              />
-            </a>
-
-            {/* Albums and Texts*/}
-            <button
-              className="musicMenuItem"
-              type="button"
-              onClick={() => setMusicView("albums")}
-            >
-              <img
-                src={albaATextyImg}
-                alt="Albums"
-              />
-            </button>
-
-
-
-            {/* Gallery */}
-            <button
-              className="musicMenuItem"
-              type="button"
-              onClick={() => setMusicView("gallery")}
-            >
-              <img
-                src={galleryImg}
-                alt="Gallery"
-              />
-            </button>
-
-            {/* Screws mirror image */}
-            <div className="sroubyMirrorImg">
-              <img
-                src={sroubyMirrorImg}
-                alt="Srouby mirror image"
-              />
-            </div>
-
-            {/* Facebook + Spotify */}
-            <div className="musicSocialRow">
+      <div className="musicMainLayout">
+        {/* LEFT SIDE */}
+        <div className="musicMainLeft">
+          <div className="musicVideoWrap">
+            <div className="musicVideoSocials">
+              {/* Facebook */}
               <a
                 href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={fbImg} alt="Facebook" />
+                <img
+                  src={fbImg}
+                  className="musicVideoSocial musicVideoFb"
+                  alt="Facebook"
+                />
               </a>
 
+              {/* Spotify */}
               <a
                 href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={spotifyImg} alt="Spotify" />
+                <img
+                  src={spotifyImg}
+                  className="musicVideoSocial musicVideoSpotify"
+                  alt="Spotify"
+                />
               </a>
 
+              {/* Vimeo */}
               <a
                 href="YOUR_VIMEO_LINK"
                 target="_blank"
                 rel="noreferrer"
-                className="vimeoWrap"
               >
                 <img
-                  className="vimeoSmall"
                   src={vimeoImg}
+                  className="musicVideoSocial musicVideoVimeo"
                   alt="Vimeo"
+                />
+              </a>
+
+              {/* Bandzone */}
+              <a
+                href="https://bandzone.cz/bouchacisrouby"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={bandzoneImg}
+                  className="musicVideoSocial musicVideoBandzone"
+                  alt="Bandzone"
                 />
               </a>
             </div>
 
-            {/* Bandzone */}
-            <a
-              className="musicMenuItem musicMenuItemDark"
-              href="https://bandzone.cz/bouchacisrouby"
-              target="_blank"
-              rel="noreferrer"
+            <img
+              className="musicVideoTitle"
+              src={bouchaciSroubyLogoImg}
+              alt="Bouchaci srouby"
+            />
+            <video
+              ref={videoRef}
+              className="musicMainVideo"
+              autoPlay
+              muted
+              playsInline
+              onPlay={() => setVideoPlaying(true)}
+              onEnded={() => {
+                if (videoRef.current) {
+                  videoRef.current.currentTime = 0;
+                }
+
+                setVideoPlaying(false);
+              }}
             >
-              <img
-                src={bandzoneImg}
-                alt="Bandzone"
-              />
-            </a>
+              <source src={Video1} type="video/mp4" />
+            </video>
 
-
+            {!videoPlaying && (
+              <button
+                className="musicVideoPlayBtn"
+                type="button"
+                onClick={() => {
+                  if (videoRef.current) {
+                    videoRef.current.currentTime = 0;
+                    videoRef.current.play();
+                  }
+                }}
+              >
+                ▶
+              </button>
+            )}
           </div>
         </div>
 
+        {/* RIGHT SIDE */}
+        <div className="musicMainRight">
+
+          {/* Newspaper article */}
+          <a
+            className="musicMenuItem"
+            href={articlePageImg}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={articleButtonImg}
+              alt="Newspaper article"
+            />
+          </a>
+
+          {/* Albums and Texts*/}
+          <button
+            className="musicMenuItem"
+            type="button"
+            onClick={() => setMusicView("albums")}
+          >
+            <img
+              src={albaATextyImg}
+              alt="Albums"
+            />
+          </button>
+
+
+
+          {/* Gallery */}
+          <button
+            className="musicMenuItem"
+            type="button"
+            onClick={() => setMusicView("gallery")}
+          >
+            <img
+              src={galleryImg}
+              alt="Gallery"
+            />
+          </button>
+
+          {/* Screws mirror image */}
+          <div className="sroubyMirrorImg">
+            <img
+              src={sroubyMirrorImg}
+              alt="Srouby mirror image"
+            />
+          </div>
+
+          {/* Facebook + Spotify */}
+          <div className="musicSocialRow">
+            <a
+              href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={fbImg} alt="Facebook" />
+            </a>
+
+            <a
+              href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={spotifyImg} alt="Spotify" />
+            </a>
+
+            <a
+              href="YOUR_VIMEO_LINK"
+              target="_blank"
+              rel="noreferrer"
+              className="vimeoWrap"
+            >
+              <img
+                className="vimeoSmall"
+                src={vimeoImg}
+                alt="Vimeo"
+              />
+            </a>
+          </div>
+
+          {/* Bandzone */}
+          <a
+            className="musicMenuItem musicMenuItemDark"
+            href="https://bandzone.cz/bouchacisrouby"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={bandzoneImg}
+              alt="Bandzone"
+            />
+          </a>
+
+
+        </div>
       </div>
+
+    </div>
 
   );
 }
