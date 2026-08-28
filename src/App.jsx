@@ -438,6 +438,7 @@ export default function App() {
 
         {activePanel === "film" && (
           <FilmPanel
+            lang={lang}
             films={films}
             selectedFilmId={selectedFilmId}
             setSelectedFilmId={setSelectedFilmId}

@@ -1,4 +1,5 @@
 import rysavyPlayingOnRadioImg from "../assets/contact/rysavy-playing-on-radio.png";
+import emailImg from "../assets/contact/email.png";
 
 export default function ContactPanel() {
   return (
@@ -13,7 +14,11 @@ export default function ContactPanel() {
         className="contactEmail"
         href="mailto:martin-rysavy@volny.cz"
       >
-        martin-rysavy@volny.cz
+        <img
+          src={emailImg}
+          alt="martin-rysavy@volny.cz"
+          className="contactEmailImg"
+        />
       </a>
     </div>
   );

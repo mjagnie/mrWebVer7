@@ -5,7 +5,7 @@
   justify-content: center;
 
   gap: 18px;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 
@@ -14,7 +14,9 @@
   max-width: 40%;
   height: auto;
   display: block;
+  margin-top: -110px;
 }
+
 .contactEmail {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
   font-size: 22px;
@@ -25,4 +27,32 @@
 .contactEmail:hover {
   text-decoration: underline;
   opacity: 0.5;
+}
+
+.contactEmail {
+  display: block;
+}
+
+.contactEmailImg {
+  display: block;
+  width: 450px;
+  height: auto;
+}
+
+.contactEmailImg:hover {
+  opacity: 0.7;
+}
+
+.contactPanel {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    to right,
+ rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.01) 20%,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(255, 255, 255, 1) 58%,
+    rgba(255, 255, 255, 0.01) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
