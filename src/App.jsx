@@ -18,7 +18,10 @@ import FilmPanel from "./panels/FilmPanel";
 import ContactPanel from "./panels/ContactPanel";
 
 import bgImg from "./assets/ui/main-page/background.jpg";
-import footprintImg from "./assets/ui/main-page/footprint.png";
+import starImg from "./assets/ui/main-page/star.png";
+import footprintImg from "./assets/ui/main-page/footprint1.png";
+import footprintLeftImg from "./assets/ui/main-page/footprint-left.png";
+import bearImg from "./assets/ui/main-page/bear.png";
 
 // Menu images (EN)
 import menuRysavyImgEn from "./assets/ui/main-page/menu/en/menu-rysavy.png";
@@ -315,12 +318,6 @@ export default function App() {
       style={{ backgroundImage: `url(${bgImg})` }}
     >
 
-      {/*
-      <img
-        src={footprintImg}
-        alt=""
-        className="mainFootprintDecoration"
-      />*/}
       {!panelOpen && (
         <>
           <div className="langBar">
@@ -342,6 +339,77 @@ export default function App() {
             onOpenContact={openContact}
             lang={lang}
           />
+
+          {lang === "en" && (
+            <>
+              <img
+                src={footprintImg}
+                alt=""
+                className="footprintDecoration-1"
+              />
+
+              <img
+                src={footprintLeftImg}
+                alt=""
+                className="footprintDecoration-2"
+              />
+
+              <img
+                src={footprintLeftImg}
+                alt=""
+                className="footprintDecoration-3"
+              />
+
+              <img
+                src={footprintLeftImg}
+                alt=""
+                className="footprintDecoration-4"
+              />
+              <img
+                src={footprintLeftImg}
+                alt=""
+                className="footprintDecoration-5"
+              />
+
+              <img
+                src={footprintImg}
+                alt=""
+                className="footprintDecoration-7"
+              />
+            </>
+          )}
+
+          {lang === "ru" && (
+            <>
+              <img
+                src={bearImg}
+                alt=""
+                className="bearDecoration-1"
+              />
+
+              <img
+                src={bearImg}
+                alt=""
+                className="bearDecoration-2"
+              />
+            </>
+          )}
+
+          {lang === "cs" && (
+            <>
+              <img
+                src={starImg}
+                alt=""
+                className="star-1"
+              />
+
+              <img
+                src={starImg}
+                alt=""
+                className="star-2"
+              />
+            </>
+          )}
         </>
       )}
       <RightPanel open={panelOpen} onClose={closePanel}>

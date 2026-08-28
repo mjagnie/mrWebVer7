@@ -33,6 +33,27 @@
   gap: 5px;
 }
 
+.star-1 {
+  position: absolute;
+  width: 29px;
+  height: auto;
+  top: 100px;
+  left: 345px;
+  opacity: 0.5;
+ }
+
+.star-2 {
+  position: absolute;
+  width: 29px;
+  height: auto;
+  top: 100px;
+  left: 755px;
+  opacity: 0.5;
+  transform: rotate(30deg);
+}
+
+
+
 /*
 .headerBlock {
   position: absolute;
@@ -146,58 +167,123 @@
 }
 
 /* Per-button sizing and position ENGLISH */
+
 .menuImg--name {
-  width: 230px;
+  width: 200px;
   height: auto;
 }
 .lang-en .menuBtn--name {
-  left: 300px;
-  top: 10px;
+  left: 337px;
+  top: 33px;
 }
 
 .menuImg--writings {
-  height: 55px;
+  height: 41px;
 }
 .lang-en .menuBtn--writings {
-  left: 149px;
-  top: 5px;
-  transform: rotate(3deg);
+  left: 173px;
+  top: px;
+  transform: rotate(0deg);
+}
+.footprintDecoration-1 {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  top: 40px;
+  left: 405px;
+  opacity: 0.3;
+  transform: rotate(0deg);
 }
 
 .menuImg--articles {
-  height: 55px;
+  height: 50px;
 }
 .lang-en .menuBtn--articles {
-  left: 560px;
-  top: -14px;
-  transform: rotate(-3deg);
+  left: 680px;
+  top: 20px;
+  transform: rotate(0deg);
+}
+.footprintDecoration-5 {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  top: 70px;
+  left: 695px;
+  opacity: 0.15;
+  transform: rotate(124deg);
+}/*
+.footprintDecoration-6 {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  top: 10px;
+  left: 595px;
+  opacity: 0.65;
+  transform: rotate(110deg);
+}*/
+.footprintDecoration-7 {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  top: 108px;
+  left: 790px;
+  opacity: 0.35;
+  transform: rotate(144deg);
 }
 
+
 .menuImg--film {
-  height: 60px;
+  height: 48px;
 }
 .lang-en .menuBtn--film {
-  left: 165px;
-  top: 80px;
-  transform: rotate(-3deg);
+  left: 195px;
+  top: 70px;
+  transform: rotate(0deg);
+}
+.footprintDecoration-2 {
+  position: absolute;
+  width: 77px;
+  height: auto;
+  top: 149px;
+  left: 355px;
+  opacity: 0.5;
+  transform: rotate(-50deg);
 }
 
 .menuImg--music {
-  height: 42px;
+  height: 37px;
 }
 .lang-en .menuBtn--music {
-  left: 569px;
-  top: 65px;
-  transform: rotate(1deg);
+  left: 575px;
+  top: -25px;
+  transform: rotate(0deg);
+}
+.footprintDecoration-4 {
+  position: absolute;
+  width: 79px;
+  height: auto;
+  top: 10px;
+  left: 610px;
+  opacity: 0.65;
+  transform: rotate(90deg);
 }
 
 .menuImg--contact {
-  height: 45px;
+  height: 40px;
 }
 .lang-en .menuBtn--contact {
-  left: 545px;
-  top: 125px;
-  transform: rotate(2deg);
+  left: 415px;
+  top: 160px;
+  transform: rotate(0deg);
+}
+.footprintDecoration-3 {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  top: 190px;
+  left: 680px;
+  opacity: 0.8;
+  transform: rotate(-35deg);
 }
 
 /* Per-button sizing and position CZECH */
@@ -241,8 +327,8 @@
   height: 52px;
 }
 .lang-cs .menuBtn--articles {
-  left: 540px;
-  top: 8px;
+  left: 539px;
+  top: 6px;
   transform: rotate(25deg);
 }
 
@@ -261,8 +347,8 @@
   height: auto;
 }
 .lang-ru .menuBtn--name {
-  left: 340px;
-  top: 35px;
+  left: 347px;
+  top: -5px;
 }
 
 .lang-ru .menuImg--contact {
@@ -270,7 +356,7 @@
 }
 .lang-ru .menuBtn--contact {
   left: 444px;
-  top: 175px;
+  top: -15px;
   transform: rotate(0deg);
 }
 
@@ -279,38 +365,54 @@
 }
 .lang-ru .menuBtn--writings {
   left: 225px;
-  top: 39px;
-  transform: rotate(-30deg);
+  top: 130px;
+  transform: rotate(0deg);
 }
 
 .lang-ru .menuImg--film {
   height: 27px;
 }
 .lang-ru .menuBtn--film {
-  left: 344px;
-  top: 2px;
-  transform: rotate(-7deg);
+  left: 349px;
+  top: 152px;
+  transform: rotate(0deg);
 }
 
 .lang-ru .menuImg--music {
-  height: 41px;
+  height: 40px;
 }
 .lang-ru .menuBtn--music {
-  left: 445px;
-  top: -2px;
-  transform: rotate(10deg);
+  left: 447px;
+  top: 159px;
+  transform: rotate(1deg);
 }
 
 .lang-ru .menuImg--articles {
   height: 31px;
 }
 .lang-ru .menuBtn--articles {
-  left: 580px;
-  top: 44px;
-  transform: rotate(29deg);
+  left: 575px;
+  top: 124px;
+  transform: rotate(-2deg);
 }
-
-
+.bearDecoration-1 {
+  position: absolute;
+  width: 570px;
+  height: auto;
+  top: -22px;
+  left: 688px;
+  opacity: 0.2;
+  transform: rotate(-3deg);
+}
+.bearDecoration-2 {
+  position: absolute;
+  width: 570px;
+  height: auto;
+  top: -22px;
+  left: -110px;
+  opacity: 0.15;
+  transform: rotate(9deg);
+}
 
 
 .menuBtn,

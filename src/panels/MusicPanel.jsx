@@ -11,7 +11,9 @@ import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 import albaATextyImg from "../assets/music/alba-a-texty.png";
 import galleryImg from "../assets/music/gallery.png";
 import sroubyMirrorImg from "../assets/music/srouby-mirror.png"
+
 import sroubaImg from "../assets/music/srouba.png";
+import chlastatImg from "../assets/music/chlastat-a-mrdat-transparent.png";
 
 import bandzoneImg from "../assets/music/logo/bz-logo-cerne-pozadi.png";
 import fbImg from "../assets/music/logo/fb-logo.png";
@@ -123,19 +125,19 @@ export default function MusicPanel() {
         <img
           src={sroubaImg}
           alt=""
-          className="musicDecoration"
+          className="sroubaDecoration"
         />
 
         <img
           src={sroubaImg}
           alt=""
-          className="musicDecoration1"
+          className="sroubaDecoration1"
         />
 
         <img
           src={sroubaImg}
           alt=""
-          className="musicDecoration2"
+          className="sroubaDecoration2"
         />
 
       </div>
@@ -383,6 +385,13 @@ export default function MusicPanel() {
 
         </div>
       </div>
+
+      <img
+        src={chlastatImg}
+        alt=""
+        className="chlastatDecoration"
+      />
+
 
     </div>
 
