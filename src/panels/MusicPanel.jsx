@@ -10,7 +10,8 @@ import bouchaciSroubyLogoImg from "../assets/music/bouchaci-srouby-name1.png";
 import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 import albaATextyImg from "../assets/music/alba-a-texty.png";
 import galleryImg from "../assets/music/gallery.png";
-import sroubyMirrorImg from "../assets/music/srouby-mirror.png"
+import sroubyMirrorImg from "../assets/music/srouby-mirror.png";
+import videoklipyImg from "../assets/music/videoklipy.png";
 
 import sroubaImg from "../assets/music/srouba.png";
 import chlastatImg from "../assets/music/chlastat-a-mrdat-transparent.png";
@@ -93,6 +94,39 @@ export default function MusicPanel() {
     );
   }
 
+  if (musicView === "videoclips") {
+    return createPortal(
+      <div className="videoclipsFullscreen">
+
+        <button
+          className="viewerBackBtn"
+          type="button"
+          onClick={() => setMusicView("main")}
+          aria-label="Back"
+        >
+          ◄
+        </button>
+
+        <div className="videoclipsContent">
+          <p className="videoclipsText">
+            Tyto a podobné výkřiky na vás vychrlí pražská parta Bouchací šrouby, enfant terrible toho nejšpinavějšího, co lze v Česku slyšet. Zneklidňující hudbu se základem v experimentální alternativě či underground utváří prapodivné nástroje jako basbalalajka, kosa, basběžka či rádio. Šrouby křesají o hrany stereotypů, zažitých frází, odposlechnutých kusů rozhovorů a bezmyšlenkovitě reprodukovaných klišé. Sdělení mrazivá jako ostří kosy, trefná jako pár facek a povědomější než dobře míněné babiččino mentorování z prošlého milenia. Ojedinělý posluchačský zážitek zaručen. Znepřátelí si i vás? Das ganze tschechische Volk ist eine Simulantenbande!
+          </p>
+        </div>
+
+
+        <button
+          className="videoclipsClose"
+          onClick={() => setMusicView("main")}
+        >
+          ✕
+        </button>
+
+      </div>,
+      document.body
+    );
+  }
+
+
   if (musicView === "albums") {
     return (
       <div className="musicAlbumsView">
@@ -121,7 +155,7 @@ export default function MusicPanel() {
             </a>
           ))}
         </div>
-        
+
         <img
           src={sroubaImg}
           alt=""
@@ -147,9 +181,6 @@ export default function MusicPanel() {
   if (musicView === "gallery") {
     return createPortal(
       <div className="galleryFullscreen">
-
-
-
         <button
           className="galleryArrowSimple galleryArrowLeft"
           type="button"
@@ -183,6 +214,8 @@ export default function MusicPanel() {
       document.body
     );
   }
+
+
 
 
 
@@ -328,6 +361,24 @@ export default function MusicPanel() {
               alt="Gallery"
             />
           </button>
+
+
+          {/* Videoclips */}
+          <button
+            className="musicMenuItem"
+            type="button"
+            onClick={() => setMusicView("videoclips")}
+          >
+            <img
+              src={videoklipyImg}
+              alt="Videoklipy"
+            />
+          </button>
+
+
+
+
+
 
           {/* Screws mirror image */}
           <div className="sroubyMirrorImg">

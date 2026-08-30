@@ -31,6 +31,27 @@ export default function FilmPanel({
           {labels.title}
         </h2>
 
+
+        {labels.movieUrl && (
+          <a
+            className="filmWatchLink"
+            href={labels.movieUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="filmWatchImg"
+              src={selectedFilm.img}
+              alt="labels.title"
+            />
+
+            <span className="filmWatchArrow">▶</span>
+          </a>
+        )}
+
+
+
+
         {Array.isArray(labels.description) ? (
           labels.description.map((paragraph, index) => (
             <p className="panelText" key={index}>
@@ -58,24 +79,25 @@ export default function FilmPanel({
               key={film.id}
               className="filmTile"
               type="button"
+
               onClick={() => setSelectedFilmId(film.id)}
             >
               <img
                 className="filmTileImg"
                 src={film.img}
                 alt={film.title}
-                />
+              />
 
               <div className="filmTileOverlay">
                 <div className="filmTileTitle">
-                 {labels.title}
+                  {labels.title}
                 </div>
 
                 <div className="filmTileMeta">
                   {film.year}
                 </div>
               </div>
-            
+
             </button>
           );
         })}
