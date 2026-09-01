@@ -5,9 +5,10 @@ import kdyzJsemVrtalCihlyImg from "../assets/music/albums/kdyz-jsem-vrtal-cihly-
 import gatyarandasImg from "../assets/music/albums/gatyarandas.png";
 
 import textyImg from "../assets/music/bouchaci-srouby-texty-cerveny.png";
-import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 
-import fakirImg from "../assets/music/fakir3.png";
+import texty1Img from "../assets/music/bouchaci-srouby-texty-cerveny2.png";
+
+import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 
 export const musicTiles = [
   {
@@ -45,6 +46,13 @@ export const musicTiles = [
     image: gatyarandasImg,
     url: "YOUR_ALBUM_LINK_5",
   },
+   {
+    id: "texty",
+    type: "pdf",
+    title: "Texty",
+    image: texty1Img,
+    url: bouchaciSroubyTextyPdf,
+  },
   {
     id: "texty",
     type: "pdf",
@@ -53,11 +61,5 @@ export const musicTiles = [
     url: bouchaciSroubyTextyPdf,
   },
  
-  {
-    id: "decoration",
-    type: "image",
-    title: "Fakir",
-    image: fakirImg,
-  },
-
+ 
 ];

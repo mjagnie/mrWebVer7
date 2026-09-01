@@ -1,14 +1,16 @@
-/* ---------------- MUSIC PANEL ---------------- */
+/* ==========================================================
+   MUSIC PANEL — MAIN VIEW
+   ========================================================== */
+
+/* ---------------- MAIN PANEL ---------------- */
 
 .musicPanel {
-  
   width: 100%;
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   box-sizing: border-box;
   overflow: hidden;
@@ -22,49 +24,30 @@
     sans-serif;
 }
 
-.chlastatDecoration {
-  position: absolute;
-
-  width: 200px;
-  height: auto;
-
-  transform: rotate(-20deg);
-  opacity: 0.8;
-
-  top: 140px;
-  left: 120px;
-
-  z-index: 20;
-  pointer-events: none;
-}
-
-
-/* ---------------- MAIN TWO-COLUMN LAYOUT ---------------- */
+/* ---------------- LAYOUT ---------------- */
 
 .musicMainLayout {
   display: grid;
-
-  /* left video / right menu */
   grid-template-columns: auto 1fr;
-  gap: 0;
 
   width: min(100%, 810px);
   height: 100vh;
+
+  gap: 0;
 
   overflow: hidden;
   align-items: start;
 }
 
-
 /* ==========================================================
-   LEFT SIDE — VIDEO
+   LEFT SIDE
    ========================================================== */
 
+   /* ---------------- VIDEO ---------------- */
 .musicMainLeft {
   width: auto;
   height: 100vh;
 }
-
 
 .musicVideoWrap {
   position: relative;
@@ -72,9 +55,6 @@
   width: 100%;
   height: 100%;
 }
-
-
-/* Main video */
 
 .musicMainVideo {
   display: block;
@@ -84,7 +64,6 @@
 
   object-fit: contain;
 }
-
 
 /* ---------------- BAND NAME OVER VIDEO ---------------- */
 
@@ -147,10 +126,8 @@
   background: rgba(0, 0, 0, 0.45);
 
   transform:
-    translate(-50%, -50%)
-    scale(1.06);
+    translate(-50%, -50%) scale(1.06);
 }
-
 
 /* ==========================================================
    SOCIAL LINKS OVER VIDEO
@@ -160,7 +137,7 @@
   The wrapper covers the whole video.
 
   Individual logos are positioned separately,
-  like in your original Music layout.
+  like in original Music layout.
 */
 
 .musicVideoSocials {
@@ -178,8 +155,7 @@
   pointer-events: auto;
 }
 
-
-/* General logo style */
+/* General social media logo style */
 
 .musicVideoSocial {
   position: absolute;
@@ -255,7 +231,7 @@
 
 
 /* ==========================================================
-   RIGHT SIDE
+   RIGHT SIDE - MENU
    ========================================================== */
 
 .musicMainRight {
@@ -271,9 +247,6 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-
-
-/* ---------------- GENERAL MENU ITEMS ---------------- */
 
 .musicMenuItem {
   display: block;
@@ -311,22 +284,17 @@
 
 
 .musicMenuItem:hover {
-  opacity: 0.75;}
- /* transform: scale(1.08);
-  z-index: 1000;
-} */
-
-
-/* ---------------- BLACK BACKGROUND MENU ITEM ---------------- */
-
-.musicMenuItemDark {
-  background: #000;
-
-  padding: 10px 14px;
+  opacity: 0.75;
 }
 
+/* ---------------- RIGHT SIDE DECORATION ---------------- */
+.sroubyMirrorImg {
+  width: 100%;
 
-.musicMenuItemDark img {
+  margin-top: auto;
+}
+
+.sroubyMirrorImg img {
   display: block;
 
   width: 100%;
@@ -336,90 +304,39 @@
 }
 
 
-/* ---------------- TEXT BUTTON FALLBACK ---------------- */
+/* ---------------- MAIN DECORATION ---------------- */
+.chlastatDecoration {
+  position: absolute;
 
-/*
-  You may eventually not need this if every menu item
-  becomes an image.
-*/
-
-.musicMenuItem span {
-  display: block;
-
-  width: 100%;
-
-  padding: 10px 0;
-
-  font-size: 22px;
-  font-weight: 600;
-
-  text-align: left;
-}
-
-
-/* =========================
-   ALBUMS + TEXTS VIEW
-   ========================= */
-
-/*
-.musicAlbumsView {
-  position: relative;
-
-  width: 100%;
-
-  padding: 60px 30px 40px;
-
-  box-sizing: border-box;
-}
-
-
-.musicAlbumsGrid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 24px;
-
-  width: 100%;
-}
-
-
-.musicAlbumLink {
-  display: block;
-
-  text-decoration: none;
-}
-
-
-.musicAlbumCover {
-  display: block;
-
-  width: 100%;
+  width: 200px;
   height: auto;
 
-  object-fit: cover;
+  transform: rotate(-20deg);
+  opacity: 0.8;
 
-  transition:
-    transform 180ms ease,
-    opacity 180ms ease;
+  top: 140px;
+  left: 120px;
+
+  z-index: 20;
+  pointer-events: none;
 }
 
-
-.musicAlbum:hover .musicAlbumCover {
-  transform: scale(1.025);
-  opacity: 0.85;
+/* =========================
+   ALBUMS & TEXTS VIEW
+   ========================= */
+.musicAlbumsView {
+  position: relative;
+  width: 100%;
 }
-*/
 
 .musicAlbumsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
 
   width: 100%;
   max-width: 780px;
   margin: 0 auto;
+  gap: 0;
 }
 
 .musicAlbumTile {
@@ -430,10 +347,15 @@
 
 .musicAlbumTile img {
   display: block;
+
   width: 100%;
   height: auto;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
+
 .musicAlbumTile:hover img {
   transform: scale(1.025);
   opacity: 0.85;
@@ -443,11 +365,18 @@
 .musicAlbumTile:last-child {
   grid-column: 1 / -1;
 }
-.musicAlbumsView {
-  position: relative;
-  width: 100%;
-}
 
+/* ---------------- ALBUM DECORATIONS ---------------- */
+/*.fakirDecoration {
+  display: block;
+
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+
+  margin: 0 auto;
+}
+*/
 .sroubaDecoration {
   position: absolute;
 
@@ -483,125 +412,13 @@
   height: auto;
 
   transform: rotate(180deg);
-  
+
   top: 5px;
   left: 55px;
 
   z-index: 5;
   pointer-events: none;
 }
-
-
-/* ==========================================================
-   GALLERY VIEW
-   ========================================================== */
-
-.musicGalleryView {
-  position: relative;
-
-  width: 100%;
-  min-height: 520px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 60px 70px 40px;
-
-  box-sizing: border-box;
-}
-
-
-.musicGalleryImage {
-  display: block;
-
-  max-width: 100%;
-  max-height: 75vh;
-
-  width: auto;
-  height: auto;
-
-  object-fit: contain;
-
-  cursor: zoom-in;
-}
-
-
-/* ---------------- GALLERY ARROWS ---------------- */
-
-.galleryArrow {
-  position: absolute;
-
-  top: 50%;
-
-  transform: translateY(-50%);
-
-  z-index: 5;
-
-  display: grid;
-  place-items: center;
-
-  width: 46px;
-  height: 46px;
-
-  padding: 0;
-
-  border: none;
-  border-radius: 50%;
-
-  background: rgba(0, 0, 0, 0.55);
-  color: #fff;
-
-  font-size: 16px;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-
-.galleryArrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-
-.galleryArrow.left {
-  left: 6px;
-}
-
-
-.galleryArrow.right {
-  right: 6px;
-}
-
-
-/* ==========================================================
-   BACK BUTTON
-   ========================================================== */
-
-.musicBackBtn {
-  position: absolute;
-
-  top: 12px;
-  left: 12px;
-
-  z-index: 10;
-
-  padding: 0;
-
-  border: none;
-  background: transparent;
-
-  font-size: 22px;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-
-.musicBackBtn:hover {
-  opacity: 0.7;
-}
-
 
 /* ==========================================================
    FULLSCREEN GALLERY
@@ -633,7 +450,9 @@
 
   object-fit: contain;
 }
-/* simple arrows */
+
+
+/* ---------------- GALLERY ARROWS ---------------- */
 
 .galleryArrowSimple {
   position: fixed;
@@ -667,6 +486,7 @@
   right: 24px;
 }
 
+/* ---------------- GALLERY CLOSE ---------------- */
 .galleryClose {
   position: fixed;
 
@@ -692,24 +512,10 @@
   opacity: 0.7;
 }
 
+/* ==========================================================
+   VIDEOCLIPS VIEW
+   ========================================================== */
 
-
-.sroubyMirrorImg {
-  width: 100%;
-
-  margin-top: auto;
-}
-
-.sroubyMirrorImg img {
-  display: block;
-
-  width: 100%;
-  height: auto;
-
-  object-fit: contain;
-}
-
-/* VIDEOCLIPS */
 .videoclipsFullscreen {
   position: fixed;
   inset: 0;
@@ -731,6 +537,7 @@
   font-size: 30px;
   cursor: pointer;
 }
+
 .videoclipsContent {
   width: min(800px, 85%);
   margin: 80px auto 0;
@@ -747,61 +554,6 @@
 }
 
 
-
 /* ==========================================================
-   RESPONSIVE — later we can redesign this properly
+   RESPONSIVE
    ========================================================== */
-
-@media (max-width: 900px) {
-
-  .musicMainLayout {
-    grid-template-columns: 1fr;
-
-    height: auto;
-
-    overflow: visible;
-  }
-
-
-  .musicMainLeft {
-    height: 100vh;
-  }
-
-
-  .musicMainRight {
-    padding: 20px 22px 30px;
-  }
-
-
-  .musicAlbumsGrid {
-    grid-template-columns: 1fr;
-  }
-
-
-  .musicGalleryView {
-    min-height: 420px;
-
-    padding:
-      55px
-      52px
-      30px;
-  }
-
-
-  .galleryArrow {
-    width: 40px;
-    height: 40px;
-
-    font-size: 28px;
-  }
-
-
-  .galleryArrow.left {
-    left: 8px;
-  }
-
-
-  .galleryArrow.right {
-    right: 8px;
-  }
-}
