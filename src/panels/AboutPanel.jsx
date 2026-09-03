@@ -1,81 +1,105 @@
 import { ABOUT_CONTENT } from "../data/aboutContent";
 
 export default function AboutPanel({ rysavyAboutImg, lang }) {
-  const content = ABOUT_CONTENT?.[lang] || ABOUT_CONTENT?.cs;
-
-  if (!content) {
-    return (
-      <div className="panelContent aboutPanel">
-        <div className="panelTextWrap">
-          <p className="panelText">About content is missing.</p>
-        </div>
-      </div>
-    );
-  }
-
-  const intro = content.intro || { beforeImage: [], afterImage: [] };
-  const sections = Array.isArray(content.sections) ? content.sections : [];
-
-  function renderParagraph(block, index) {
-    if (!block || block.type !== "p") return null;
-
-    return (
-      <p key={index} className="panelText">
-        {block.strong && <strong>{block.strong}</strong>}
-        {block.text}
-      </p>
-    );
-  }
+  const content = ABOUT_CONTENT[lang] || ABOUT_CONTENT.cs;
 
   return (
     <div className="panelContent aboutPanel">
-      {/* INTRO — before image */}
+
+      {/* ---------------- INTRO ---------------- */}
+
       <div className="panelTextWrap">
-        {intro.beforeImage.map(renderParagraph)}
+        {content.intro.beforeImage.map((paragraph, index) => (
+          <p
+            key={index}
+            className="panelText"
+          >
+            {paragraph.strong && (
+              <strong>{paragraph.strong}</strong>
+            )}
+
+            {paragraph.text}
+          </p>
+        ))}
       </div>
 
-      {/* IMAGE */}
+
+      {/* ---------------- IMAGE ---------------- */}
+
       <div className="panelImgWrap">
-        <img className="panelImg" src={rysavyAboutImg} alt="Martin Ryšavý" />
+        <img
+          className="panelImg"
+          src={rysavyAboutImg}
+          alt="Martin Ryšavý"
+        />
       </div>
 
-      {/* INTRO — after image + SECTIONS */}
+
+      {/* ---------------- CONTENT ---------------- */}
+
       <div className="panelTextWrap">
-        {intro.afterImage.map(renderParagraph)}
 
-        {/* SECTIONS */}
-        {sections.map((section, si) => (
-          <div key={si}>
-            <p className="panelText panelText--heading">{section.heading}</p>
+        {content.intro.afterImage.map((paragraph, index) => (
+          <p
+            key={index}
+            className="panelText"
+          >
+            {paragraph.text}
+          </p>
+        ))}
 
-            {Array.isArray(section.subsections) ? (
-              section.subsections.map((sub, sj) => (
-                <div key={sj}>
-                  <p className="panelText panelText--subheading">{sub.title}</p>
+
+        {/* ---------------- SECTIONS ---------------- */}
+
+        {content.sections.map((section, sectionIndex) => (
+          <div key={sectionIndex}>
+
+            <p className="panelText panelText--heading">
+              {section.heading}
+            </p>
+
+            {section.subsections ? (
+              section.subsections.map((subsection, subsectionIndex) => (
+                <div key={subsectionIndex}>
+
+                  <p className="panelText panelText--subheading">
+                    {subsection.heading}
+                  </p>
 
                   <ul className="panelList">
-                    {(sub.items || []).map((item, k) => (
-                      <li key={k} className="panelListItem">
-                        {item}
+                    {subsection.items.map((item, itemIndex) => (
+                      <li
+                        key={itemIndex}
+                        className="panelListItem"
+                      >
+                        <strong>{item.title}</strong>
+                        {item.text}
                       </li>
                     ))}
                   </ul>
+
                 </div>
               ))
             ) : (
               <ul className="panelList">
-                {(section.items || []).map((item, k) => (
-                  <li key={k} className="panelListItem">
-                    {item}
+                {section.items.map((item, itemIndex) => (
+                  <li
+                    key={itemIndex}
+                    className="panelListItem"
+                  >
+                    <strong>{item.title}</strong>
+                    {item.text}
                   </li>
                 ))}
               </ul>
             )}
+
           </div>
         ))}
+
       </div>
+
     </div>
   );
 }
-
 

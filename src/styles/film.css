@@ -1,71 +1,65 @@
+/* ==========================================================
+   FILM GRID
+   ========================================================== */
+
 .filmGridWrap {
   width: min(810px, 100%);
+
   margin: 0 auto;
   padding: 0;
+
   box-sizing: border-box;
 }
 
 .filmGrid {
   display: grid;
   grid-template-columns: 1fr;
+
   gap: 0px;
 
   overflow: visible;
 }
 
+/* ---------------- FILM TILE ---------------- */
 .filmTile {
   position: relative;
-  height: 53px;
+  
+  height: 77px;
   width: 100%;
+  
   background: transparent;
+  
   border-radius: 10px;
-  overflow: hidden;
   border: none;
+
   padding: 0;
+  
+  overflow: hidden;
   cursor: pointer;
 
   transition:
     height 0.35s ease,
     transform 0.35s ease,
     opacity 0.2s ease;
- }
+}
 
 /* Image fills the whole tile */
 .filmTileImg {
   width: 100%;
+
   height: 100%;
-  object-fit: cover;     /* fills tile without stretching */
+  object-fit: cover;
+
+  /* fills tile without stretching */
   display: block;
 }
 
-/* Text overlay on top of image */
-.filmTileOverlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 4px 16px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0)
-  );
-
-  color: white;
-  text-align: left;
-}
-
-/*
+/* ---------------- TILE HOVER ---------------- */
 .filmTile:hover {
-  opacity: 0.85;
-  transform: scale(1.35);
-}
-*/
+  height: 370px;
 
-.filmTile:hover {
-  height: 300px;
   z-index: 100;
+
   opacity: 1;
 }
 
@@ -73,40 +67,60 @@
   transform: translateY(-247px);
 }
 
-.filmTile:hover .filmTileImg {
-  object-fit: cover;
-}
+/* ---------------- TILE TEXT ---------------- */
 
+/* Text overlay on top of image */
+.filmTileOverlay {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 4px 16px;
+
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0));
+
+  color: white;
+  text-align: left;
+}
 .filmTileTitle {
-  font-size: 20px;
-  margin-bottom: 4px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: -4px;
 }
-
 .filmTileMeta {
-  font-size: 14px;
-  opacity: 0.85;
+  font-size: 16px;
+  font-weight: 800;
 }
 
-/* ---------------- SELECTED FILM DETAIL ---------------- */
+
+/* ==========================================================
+   SELECTED FILM DETAIL
+   ========================================================== */
 
 .filmDetail {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  
+  gap: 20px;
   align-items: start;
 
   max-width: 70ch;
+  
   margin: 0 auto;
-
-  padding-top: 45px;
+  padding-top: 5px;
 }
 
-/* Film title */
+/* ---------------- FILM TITLE ---------------- */
 
 .filmDetail .panelTitle {
-  font-size: 23px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 20px;
+
+  margin-bottom: 0px;
 
   font-family:
     "MyFont",
@@ -117,19 +131,9 @@
     sans-serif;
 }
 
-/* Year */
+/* ---------------- FILM DESCRIPTION ---------------- */
 
-.filmDetail .panelText:first-of-type {
-  margin: 0 0 12px;
-
-  font-size: 17px;
-  text-align: center;
-  font-weight: normal;
-}
-
-/* Film description */
-
-.filmDetail .panelText:last-of-type {
+.filmDetail .panelText {
   margin-bottom: 15px;
 
   font-size: 17px;
@@ -139,39 +143,64 @@
   text-align: left;
 }
 
+/* ---------------- WATCH FILM IMAGE ---------------- */
+
 .filmWatchLink {
   position: relative;
+
   display: block;
+
   width: 100%;
+
   margin-bottom: 0px;
+
   overflow: hidden;
   border-radius: 10px;
 }
 
 .filmWatchImg {
   display: block;
+
   width: 100%;
   height: 180px;
+
   object-fit: cover;
 }
 
+/* ---------------- PLAY ARROW ---------------- */
+
 .filmWatchArrow {
   position: absolute;
+
   top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%);
 
   color: white;
-  font-size: 50px;
+
+  font-size: 60px;
+
+  opacity: 0.5;
 
   pointer-events: none;
-  transition: transform 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .filmWatchLink:hover .filmWatchArrow {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform:
+    translate(-50%, -50%)
+    scale(1.5);
+
+  opacity: 0.7;
 }
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
 
 @media (min-width: 900px) {
   .filmGrid {
@@ -179,4 +208,3 @@
     gap: 4px;
   }
 }
-

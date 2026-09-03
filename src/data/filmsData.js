@@ -3,7 +3,7 @@
 export function createFilmsData(images) {
   return [
     {
-      id: "film-1",
+      id: "1",
       year: 1995,
       img: images.argisImg,
 
@@ -28,7 +28,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-3",
+      id: "3",
       year: 1999,
       img: images.indiankaImg,
 
@@ -53,7 +53,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-4",
+      id: "4",
       year: 2001,
       img: images.duseVmuzeuImg,
 
@@ -78,7 +78,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-5",
+      id: "5",
       year: 2004,
       img: images.afonkaImg,
 
@@ -102,7 +102,7 @@ export function createFilmsData(images) {
     },
 
     {
-      id: "film-6",
+      id: "6",
       year: 2006,
       img: images.kdoImg,
 
@@ -127,7 +127,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-7",
+      id: "7",
       year: 2008,
       img: images.malupienImg,
 
@@ -152,7 +152,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-8",
+      id: "8",
       year: 2004,
       img: images.zemeSnuImg,
 
@@ -177,7 +177,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-9",
+      id: "9",
       year: 2006,
       img: images.bananoveDetiImg,
 
@@ -202,7 +202,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-10",
+      id: "10",
       year: 2010,
       img: images.medvediImg,
 
@@ -227,7 +227,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-11",
+      id: "11",
       year: 2014,
       img: images.panPovolnyImg,
 
@@ -252,7 +252,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-12",
+      id: "12",
       year: 2015,
       img: images.naVodeImg,
 
@@ -277,7 +277,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-13",
+      id: "13",
       year: 2017,
       img: images.gulliverImg,
 
@@ -302,7 +302,7 @@ export function createFilmsData(images) {
 
 
     {
-      id: "film-14",
+      id: "14",
       year: 2024,
       img: images.jaHerecImg,
 

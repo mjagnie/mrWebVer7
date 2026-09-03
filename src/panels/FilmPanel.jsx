@@ -10,14 +10,16 @@ export default function FilmPanel({
     return film?.labels?.[lang] || film?.labels?.cs || {};
   }
 
+  // --------------------------------------------------
   // DETAIL MODE
+  // --------------------------------------------------
   if (selectedFilmId !== null && selectedFilm) {
     const labels = getLabels(selectedFilm);
 
     return (
       <div className="filmDetail">
 
-        {/* Back button same as Books viewer */}
+        {/* Back button */}
         <button
           className="viewerBackBtn"
           type="button"
@@ -31,7 +33,6 @@ export default function FilmPanel({
           {labels.title}
         </h2>
 
-
         {labels.movieUrl && (
           <a
             className="filmWatchLink"
@@ -42,19 +43,19 @@ export default function FilmPanel({
             <img
               className="filmWatchImg"
               src={selectedFilm.img}
-              alt="labels.title"
+              alt={labels.title}
             />
 
             <span className="filmWatchArrow">▶</span>
           </a>
         )}
 
-
-
-
         {Array.isArray(labels.description) ? (
           labels.description.map((paragraph, index) => (
-            <p className="panelText" key={index}>
+            <p
+              className="panelText"
+              key={index}
+            >
               {paragraph}
             </p>
           ))
@@ -67,40 +68,45 @@ export default function FilmPanel({
     );
   }
 
+  // --------------------------------------------------
   // TILE MODE
+  // --------------------------------------------------
+
   return (
     <div className="filmGridWrap">
       <div className="filmGrid">
-        {films.map((film) => {
-          const labels = getLabels(film);
+        {[...films]
+          .sort((a, b) => b.id - a.id)
+          .map((film) => {
+            const labels = getLabels(film);
 
-          return (
-            <button
-              key={film.id}
-              className="filmTile"
-              type="button"
+            return (
+              <button
+                key={film.id}
+                className="filmTile"
+                type="button"
 
-              onClick={() => setSelectedFilmId(film.id)}
-            >
-              <img
-                className="filmTileImg"
-                src={film.img}
-                alt={film.title}
-              />
+                onClick={() => setSelectedFilmId(film.id)}
+              >
+                <img
+                  className="filmTileImg"
+                  src={film.img}
+                  alt={labels.title}
+                />
 
-              <div className="filmTileOverlay">
-                <div className="filmTileTitle">
-                  {labels.title}
+                <div className="filmTileOverlay">
+                  <div className="filmTileTitle">
+                    {labels.title}
+                  </div>
+
+                  <div className="filmTileMeta">
+                    {film.year}
+                  </div>
                 </div>
 
-                <div className="filmTileMeta">
-                  {film.year}
-                </div>
-              </div>
-
-            </button>
-          );
-        })}
+              </button>
+            );
+          })}
       </div>
     </div>
   );

@@ -32,7 +32,6 @@ export default function WritingsPanel({
   const ui = UI[lang] || UI.en;
 
   const [activeCoverIndex, setActiveCoverIndex] = useState(0);
-
   const coverRefs = useRef([]);
 
   function getLabels(book) {
@@ -80,24 +79,23 @@ export default function WritingsPanel({
     setActiveCoverIndex(index);
   }
 
-  /*
-   * Whenever the active book changes, move it to the middle
-   * of the horizontal carousel.
-   */
+  // Keep active cover centered
   useEffect(() => {
     const activeCover = coverRefs.current[activeCoverIndex];
 
-    if (activeCover) {
-      activeCover.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
+    if (!activeCover) {
+      return;
     }
+
+    activeCover.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
   }, [activeCoverIndex, selectedWritingId]);
 
   /*
-   * Keep the active index valid if the writings data changes.
+   * Keep active index valid if the writings data changes
    */
   useEffect(() => {
     if (writings.length === 0) {
@@ -110,10 +108,10 @@ export default function WritingsPanel({
     }
   }, [writings.length, activeCoverIndex]);
 
-  /*
-   * VIEW 1:
-   * No book selected — show the cover carousel.
-   */
+  // --------------------------------------------------
+  // COVER CAROUSEL
+  // --------------------------------------------------
+
   if (selectedWritingId === null || !selectedWriting) {
     if (writings.length === 0) {
       return <div className="writingsRoot" />;
@@ -122,6 +120,7 @@ export default function WritingsPanel({
     return (
       <div className="writingsRoot">
         <div className="bookCarousel">
+
           <button
             className="bookCarouselArrow bookCarouselArrow--left"
             type="button"
@@ -143,18 +142,22 @@ export default function WritingsPanel({
                 return null;
               }
 
+              const coverClassName =
+                book.id === "cesty-na-sibir-2008"
+                  ? "bookCarouselCover bookCarouselCover--wide"
+                  : "bookCarouselCover";
+
               return (
                 <button
                   key={book.id}
                   ref={(element) => {
                     coverRefs.current[index] = element;
                   }}
-                  className={[
-                    "bookCarouselItem",
-                    isActive ? "bookCarouselItem--active" : "",
-                  ]
-                    .filter(Boolean)
-                    .join(" ")}
+                  className={
+                    isActive
+                      ? "bookCarouselItem bookCarouselItem--active"
+                      : "bookCarouselItem"
+                  }
                   type="button"
                   onClick={() => handleCoverClick(book, index)}
                   aria-label={
@@ -164,10 +167,7 @@ export default function WritingsPanel({
                   }
                 >
                   <img
-                    className={`bookCarouselCover ${book.id === "cesty-na-sibir-2008"
-                        ? "bookCarouselCover--wide"
-                        : ""
-                      }`}
+                    className={coverClassName}
                     src={cover}
                     alt={title}
                   />
@@ -185,19 +185,22 @@ export default function WritingsPanel({
           >
             ►
           </button>
+
         </div>
       </div>
     );
   }
 
-  /*
-   * VIEW 2:
-   * The active cover was clicked — show the book information.
-   */
+  // --------------------------------------------------
+  // BOOK DETAIL
+  // --------------------------------------------------
+
   const labels = getLabels(selectedWriting);
 
   return (
-    <div className="writingsRoot">
+    <div className="writingsRoot"
+    style={{ outline: "4px solid red" }}>
+      
       <button
         className="viewerBackBtn"
         type="button"
@@ -209,8 +212,11 @@ export default function WritingsPanel({
       </button>
 
       <div className="writingsContent">
-        <div className="bookDetail">
-          <div className="bookDetailText">
+        <div className="bookDetail"
+        /*style={{ outline: "4px solid green" }}*/>
+          <div className="bookDetailText"
+          /*style={{ outline: "4px solid orange" }}*/>
+            
             {labels.authorMain && (
               <div className="bookAuthor">
                 {labels.authorMain}
@@ -280,9 +286,11 @@ export default function WritingsPanel({
                 ))}
               </div>
             )}
+          
           </div>
         </div>
       </div>
+
     </div>
   );
 }

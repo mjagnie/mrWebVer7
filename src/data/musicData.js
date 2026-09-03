@@ -5,6 +5,8 @@ import kdyzJsemVrtalCihlyImg from "../assets/music/albums/kdyz-jsem-vrtal-cihly-
 import gatyarandasImg from "../assets/music/albums/gatyarandas.png";
 
 import textyImg from "../assets/music/bouchaci-srouby-texty-cerveny.png";
+import fakirLongImg from "../assets/music/fakir3.png";
+import fakir2Img from "../assets/music/fakir2.png";
 
 import texty1Img from "../assets/music/bouchaci-srouby-texty-cerveny2.png";
 
@@ -50,7 +52,7 @@ export const musicTiles = [
     id: "texty",
     type: "pdf",
     title: "Texty",
-    image: texty1Img,
+    image: fakir2Img,
     url: bouchaciSroubyTextyPdf,
   },
   {
