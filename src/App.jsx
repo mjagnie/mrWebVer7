@@ -12,6 +12,7 @@ import RightPanel from "./components/RightPanel";
 
 import AboutPanel from "./panels/AboutPanel";
 import WritingsPanel from "./panels/WritingsPanel";
+import BookView from "./panels/BookView";
 import ArticlesPanel from "./panels/ArticlesPanel";
 import MusicPanel from "./panels/MusicPanel";
 import FilmPanel from "./panels/FilmPanel";
@@ -264,13 +265,18 @@ export default function App() {
     const path = loc.pathname;
 
     if (path === `/${lang}/about`) setActivePanel("about");
-    else if (path === `/${lang}/writings`) setActivePanel("writings");
+    else if (
+      path === `/${lang}/writings` &&
+      activePanel !== "bookView"
+    ) {
+      setActivePanel("writings");
+    }
     else if (path === `/${lang}/articles`) setActivePanel("articles");
     else if (path === `/${lang}/film`) setActivePanel("film");
     else if (path === `/${lang}/music`) setActivePanel("music");
     else if (path === `/${lang}/contact`) setActivePanel("contact");
     else if (path === `/${lang}`) setActivePanel(null);
-  }, [loc.pathname, lang]);
+  }, [loc.pathname, lang, activePanel]);
 
   // Redirect "/" → "/en"
   useEffect(() => {
@@ -412,7 +418,11 @@ export default function App() {
           )}
         </>
       )}
-      <RightPanel open={panelOpen} onClose={closePanel}>
+      <RightPanel
+        open={panelOpen}
+        onClose={closePanel}
+        panelType={activePanel}
+      >
 
         {activePanel === "about" && (
           <AboutPanel rysavyAboutImg={rysavyAboutImg} lang={lang} />
@@ -429,6 +439,15 @@ export default function App() {
             selectedWriting={selectedWriting}
             pageIndex={pageIndex}
             setPageIndex={setPageIndex}
+            onOpenBook={() => setActivePanel("bookView")}
+          />
+        )}
+
+        {activePanel === "bookView" && (
+          <BookView
+            lang={lang}
+            selectedWriting={selectedWriting}
+            onBack={() => setActivePanel("writings")}
           />
         )}
 

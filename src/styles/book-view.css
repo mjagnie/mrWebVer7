@@ -1,0 +1,155 @@
+
+/* ==========================================================
+   BOOK DETAIL VIEW
+   ========================================================== */
+.bookView {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  font-family:
+    "MyFont",
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+}
+
+.writingsContent {
+  padding: 60px clamp(26px, 4vw, 50px) 40px;
+
+  box-sizing: border-box;
+}
+
+
+.bookView .viewerBackBtn {
+  top: 12px;
+  left: 12px;
+
+  font-size: 38px;
+}
+
+
+.rightPanel--bookView .closeBtn {
+  top: 12px;
+  right: 12px;
+
+  position: absolute;
+  
+  padding: 0;
+  border: none;
+  background: transparent;
+
+
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.bookDetail {
+  display: grid;
+  grid-template-columns: 350px minmax(0, 55ch);
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+
+.bookDetailText {
+  width: 100%;
+  min-width: 0;
+  max-width: 55ch;
+
+  margin: 0;
+}
+
+.bookDetailCover img {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin-top: -50px;
+  margin-bottom: 5px;
+}
+
+
+/* ---------------- BOOK TYPOGRAPHY ---------------- */
+
+.bookAuthor {
+  font-size: 17px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.bookTitle {
+  margin-bottom: 15px;
+
+  font-size: 33px;
+  text-align: left;
+}
+
+.bookInfo {
+  margin-bottom: 12px;
+
+  font-size: 17px;
+  text-align: center;
+}
+
+.bookDescription {
+  margin-bottom: 15px;
+
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: bold;
+
+  text-align: left;
+}
+
+.bookDetails {
+  margin-top: 2px;
+
+  font-size: 16px;
+}
+
+
+/* ==========================================================
+   REVIEWS
+   ========================================================== */
+
+.bookReviewsInline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 3px;
+
+  margin-top: 40px;
+
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.bookReviewsInline strong {
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 0.03em;
+
+  opacity: 0.75;
+}
+
+.reviewLogoLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.reviewLogoLink:hover {
+  opacity: 0.7;
+}
+
+.reviewLogo {
+  display: block;
+
+  width: auto;
+  height: 25px;
+}

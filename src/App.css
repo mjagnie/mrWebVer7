@@ -7,9 +7,11 @@
 
 @import "./styles/about.css";
 @import "./styles/writings.css";
+@import "./styles/book-view.css";
 @import "./styles/articles.css";
 @import "./styles/film.css";
 @import "./styles/music.css";
+@import "./styles/videoclips.css";
 @import "./styles/contact.css";
 
 

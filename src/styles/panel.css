@@ -37,7 +37,7 @@
   z-index: 999;
   border: none;
   background: transparent;
-  font-size: 22px;
+  font-size: 38px;
   cursor: pointer;
   line-height: 1;
 }
@@ -67,7 +67,7 @@
   
   font-size: clamp(16px, 1.1vw, 19px); /* responsive */
   line-height: 1.7;
-    text-align: justify;
+  text-align: justify;
   text-justify: inter-word;
   text-align-last: left;
 }

@@ -24,6 +24,20 @@
   ); */
 }
 
+.rightPanel--about .closeBtn {
+  top: calc(50% - 347px);
+
+  position: absolute;
+  
+  padding: 0;
+  border: none;
+  background: transparent;
+
+
+  font-size: 38px;
+  cursor: pointer;
+}
+
 
 /* ---------------- TEXT ---------------- */
 

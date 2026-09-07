@@ -1,6 +1,70 @@
 /* ==========================================================
    WRITINGS PANEL
    ========================================================== */
+.writingsPicture {
+  position: relative;
+  width: min(700px, 90vw);
+  margin: 320px auto 0;
+}
+
+.writingsPictureImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bookHotspot {
+  position: absolute;
+  padding: 0;
+  border: 5px solid black;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bookHotspot:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: grey;
+}
+
+.bookHotspot--vrac {
+  left: 13%;
+  top: 0%;
+  width: 75%;
+  height: 17%;
+}
+
+.bookHotspot--tundra {
+  left: 7%;
+  top: 17%;
+  width: 81%;
+  height: 20%;
+}
+
+.bookHotspot--lesni {
+  left: 8%;
+  top: 37%;
+  width: 82%;
+  height: 10%;
+}
+
+.bookHotspot--cesty {
+  left: 0%;
+  top: 47%;
+  width: 100%;
+  height: 29%;
+}
+
+.bookHotspot--zlate {
+  left: 10%;
+  top: 76%;
+  width: 84%;
+  height: 24%;
+}
 
 .writingsRoot {
   position: relative;
@@ -17,264 +81,6 @@
     -apple-system,
     "Segoe UI",
     sans-serif;
-}
-
-.writingsContent {
-  padding: 60px clamp(26px, 4vw, 50px) 40px;
-
-  box-sizing: border-box;
-}
-
-
-/* ==========================================================
-   BOOK CAROUSEL
-   ========================================================== */
-
-.bookCarousel {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-  height: 100vh;
-
-  padding: 18px 70px 30px;
-
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.bookCarouselTrack {
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-
-  gap: 0;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-
-  scroll-padding-left: 50%;
-  scroll-padding-right: 50%;
-}
-
-.bookCarouselTrack::before {
-  content: "";
-
-  flex: 0 0 30%;
-}
-
-.bookCarouselTrack::after {
-  content: "";
-
-  flex: 0 0 50%;
-}
-
-.bookCarouselTrack::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* ---------------- CAROUSEL ITEM ---------------- */
-
-.bookCarouselItem {
-  flex: 0 0 auto;
-
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  background: transparent;
-
-  cursor: pointer;
-
-  opacity: 0.48;
-  filter: grayscale(75%);
-
-  transform: scale(0.9);
-
-  transition:
-    transform 820ms ease,
-    opacity 820ms ease,
-    filter 820ms ease;
-}
-
-.bookCarouselItem:hover {
-  opacity: 0.75;
-}
-
-.bookCarouselItem--active {
-  opacity: 1;
-  filter: grayscale(0%);
-
-  transform: scale(1);
-}
-
-.bookCarouselItem--active:hover {
-  opacity: 1;
-}
-
-.bookCarouselItem:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 8px;
-}
-
-
-/* ---------------- BOOK COVER ---------------- */
-
-.bookCarouselCover {
-  display: block;
-
-  width: auto;
-  height: 90vh;
-
-  object-fit: contain;
-}
-
-
-/* ---------------- CAROUSEL ARROWS ---------------- */
-
-.bookCarouselArrow {
-  position: absolute;
-
-  top: 50%;
-
-  z-index: 10;
-
-  transform: translateY(-50%);
-
-  display: grid;
-  place-items: center;
-
-  width: 46px;
-  height: 46px;
-
-  padding: 0;
-
-  border: none;
-  background: transparent;
-
-  font-size: 24px;
-  line-height: 1;
-
-  cursor: pointer;
-}
-
-.bookCarouselArrow--left {
-  left: 12px;
-}
-
-.bookCarouselArrow--right {
-  right: 12px;
-}
-
-
-/* ==========================================================
-   BOOK DETAIL
-   ========================================================== */
-
-.bookDetail {
-  display: grid;
-
-  gap: 30px;
-
-  align-items: start;
-}
-
-.bookDetailText {
-  width: 100%;
-  min-width: 0;
-  max-width: 55ch;
-
-  margin: 0 auto;
-}
-
-
-/* ---------------- BOOK TYPOGRAPHY ---------------- */
-
-.bookAuthor {
-  font-size: 17px;
-  font-weight: bold;
-
-  text-align: center;
-}
-
-.bookTitle {
-  margin-bottom: 20px;
-
-  font-size: 23px;
-  text-align: center;
-}
-
-.bookInfo {
-  margin-bottom: 12px;
-
-  font-size: 17px;
-  text-align: center;
-}
-
-.bookDescription {
-  margin-bottom: 15px;
-
-  font-size: 17px;
-  line-height: 1.4;
-  font-weight: bold;
-
-  text-align: left;
-}
-
-.bookDetails {
-  margin-top: 2px;
-
-  font-size: 16px;
-}
-
-
-/* ==========================================================
-   REVIEWS
-   ========================================================== */
-
-.bookReviewsInline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 3px;
-
-  margin-top: 40px;
-
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.bookReviewsInline strong {
-  font-size: 15px;
-  font-weight: 600;
-
-  letter-spacing: 0.03em;
-
-  opacity: 0.75;
-}
-
-.reviewLogoLink {
-  display: inline-flex;
-  align-items: center;
-}
-
-.reviewLogoLink:hover {
-  opacity: 0.7;
-}
-
-.reviewLogo {
-  display: block;
-
-  width: auto;
-  height: 25px;
 }
 
 

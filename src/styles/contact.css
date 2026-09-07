@@ -8,6 +8,19 @@
   padding-top: 0px;
 }
 
+.rightPanel--contact .closeBtn {
+  top: calc(50% - 350px);
+
+  position: absolute;
+  
+  padding: 0;
+  border: none;
+  background: transparent;
+
+
+  font-size: 38px;
+  cursor: pointer;
+}
 
 .contactPanelImg {
   width: 360px;
