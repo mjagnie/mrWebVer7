@@ -107,22 +107,7 @@ export default function HeaderBlock({
 
       </div>
 
-      {/* Contact
-      <div className="contactRow">
-        <button 
-          className="contactBtn"
-          onClick={onOpenContact} 
-          type="button"
-          aria-label="Contact"
-        >
-          <img 
-            src={menuContactImg} 
-            alt="Contact" 
-            className="contactImg contactImg--contact"
-          />
-        </button>
-      </div> */}
-
+      
     </div>
   );
 }

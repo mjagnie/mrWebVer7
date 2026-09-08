@@ -345,7 +345,7 @@ export default function App() {
             onOpenContact={openContact}
             lang={lang}
           />
-
+{/*
           {lang === "en" && (
             <>
               <img
@@ -415,7 +415,7 @@ export default function App() {
                 className="star-2"
               />
             </>
-          )}
+          )} */}
         </>
       )}
       <RightPanel
