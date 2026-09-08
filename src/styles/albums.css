@@ -1,0 +1,102 @@
+/* =========================
+   ALBUMS & TEXTS VIEW
+   ========================= */
+.musicAlbumsView {
+  position: relative;
+  width: 100%;
+}
+
+.musicAlbumsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.musicAlbumTile {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.musicAlbumTile img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.musicAlbumTile:hover img {
+  transform: scale(1.025);
+  opacity: 0.85;
+}
+
+
+.musicAlbumTile:last-child {
+  grid-column: 1 / -1;
+}
+
+.musicAlbumsView .viewerBackBtn {
+  font-size: 38px;
+}
+
+/* ---------------- ALBUM DECORATIONS ---------------- */
+/*.fakirDecoration {
+  display: block;
+
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+
+  margin: 0 auto;
+}
+*/
+.sroubaDecoration {
+  position: absolute;
+
+  width: 390px;
+  height: auto;
+
+  rotate: 90deg;
+  top: 110px;
+  left: 1105px;
+
+  z-index: 5;
+  pointer-events: none;
+}
+
+.sroubaDecoration1 {
+  position: absolute;
+
+  width: 350px;
+  height: auto;
+
+  rotate: 270deg;
+  top: 400px;
+  left: 60px;
+
+  z-index: 5;
+  pointer-events: none;
+}
+
+.sroubaDecoration2 {
+  position: absolute;
+
+  width: 300px;
+  height: auto;
+
+  transform: rotate(180deg);
+
+  top: 5px;
+  left: 55px;
+
+  z-index: 5;
+  pointer-events: none;
+}

@@ -1,0 +1,92 @@
+
+/* ==========================================================
+   FULLSCREEN GALLERY
+   ========================================================== */
+
+.galleryFullscreen {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.95);
+}
+
+
+.galleryFullscreenImg {
+  display: block;
+
+  max-width: 92vw;
+  max-height: 92vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ---------------- GALLERY ARROWS ---------------- */
+
+.galleryArrowSimple {
+  position: fixed;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 100000;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 38px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.galleryArrowSimple:hover {
+  opacity: 0.65;
+}
+
+.galleryArrowLeft {
+  left: 24px;
+}
+
+.galleryArrowRight {
+  right: 24px;
+}
+
+/* ---------------- GALLERY CLOSE ---------------- */
+.galleryClose {
+  position: fixed;
+
+  top: 12px;
+  right: 20px;
+
+  z-index: 100001;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  color: white;
+
+  font-size: 38px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.galleryClose:hover {
+  opacity: 0.7;
+}

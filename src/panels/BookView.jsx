@@ -18,6 +18,7 @@ export default function BookView({
 
   const ui = UI[lang] || UI.en;
 
+  
   function getLabels(book) {
     return book?.labels?.[lang] || book?.labels?.cs || {};
   }
@@ -46,13 +47,13 @@ export default function BookView({
       </button>
 
       <div className="writingsContent">
-        
+
         <div className="bookDetail">
 
           <div className="bookDetailCover">
             <img src={cover} alt={labels.titleMain || "Book cover"} />
           </div>
-          
+
           <div className="bookDetailText">
 
             {labels.authorMain && (
@@ -61,13 +62,13 @@ export default function BookView({
               </div>
             )}
 
-            
+
             {labels.titleMain && (
               <div className="bookTitle">
                 <strong>{labels.titleMain}</strong>
               </div>
             )}
-            
+
 
             {labels.additionalInfo && (
               <div className="bookInfo">
