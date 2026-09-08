@@ -108,7 +108,7 @@
 
 .headerBlock {
   position: absolute;
-  top: 50px;
+  top: clamp(50px, 8vh, 120px);
   left: 120px;
 
   width: 700px;
