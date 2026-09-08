@@ -10,8 +10,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  width: 100%;
-  max-width: 780px;
+  width: clamp(780px, 95vh, 1150px);
+  max-width: 100%;
+  
   margin: 0 auto;
   gap: 0;
 }
@@ -60,11 +61,10 @@
 */
 .sroubaDecoration {
   position: absolute;
-
   width: 390px;
   height: auto;
 
-  rotate: 90deg;
+  transform: rotate(90deg);
   top: 110px;
   left: 1105px;
 
@@ -74,11 +74,10 @@
 
 .sroubaDecoration1 {
   position: absolute;
-
   width: 350px;
   height: auto;
 
-  rotate: 270deg;
+  transform: rotate(270deg);
   top: 400px;
   left: 60px;
 
@@ -88,15 +87,35 @@
 
 .sroubaDecoration2 {
   position: absolute;
-
   width: 300px;
   height: auto;
 
   transform: rotate(180deg);
-
   top: 5px;
   left: 55px;
 
   z-index: 5;
   pointer-events: none;
+}
+
+@media (min-height: 1000px) {
+
+  .sroubaDecoration {
+    width: clamp(350px, 32vh, 390px);
+    left: calc(50% + clamp(470px, 44vh, 525px));
+  }
+
+  .sroubaDecoration1 {
+    width: clamp(315px, 29vh, 350px);
+
+    left: auto;
+    right: calc(50% + clamp(475px, 44vh, 530px));
+  }
+
+  .sroubaDecoration2 {
+    width: clamp(270px, 25vh, 300px);
+
+    left: auto;
+    right: calc(50% + clamp(520px, 48vh, 580px));
+  }
 }

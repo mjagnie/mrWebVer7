@@ -45,7 +45,8 @@
   display: grid;
   grid-template-columns: auto 1fr;
 
-  width: min(100%, 810px);
+  width: clamp(810px, calc(100vh + 100px), 1300px);
+  
   height: 100vh;
 
   gap: 0;
@@ -337,3 +338,9 @@
 /* ==========================================================
    RESPONSIVE
    ========================================================== */
+  
+   @media (min-height: 1150px) {
+  .musicMainLayout {
+    width: 1300px;
+  }
+}

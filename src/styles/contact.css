@@ -9,7 +9,8 @@
 }
 
 .rightPanel--contact .closeBtn {
-  top: calc(50% - 350px);
+  top: 12px;
+  right: 12px;
 
   position: absolute;
   

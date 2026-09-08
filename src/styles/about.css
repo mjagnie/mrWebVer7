@@ -25,7 +25,8 @@
 }
 
 .rightPanel--about .closeBtn {
-  top: calc(50% - 347px);
+  top: 12px;
+  right: 12px;
 
   position: absolute;
   
