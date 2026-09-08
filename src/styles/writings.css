@@ -4,7 +4,7 @@
 .writingsPicture {
   position: relative;
   width: clamp(700px, 45vw, 900px);
-  margin: clamp(320px, 30vh, 420px) auto 0;
+  margin: 320px auto 0;
 }
 
 .writingsPictureImg {
@@ -116,42 +116,8 @@
    RESPONSIVE
    ========================================================== */
 
-@media (max-width: 900px) {
-  .bookCarousel {
-    min-height: 460px;
-
-    padding: 15px 52px 25px;
-  }
-
-  .bookCarouselTrack {
-    gap: 14px;
-  }
-
-  .bookCarouselCover {
-    width: min(72vw, 340px);
-    height: auto;
-  }
-
-  .bookCarouselArrow {
-    width: 40px;
-    height: 40px;
-
-    font-size: 20px;
-  }
-
-  .bookCarouselArrow--left {
-    left: 6px;
-  }
-
-  .bookCarouselArrow--right {
-    right: 6px;
-  }
-
-  .writingsContent {
-    padding: 55px 22px 30px;
-  }
-
-  .bookDetail {
-    gap: 24px;
+@media (min-height: 1000px) {
+  .writingsPicture {
+    margin-top: 650px;
   }
 }
