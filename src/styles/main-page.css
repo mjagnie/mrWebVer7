@@ -96,19 +96,26 @@
   width: 200px;
   height: auto;
 }
-
 .lang-en .menuBtn--name {
   left: 337px;
-  top: 33px;
+  top: 23px;
+}
+
+.menuImg--contact {
+  height: 40px;
+}
+.lang-en .menuBtn--contact {
+  left: 400px;
+  top: 150px;
+  transform: rotate(0deg);
 }
 
 .menuImg--writings {
-  height: 41px;
+  height: 43px;
 }
-
 .lang-en .menuBtn--writings {
-  left: 173px;
-  top: px;
+  left: 243px;
+  top: -12px;
   transform: rotate(0deg);
 }
 
@@ -116,10 +123,28 @@
 .menuImg--articles {
   height: 50px;
 }
-
 .lang-en .menuBtn--articles {
-  left: 680px;
-  top: 20px;
+  left: 570px;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+
+.menuImg--film {
+  height: 48px;
+}
+.lang-en .menuBtn--film {
+  left: 195px;
+  top: 40px;
+  transform: rotate(0deg);
+}
+
+.menuImg--music {
+  height: 37px;
+}
+.lang-en .menuBtn--music {
+  left: 375px;
+  top: -35px;
   transform: rotate(0deg);
 }
 
@@ -200,36 +225,6 @@
 }
 */
 
-.menuImg--film {
-  height: 48px;
-}
-
-.lang-en .menuBtn--film {
-  left: 195px;
-  top: 70px;
-  transform: rotate(0deg);
-}
-
-.menuImg--music {
-  height: 37px;
-}
-
-.lang-en .menuBtn--music {
-  left: 575px;
-  top: -25px;
-  transform: rotate(0deg);
-}
-
-
-.menuImg--contact {
-  height: 40px;
-}
-
-.lang-en .menuBtn--contact {
-  left: 415px;
-  top: 160px;
-  transform: rotate(0deg);
-}
 
 
 

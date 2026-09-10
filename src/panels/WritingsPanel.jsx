@@ -3,27 +3,12 @@ import booksImg from "../assets/books/knihy-back.png";
 export default function WritingsPanel({
   writings,
   setSelectedWritingId,
-  setPageIndex,
   onOpenBook,
 }) {
-
   function openBook(bookId) {
     setSelectedWritingId(bookId);
-
-    if (setPageIndex) {
-      setPageIndex(0);
-    }
     onOpenBook();
   }
-
-  function closeBook() {
-    setSelectedWritingId(null);
-
-    if (setPageIndex) {
-      setPageIndex(0);
-    }
-  }
-
 
   if (writings.length === 0) {
     return <div className="writingsRoot" />;
