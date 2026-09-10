@@ -49,14 +49,14 @@ export const musicTiles = [
     url: "YOUR_ALBUM_LINK_5",
   },
    {
-    id: "texty",
+    id: "texty-fakir",
     type: "pdf",
     title: "Texty",
     image: fakir2Img,
     url: bouchaciSroubyTextyPdf,
   },
   {
-    id: "texty",
+    id: "texty-cerveny",
     type: "pdf",
     title: "Texty",
     image: textyImg,
