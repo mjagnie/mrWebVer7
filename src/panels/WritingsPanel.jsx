@@ -1,4 +1,4 @@
-import booksImg from "../assets/books/knihy-back.png";
+import "../styles/writings.css";
 
 export default function WritingsPanel({
   writings,
@@ -10,57 +10,31 @@ export default function WritingsPanel({
     onOpenBook();
   }
 
-  if (writings.length === 0) {
-    return <div className="writingsRoot" />;
-  }
+  return (
+    <section className="writings-panel">
+      <h1></h1>
 
- return (
-    <div className="writingsRoot">
+      <div className="writings-list">
+        {writings.map((book) => {
+          const labels = book.labels?.cs || {};
 
-      <div className="writingsPicture">
-        <img
-          className="writingsPictureImg"
-          src={booksImg}
-          alt="Books by Martin Ryšavý"
-        />
+          return (
+            <div key={book.id} className="writing-item">
+              <div className="writing-year">
+                {labels.year?.match(/\d{4}/)?.[0]}
+              </div>
 
-        <button
-          className="bookHotspot bookHotspot--vrac"
-          type="button"
-          onClick={() => openBook("vrac-cz")}
-          aria-label="Vrač"
-        />
-
-        <button
-          className="bookHotspot bookHotspot--tundra"
-          type="button"
-          onClick={() => openBook("book-9")}
-          aria-label="Tundra a smrt"
-        />
-
-        <button
-          className="bookHotspot bookHotspot--lesni"
-          type="button"
-          onClick={() => openBook("lesni-chodci-2001")}
-          aria-label="Lesní chodci"
-        />
-
-        <button
-          className="bookHotspot bookHotspot--cesty"
-          type="button"
-          onClick={() => openBook("cesty-na-sibir-2011")}
-          aria-label="Cesty na Sibiř"
-        />
-
-        <button
-          className="bookHotspot bookHotspot--zlate"
-          type="button"
-          onClick={() => openBook("book-8")}
-          aria-label="Zlaté vidění"
-        />
-
+              <button
+                className="writing-link"
+                type="button"
+                onClick={() => openBook(book.id)}
+              >
+                {labels.titleMain}
+              </button>
+            </div>
+          );
+        })}
       </div>
-
-    </div>
+    </section>
   );
 }

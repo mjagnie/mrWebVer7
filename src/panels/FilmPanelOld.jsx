@@ -5,25 +5,26 @@ export default function FilmPanel({
   setSelectedFilmId,
   selectedFilm,
 }) {
+
   function getLabels(film) {
     return film?.labels?.[lang] || film?.labels?.cs || {};
   }
 
   // --------------------------------------------------
-  // DETAIL MODE — keep as before
+  // DETAIL MODE
   // --------------------------------------------------
-
   if (selectedFilmId !== null && selectedFilm) {
     const labels = getLabels(selectedFilm);
 
     return (
       <div className="filmDetail">
 
+        {/* Back button */}
         <button
           className="viewerBackBtn"
           type="button"
           onClick={() => setSelectedFilmId(null)}
-          aria-label="Back to film list"
+          aria-label="Back to film tiles"
         >
           ◄
         </button>
@@ -45,9 +46,7 @@ export default function FilmPanel({
               alt={labels.title}
             />
 
-            <span className="filmWatchArrow">
-              ▶
-            </span>
+            <span className="filmWatchArrow">▶</span>
           </a>
         )}
 
@@ -70,37 +69,46 @@ export default function FilmPanel({
   }
 
   // --------------------------------------------------
-  // LIST MODE — new overview
+  // TILE MODE
   // --------------------------------------------------
 
   return (
-    <section className="films-panel">
-      <div className="films-list">
+    <div className="filmGridWrap">
+      <div className="filmGrid">
         {[...films]
           .sort((a, b) => b.id - a.id)
           .map((film) => {
             const labels = getLabels(film);
 
             return (
-              <div
+              <button
                 key={film.id}
-                className="film-item"
+                className="filmTile"
+                type="button"
+
+                onClick={() => setSelectedFilmId(film.id)}
               >
-                <div className="film-year">
-                  {film.year}
+                <img
+                  className="filmTileImg"
+                  src={film.img}
+                  alt={labels.title}
+                />
+
+                <div className="filmTileOverlay">
+                  <div className="filmTileTitle">
+                    {labels.title}
+                  </div>
+
+                  <div className="filmTileMeta">
+                    {film.year}
+                  </div>
                 </div>
 
-                <button
-                  className="film-link"
-                  type="button"
-                  onClick={() => setSelectedFilmId(film.id)}
-                >
-                  {labels.title}
-                </button>
-              </div>
+              </button>
             );
           })}
       </div>
-    </section>
+    </div>
   );
 }
+

@@ -1,141 +1,33 @@
-.rightPanel--film .closeBtn {
-  top: calc(50% - 372px);
+/* =========================================================
+   FILM LIST
+   ========================================================= */
 
-  position: absolute;
-  
-  padding: 0;
-  border: none;
-  background: transparent;
-
-
-  font-size: 38px;
-  cursor: pointer;
-}
-
-
-/* ==========================================================
-   FILM GRID
-   ========================================================== */
-
-.filmGridWrap {
-  width: min(810px, 100%);
-
+.films-panel {
+  width: min(780px, 100%);
   margin: 0 auto;
-  padding: 0;
-
+  padding: 95px 0 0;
   box-sizing: border-box;
+
+  transform: translateX(170px);
 }
 
-.filmGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  gap: 0px;
-
-  overflow: visible;
-}
-
-/* ---------------- FILM TILE ---------------- */
-.filmTile {
-  position: relative;
-  
-  height: 77px;
-  width: 100%;
-  
-  background: transparent;
-  
-  border-radius: 10px;
-  border: none;
-
+.films-list {
+  margin: 0;
   padding: 0;
-  
-  overflow: hidden;
-  cursor: pointer;
-
-  transition:
-    height 0.35s ease,
-    transform 0.35s ease,
-    opacity 0.2s ease;
 }
 
-/* Image fills the whole tile */
-.filmTileImg {
-  width: 100%;
-
-  height: 100%;
-  object-fit: cover;
-
-  /* fills tile without stretching */
-  display: block;
-}
-
-/* ---------------- TILE HOVER ---------------- */
-.filmTile:hover {
-  height: 370px;
-
-  z-index: 100;
-
-  opacity: 1;
-}
-
-.filmTile:nth-last-child(-n + 4):hover {
-  transform: translateY(-247px);
-}
-
-/* ---------------- TILE TEXT ---------------- */
-
-/* Text overlay on top of image */
-.filmTileOverlay {
-  position: absolute;
-
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  padding: 4px 16px;
-
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0));
-
-  color: white;
-  text-align: left;
-}
-.filmTileTitle {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: -4px;
-}
-.filmTileMeta {
-  font-size: 16px;
-  font-weight: 800;
-}
-
-
-/* ==========================================================
-   SELECTED FILM DETAIL
-   ========================================================== */
-
-.filmDetail {
+.film-item {
   display: grid;
-  grid-template-columns: 1fr;
-  
-  gap: 20px;
-  align-items: start;
-
-  max-width: 70ch;
-  
-  margin: 0 auto;
-  padding-top: 5px;
+  grid-template-columns: 70px 1fr;
+  column-gap: 24px;
+  margin: 0 0 12px 0;
+  align-items: baseline;
 }
 
-/* ---------------- FILM TITLE ---------------- */
-
-.filmDetail .panelTitle {
-  font-size: 28px;
-  text-align: center;
-
-  margin-bottom: 0px;
+.film-year {
+  text-align: right;
+  font-size: 17px;
+  font-weight: 600;
 
   font-family:
     "MyFont",
@@ -146,86 +38,48 @@
     sans-serif;
 }
 
-/* ---------------- FILM DESCRIPTION ---------------- */
+.film-link {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: transparent;
 
-.filmDetail .panelText {
-  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
 
-  font-size: 17px;
-  line-height: 1.4;
-  font-weight: bold;
+  font-family:
+    "MyFont",
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
 
+  color: inherit;
+  text-decoration: underline;
   text-align: left;
+
+  cursor: pointer;
 }
 
-/* ---------------- WATCH FILM IMAGE ---------------- */
-
-.filmWatchLink {
-  position: relative;
-
-  display: block;
-
-  width: 100%;
-
-  margin-bottom: 0px;
-
-  overflow: hidden;
-  border-radius: 10px;
+.film-link:hover {
+  opacity: 0.45;
 }
 
-.filmWatchImg {
-  display: block;
 
-  width: 100%;
-  height: 180px;
+/* =========================================================
+   CLOSE BUTTON — FILM LIST
+   ========================================================= */
 
-  object-fit: cover;
-}
-
-/* ---------------- PLAY ARROW ---------------- */
-
-.filmWatchArrow {
+.rightPanel--film .closeBtn {
+  top: 12px;
+  right: 12px;
   position: absolute;
 
-  top: 50%;
-  left: 50%;
+  padding: 0;
+  border: none;
+  background: transparent;
 
-  transform: translate(-50%, -50%);
-
-  color: white;
-
-  font-size: 60px;
-
-  opacity: 0.5;
-
-  pointer-events: none;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.filmWatchLink:hover .filmWatchArrow {
-  transform:
-    translate(-50%, -50%)
-    scale(1.5);
-
-  opacity: 0.7;
-}
-
-/* ---------------- BACK ARROW ---------------- */
-.filmDetail .viewerBackBtn {
-  top: calc(50% - 372px);
   font-size: 38px;
-}
-
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
-
-@media (min-width: 900px) {
-  .filmGrid {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
+  cursor: pointer;
 }
