@@ -15,25 +15,27 @@ export default function WritingsPanel({
       <h1></h1>
 
       <div className="writings-list">
-        {writings.map((book) => {
-          const labels = book.labels?.cs || {};
+        {[...writings]
+          .sort((a, b) => b.id - a.id)
+          .map((book) => {
+            const labels = book.labels?.cs || {};
 
-          return (
-            <div key={book.id} className="writing-item">
-              <div className="writing-year">
-                {labels.year?.match(/\d{4}/)?.[0]}
+            return (
+              <div key={book.id} className="writing-item">
+                <div className="writing-year">
+                  {labels.year?.match(/\d{4}/)?.[0]}
+                </div>
+
+                <button
+                  className="writing-link"
+                  type="button"
+                  onClick={() => openBook(book.id)}
+                >
+                  {labels.titleMain}
+                </button>
               </div>
-
-              <button
-                className="writing-link"
-                type="button"
-                onClick={() => openBook(book.id)}
-              >
-                {labels.titleMain}
-              </button>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </section>
   );

@@ -55,13 +55,6 @@ export const musicTiles = [
     image: fakir2Img,
     url: bouchaciSroubyTextyPdf,
   },
-  {
-    id: "texty-cerveny",
-    type: "pdf",
-    title: "Texty",
-    image: textyImg,
-    url: bouchaciSroubyTextyPdf,
-  },
- 
+
  
 ];

@@ -13,6 +13,8 @@ import vimeoImg from "../assets/music/logo/vimeo-logo.png";
 
 import articlePageImg from "../assets/music/bs-a2.jpg";
 
+import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
+
 
 export default function MusicPanel() {
   const [musicView, setMusicView] = useState("main");
@@ -31,6 +33,10 @@ export default function MusicPanel() {
 
   if (musicView === "albums") {
     return <AlbumsView onBack={returnToMain} />;
+  }
+
+  if (musicView === "texts") {
+    return <TextsView onBack={returnToMain} />;
   }
 
   if (musicView === "gallery") {
@@ -143,13 +149,14 @@ export default function MusicPanel() {
             ALBA
           </button>
 
-          <button
+          <a
             className="musicTextLink"
-            type="button"
-            onClick={() => setMusicView("albums")}
+            href={bouchaciSroubyTextyPdf}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             TEXTY
-          </button>
+          </a>
 
           <button
             className="musicTextLink"

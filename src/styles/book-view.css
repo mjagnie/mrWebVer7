@@ -18,7 +18,7 @@
 }
 
 .writingsContent {
-  padding: 60px clamp(26px, 4vw, 50px) 40px;
+  padding: 60px 40px 40px 170px;
 
   box-sizing: border-box;
 }
@@ -84,7 +84,7 @@
   font-size: 17px;
   font-weight: bold;
 
-  text-align: center;
+  text-align: left;
 }
 
 .bookTitle {
@@ -98,7 +98,7 @@
   margin-bottom: 12px;
 
   font-size: 17px;
-  text-align: center;
+  text-align: left;
 }
 
 .bookDescription {
@@ -158,4 +158,43 @@
 
   width: auto;
   height: 25px;
+}
+
+/* ==========================================================
+   WRACZ ADJUSTMENT
+   ========================================================== */
+.patroniteLogo {
+  width: 150px;
+  height: auto;
+}
+
+.wraczCover {
+  margin-top: 30px;
+}
+
+/* ==========================================================
+   VRAC BULGARIAN ADJUSTMENT
+   ========================================================== */
+.vracBulgarianCover {
+  margin-top: 35px;
+}
+/* ==========================================================
+   SIBERIA ADJUSTMENT
+   ========================================================== */
+.siberiaCover {
+  margin-top: 35px;
+}
+
+/* ==========================================================
+   DIMITRIJ ADJUSTMENT
+   ========================================================== */
+.dimitrijCover {
+  margin-top: 50px;
+}
+
+/* ==========================================================
+   CESTY ADJUSTMENT
+   ========================================================== */
+.cestyCover {
+  margin-top: 30px;
 }

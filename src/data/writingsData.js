@@ -3,7 +3,7 @@
 export function createWritingsData(images) {
   return [
     {
-      id: "lesni-chodci-2001",
+      id: "1",
       cover: images.lesniChodciEd1Cover,
       pages: [
       ],
@@ -47,7 +47,7 @@ export function createWritingsData(images) {
     },
 
     {
-      id: "vytvarne-prace-s-pohadkami",
+      id: "2",
       cover: images.vytvarnePraceCover,
       pages: [
       ],
@@ -85,7 +85,7 @@ export function createWritingsData(images) {
 
 
     {
-      id: "lovec-ticha-2006",
+      id: "3",
       cover: images.lovecTichaCoverImg,
       pages: [
       ],
@@ -123,11 +123,10 @@ export function createWritingsData(images) {
 
 
     {
-      id: "cesty-na-sibir-2008",
+      id: "4",
       cover: images.cestyCover1ImgCs,
       cover2: images.cestyCover2ImgCs,
-      pages: [
-      ],
+      coverClassName: "cestyCover",
       reviews: [
         {
           logo: images.iLiteraturaImg,
@@ -173,7 +172,7 @@ export function createWritingsData(images) {
     },
 
     {
-      id: "vrac-cz",
+      id: "5",
       cover: images.vracCover1ImgCs,
       pages: [
       ],
@@ -222,7 +221,7 @@ export function createWritingsData(images) {
 
 
     {
-      id: "cesty-na-sibir-2011",
+      id: "6",
       cover: images.cestyEd2Cover1ImgCs,
       pages: [
       ],
@@ -272,7 +271,7 @@ export function createWritingsData(images) {
 
 
     {
-      id: "lesni-chodci-2011",
+      id: "7",
       cover: images.lesniChodciEd2Cover1Img,
       pages: [
       ],
@@ -313,7 +312,7 @@ export function createWritingsData(images) {
     },
 
     {
-      id: "book-7",
+      id: "8",
       cover: images.staniceCover1Img,
       pages: [
       ],
@@ -355,10 +354,9 @@ export function createWritingsData(images) {
 
 
     {
-      id: "book-13",
+      id: "9",
       cover: images.vracCover1ImgDe,
-      pages: [
-      ],
+      coverClassName: "dimitrijCover",
 
       labels: {
         cs: {
@@ -395,10 +393,9 @@ export function createWritingsData(images) {
 
 
     {
-      id: "book-14",
+      id: "10",
       cover: images.cestyCover1ImgEs,
-      pages: [
-      ],
+      coverClassName: "siberiaCover",
 
       labels: {
         cs: {
@@ -436,10 +433,9 @@ export function createWritingsData(images) {
 
 
     {
-      id: "book-12",
+      id: "11",
       cover: images.vracCover1ImgBg,
-      pages: [
-      ],
+      coverClassName: "vracBulgarianCover",
 
       labels: {
         cs: {
@@ -477,7 +473,7 @@ export function createWritingsData(images) {
 
 
     {
-      id: "book-8",
+      id: "12",
       cover: images.zlateVideniCover1Img,
       pages: [
       ],
@@ -523,7 +519,7 @@ export function createWritingsData(images) {
     },
 
     {
-      id: "book-9",
+      id: "13",
       cover: images.tundraCover1Img,
       pages: [
       ],
@@ -565,15 +561,16 @@ export function createWritingsData(images) {
 
 
     {
-      id: "book-11",
+      id: "14",
       cover: images.vracCover1ImgPl,
-      pages: [
-      ],
+      coverClassName: "wraczCover",
+
       reviews: [
         {
           logo: images.patroniteLogo,
           href: "https://patronite.pl/post/43037/sztuka-pamieci",
           alt: "patronite.pl",
+          className: "patroniteLogo",
         },
       ],
       labels: {

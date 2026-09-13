@@ -28,7 +28,7 @@
   max-width: 40%;
   height: auto;
   display: block;
-  margin-top: -110px;
+  margin-top: 10px;
 }
 
 .contactEmail {
@@ -39,7 +39,6 @@
 }
 
 .contactEmail:hover {
-  text-decoration: underline;
   opacity: 0.5;
 }
 
@@ -51,6 +50,7 @@
   display: block;
   width: 450px;
   height: auto;
+  margin-top: -65px;
 }
 
 .contactEmailImg:hover {

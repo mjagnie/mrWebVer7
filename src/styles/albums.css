@@ -13,7 +13,7 @@
   width: clamp(780px, 95vh, 1150px);
   max-width: 100%;
   
-  margin: 0 auto;
+  margin: 40px auto 0;
   gap: 0;
 }
 
@@ -39,13 +39,13 @@
   opacity: 0.85;
 }
 
-
-.musicAlbumTile:last-child {
-  grid-column: 1 / -1;
-}
-
 .musicAlbumsView .viewerBackBtn {
   font-size: 38px;
+  border: none;
+  outline: none;
+
+  background: transparent;
+  box-shadow: none;
 }
 
 /* ---------------- ALBUM DECORATIONS ---------------- */
@@ -74,12 +74,12 @@
 
 .sroubaDecoration1 {
   position: absolute;
-  width: 350px;
+  width: 250px;
   height: auto;
 
   transform: rotate(270deg);
-  top: 400px;
-  left: 60px;
+  top: 210px;
+  left: 160px;
 
   z-index: 5;
   pointer-events: none;

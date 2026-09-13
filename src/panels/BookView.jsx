@@ -18,7 +18,7 @@ export default function BookView({
 
   const ui = UI[lang] || UI.en;
 
-  
+
   function getLabels(book) {
     return book?.labels?.[lang] || book?.labels?.cs || {};
   }
@@ -50,8 +50,15 @@ export default function BookView({
 
         <div className="bookDetail">
 
-          <div className="bookDetailCover">
-            <img src={cover} alt={labels.titleMain || "Book cover"} />
+          <div
+            className={`bookDetailCover ${
+              selectedWriting.coverClassName || ""
+              }`}
+          >
+            <img
+              src={cover}
+              alt={labels.titleMain || "Book cover"}
+            />
           </div>
 
           <div className="bookDetailText">
@@ -119,7 +126,7 @@ export default function BookView({
                     rel="noopener noreferrer"
                   >
                     <img
-                      className="reviewLogo"
+                      className={`reviewLogo ${review.className || ""}`}
                       src={review.logo}
                       alt={review.alt}
                     />
