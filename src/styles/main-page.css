@@ -93,58 +93,58 @@
 /* Per-button sizing and position ENGLISH */
 
 .menuImg--name {
-  width: 200px;
+  width: 220px;
   height: auto;
 }
 .lang-en .menuBtn--name {
-  left: 337px;
-  top: 23px;
+  left: 349px;
+  top: -15px;
 }
 
 .menuImg--contact {
-  height: 40px;
+  height: 38px;
 }
 .lang-en .menuBtn--contact {
-  left: 400px;
-  top: 150px;
+  left: 620px;
+  top: 60px;
   transform: rotate(0deg);
 }
 
 .menuImg--writings {
-  height: 43px;
+  height: 38px;
 }
 .lang-en .menuBtn--writings {
-  left: 243px;
-  top: -12px;
+  left: 245px;
+  top: 115px;
   transform: rotate(0deg);
 }
 
 
 .menuImg--articles {
-  height: 50px;
+  height: 45px;
 }
 .lang-en .menuBtn--articles {
-  left: 570px;
-  top: 0px;
+  left: 565px;
+  top: 115px;
   transform: rotate(0deg);
 }
 
 
 .menuImg--film {
-  height: 48px;
+  height: 41px;
 }
 .lang-en .menuBtn--film {
-  left: 195px;
-  top: 40px;
+  left: 355px;
+  top: 145px;
   transform: rotate(0deg);
 }
 
 .menuImg--music {
-  height: 37px;
+  height: 31px;
 }
 .lang-en .menuBtn--music {
-  left: 375px;
-  top: -35px;
+  left: 445px;
+  top: 145px;
   transform: rotate(0deg);
 }
 
@@ -230,62 +230,56 @@
 
 /* Per-button sizing and position CZECH */
 .lang-cs .menuImg--name {
-  width: 200px;
+  width: 220px;
   height: auto;
 }
-
 .lang-cs .menuBtn--name {
-  left: 337px;
-  top: 33px;
+  left: 349px;
+  top: -15px;
 }
 
 .lang-cs .menuImg--writings {
-  height: 47px;
+  height: 49px;
 }
-
 .lang-cs .menuBtn--writings {
-  left: 248px;
-  top: 9px;
-  transform: rotate(-27deg);
+  left: 235px;
+  top: 115px;
+  transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--film {
   height: 43px;
 }
-
 .lang-cs .menuBtn--film {
-  left: 344px;
-  top: -22px;
-  transform: rotate(-8deg);
+  left: 345px;
+  top: 145px;
+  transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--music {
-  height: 40px;
+  height: 41px;
 }
-
 .lang-cs .menuBtn--music {
-  left: 434px;
-  top: -23px;
-  transform: rotate(5deg);
+  left: 447px;
+  top: 155px;
+  transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--articles {
-  height: 52px;
+  height: 53px;
 }
-
 .lang-cs .menuBtn--articles {
-  left: 539px;
-  top: 6px;
-  transform: rotate(25deg);
+  left: 565px;
+  top: 124px;
+  transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--contact {
-  height: 36px;
+  height: 39px;
 }
-
 .lang-cs .menuBtn--contact {
-  left: 429px;
-  top: 166px;
+  left: 610px;
+  top: 70px;
   transform: rotate(0deg);
 }
 
@@ -294,7 +288,6 @@
   width: 215px;
   height: auto;
 }
-
 .lang-ru .menuBtn--name {
   left: 347px;
   top: -5px;

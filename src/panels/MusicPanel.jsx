@@ -63,8 +63,7 @@ export default function MusicPanel() {
         <div className="musicInfoColumn">
 
           <div className="musicIntro">
-            Pražská parta Bouchací šrouby,
-            enfant terrible toho nejšpinavějšího,
+            Enfant terrible toho nejšpinavějšího,
             co lze v Česku slyšet. Zneklidňující hudbu
             se základem v experimentální alternativě či
             underground utváří prapodivné nástroje jako
