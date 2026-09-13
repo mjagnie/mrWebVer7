@@ -1,50 +1,38 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 import AlbumsView from "./AlbumsView";
 import GalleryView from "./GalleryView";
 import VideoclipsView from "./VideoclipsView";
 
-import Video1 from "../assets/music/video1.mp4";
-
 import bouchaciSroubyLogoImg from "../assets/music/bouchaci-srouby-name1.png";
-import albaATextyImg from "../assets/music/alba-a-texty.png";
-import galleryImg from "../assets/music/gallery.png";
-import sroubyMirrorImg from "../assets/music/srouby-mirror.png";
-import videoklipyImg from "../assets/music/videoklipy.png";
 
-import chlastatImg from "../assets/music/chlastat-a-mrdat-transparent.png";
-
-import bandzoneImg from "../assets/music/logo/bz-logo-cerne-pozadi.png";
+import bandzoneImg from "../assets/music/logo/bandzone-logo.png";
 import fbImg from "../assets/music/logo/fb-logo.png";
 import spotifyImg from "../assets/music/logo/spotify-logo.png";
 import vimeoImg from "../assets/music/logo/vimeo-logo.png";
 
-import articleButtonImg from "../assets/music/A2.png";
 import articlePageImg from "../assets/music/bs-a2.jpg";
 
 
 export default function MusicPanel() {
-  const videoRef = useRef(null);
-  const [videoPlaying, setVideoPlaying] = useState(true);
   const [musicView, setMusicView] = useState("main");
 
-  // helper
   function returnToMain() {
     setMusicView("main");
   }
 
   // --------------------------------------------------
-  // VIEWS: VIDEOCLIPS, GALLERY, ALBUMS & TEXTS
+  // SUBVIEWS
   // --------------------------------------------------
 
   if (musicView === "videoclips") {
     return <VideoclipsView onBack={returnToMain} />;
   }
-  
+
   if (musicView === "albums") {
     return <AlbumsView onBack={returnToMain} />;
   }
-  
+
   if (musicView === "gallery") {
     return <GalleryView onBack={returnToMain} />;
   }
@@ -56,182 +44,142 @@ export default function MusicPanel() {
 
   return (
     <div className="musicPanel">
-      <div className="musicMainLayout">
 
-        {/* LEFT SIDE */}
+      {/* BAND NAME — across both columns */}
+      <div className="musicBandLogo">
+        <img
+          src={bouchaciSroubyLogoImg}
+          alt="Bouchací Šrouby"
+        />
+      </div>
 
-        <div className="musicMainLeft">
-          <div className="musicVideoWrap">
 
-            <div className="musicVideoSocials">
+      <div className="musicTwoColumns">
 
-              {/* Facebook */}
-              <a
-                href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={fbImg}
-                  className="musicVideoSocial musicVideoFb"
-                  alt="Facebook"
-                />
-              </a>
+        {/* =================================================
+            LEFT COLUMN
+            ================================================= */}
 
-              {/* Spotify */}
-              <a
-                href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={spotifyImg}
-                  className="musicVideoSocial musicVideoSpotify"
-                  alt="Spotify"
-                />
-              </a>
+        <div className="musicInfoColumn">
 
-              {/* Vimeo */}
-              <a
-                href="YOUR_VIMEO_LINK"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={vimeoImg}
-                  className="musicVideoSocial musicVideoVimeo"
-                  alt="Vimeo"
-                />
-              </a>
+          <div className="musicIntro">
+            Pražská parta Bouchací šrouby,
+            enfant terrible toho nejšpinavějšího,
+            co lze v Česku slyšet. Zneklidňující hudbu
+            se základem v experimentální alternativě či
+            underground utváří prapodivné nástroje jako
+            basbalalajka, kosa, basběžka či rádio. Šrouby
+            křesají o hrany stereotypů, zažitých frází,
+            odposlechnutých kusů rozhovorů a bezmyšlenkovitě
+            reprodukovaných klišé. Sdělení mrazivá jako
+            ostří kosy, trefná jako pár facek a
+            povědomější než dobře míněné babiččino
+            mentorování z prošlého milenia.
+            Ojedinělý posluchačský zážitek zaručen.
+            Znepřátelí si i vás? Das ganze tschechische
+            Volk ist eine Simulantenbande!
+          </div>
 
-              {/* Bandzone */}
-              <a
-                href="https://bandzone.cz/bouchacisrouby"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={bandzoneImg}
-                  className="musicVideoSocial musicVideoBandzone"
-                  alt="Bandzone"
-                />
-              </a>
-            </div>
 
-            <img
-              className="musicVideoTitle"
-              src={bouchaciSroubyLogoImg}
-              alt="Bouchaci srouby"
-            />
+          {/* SOCIAL MEDIA */}
+          <div className="musicSocials">
 
-            <video
-              ref={videoRef}
-              className="musicMainVideo"
-              autoPlay
-              muted
-              playsInline
-              onPlay={() => setVideoPlaying(true)}
-              onEnded={() => {
-                if (videoRef.current) {
-                  videoRef.current.currentTime = 0;
-                }
-
-                setVideoPlaying(false);
-              }}
+            <a
+              href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <source src={Video1} type="video/mp4" />
-            </video>
+              <img
+                src={fbImg}
+                alt="Facebook" />
+            </a>
 
-            {!videoPlaying && (
-              <button
-                className="musicVideoPlayBtn"
-                type="button"
-                onClick={() => {
-                  if (videoRef.current) {
-                    videoRef.current.currentTime = 0;
-                    videoRef.current.play();
-                  }
-                }}
-                aria-label="Play video"
-              >
-                ▶
-              </button>
-            )}
+            <a
+              href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={spotifyImg} alt="Spotify" />
+            </a>
+
+            <a
+              href="https://bandzone.cz/bouchacisrouby"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={bandzoneImg}
+                className="musicSocialBandzone"
+                alt="Bandzone"
+              />
+            </a>
+
+            <a
+              href="YOUR_VIMEO_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={vimeoImg}
+                className="musicSocialVimeo"
+                alt="Vimeo"
+              />
+            </a>
+
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <div className="musicMainRight">
 
-          {/* Newspaper article */}
+        {/* =================================================
+            RIGHT COLUMN
+            ================================================= */}
+
+        <div className="musicLinksColumn">
+
+          <button
+            className="musicTextLink"
+            type="button"
+            onClick={() => setMusicView("albums")}
+          >
+            ALBA
+          </button>
+
+          <button
+            className="musicTextLink"
+            type="button"
+            onClick={() => setMusicView("albums")}
+          >
+            TEXTY
+          </button>
+
+          <button
+            className="musicTextLink"
+            type="button"
+            onClick={() => setMusicView("videoclips")}
+          >
+            VIDEOKLIPY
+          </button>
+
           <a
-            className="musicMenuItem"
+            className="musicTextLink"
             href={articlePageImg}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={articleButtonImg}
-              alt="Newspaper article"
-            />
+            NAPSALI O NÁS
           </a>
 
-          {/* Albums and Texts*/}
           <button
-            className="musicMenuItem"
-            type="button"
-            onClick={() => setMusicView("albums")}
-          >
-            <img
-              src={albaATextyImg}
-              alt="Albums and texts"
-            />
-          </button>
-
-          {/* Gallery */}
-          <button
-            className="musicMenuItem"
+            className="musicTextLink"
             type="button"
             onClick={() => setMusicView("gallery")}
           >
-            <img
-              src={galleryImg}
-              alt="Gallery"
-            />
+            FOTOGALERIE
           </button>
 
-          {/* Videoclips */}
-          <button
-            className="musicMenuItem"
-            type="button"
-            onClick={() => setMusicView("videoclips")}
-          >
-            <img
-              src={videoklipyImg}
-              alt="Videoklipy"
-            />
-          </button>
+        </div>
 
-
-          {/* Decorative screws mirror image */}
-          <div className="sroubyMirrorImg">
-            <img
-              src={sroubyMirrorImg}
-              alt=""
-            />
-          </div>
-
-        </div> {/* end musicMainRight */}
-
-      </div> {/* end musicMainLayout */}
-
-      {/* Decoration */}
-      <img
-        src={chlastatImg}
-        alt=""
-        className="chlastatDecoration"
-      />
-
+      </div>
     </div>
   );
 }
