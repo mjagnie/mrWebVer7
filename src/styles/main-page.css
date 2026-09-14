@@ -406,6 +406,20 @@
 
 }
 
+/* Narrower phones */
+@media (max-width: 390px) and (orientation: portrait) {
 
+  .headerBlock {
+    left: -155px;
+    top: 90px;
+    transform: scale(0.70);
+  }
+
+  .langBar {
+    left: 10px;
+    bottom: 50px;
+  }
+
+}
 
 
