@@ -389,7 +389,9 @@
 @media (max-width: 600px) and (orientation: portrait) {
 
   .page {
-    background-position: 19% center;}
+    background-position: 18% center;
+    background-size: auto 129%;
+  }
 
   .headerBlock {
     left: -204px;
@@ -411,7 +413,7 @@
 
   .headerBlock {
     left: -155px;
-    top: 90px;
+    top: 60px;
     transform: scale(0.70);
   }
 
