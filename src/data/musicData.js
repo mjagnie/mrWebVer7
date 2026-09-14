@@ -48,13 +48,13 @@ export const musicTiles = [
     image: gatyarandasImg,
     url: "YOUR_ALBUM_LINK_5",
   },
-   {
+  /* {
     id: "texty-fakir",
-    type: "pdf",
+    type: "jpg",
     title: "Texty",
     image: fakir2Img,
     url: bouchaciSroubyTextyPdf,
   },
-
+*/
  
 ];

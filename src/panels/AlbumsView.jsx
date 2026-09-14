@@ -33,11 +33,6 @@ export default function AlbumsView({ onBack }) {
                 ))}
             </div>
 
-            {/*<img
-                src={fakirDecorationImg}
-                alt=""
-                className="albumsFakirDecoration"
-            />*/}
 
             <img
                 src={sroubaImg}
