@@ -23,21 +23,6 @@
   box-sizing: border-box;
 }
 
-
-.bookView .viewerBackBtn {
-  top: 12px;
-  left: 12px;
-
-  font-size: 38px;
-  
-  padding: 0;
-  border: none;
-  background: transparent;
-
-  cursor: pointer;
-}
-
-
 .rightPanel--bookView .closeBtn {
   top: 12px;
   right: 12px;
@@ -55,8 +40,8 @@
 
 .bookDetail {
   display: grid;
-  grid-template-columns: 350px minmax(0, 55ch);
-  gap: 20px;
+  grid-template-columns: 330px minmax(0, 55ch);
+  gap: 0px;
   align-items: start;
   justify-content: center;
 }
@@ -71,10 +56,15 @@
 
 .bookDetailCover img {
   display: block;
-  width: 350px;
+  width: 310px;
   height: auto;
-  margin-top: -50px;
+  margin-top: -10px;
   margin-bottom: 5px;
+}
+
+.bookCoverFrame img {
+  border: 1px solid black;
+  box-sizing: border-box;
 }
 
 
@@ -169,14 +159,14 @@
 }
 
 .wraczCover {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 /* ==========================================================
    VRAC BULGARIAN ADJUSTMENT
    ========================================================== */
 .vracBulgarianCover {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 /* ==========================================================
    SIBERIA ADJUSTMENT
@@ -189,14 +179,14 @@
    DIMITRIJ ADJUSTMENT
    ========================================================== */
 .dimitrijCover {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 /* ==========================================================
    CESTY ADJUSTMENT
    ========================================================== */
 .cestyCover {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 /* ==========================================================
@@ -205,15 +195,9 @@
 
 @media (max-width: 600px) and (orientation: portrait) {
 
-  /* Hide navigation */
-  .bookView .viewerBackBtn {
-    display: none;
-  }
-
   .rightPanel--bookView .closeBtn {
     display: none;
   }
-
 
   /* Main content */
   .bookView .writingsContent {
@@ -223,7 +207,6 @@
     box-sizing: border-box;
   }
 
-
   /* One column */
   .bookView .bookDetail {
     display: flex;
@@ -232,7 +215,6 @@
     gap: 30px;
     align-items: stretch;
   }
-
 
   /* Cover centered */
   .bookView .bookDetailCover {
@@ -252,7 +234,6 @@
     margin: 0;
   }
 
-
   /* Text underneath, aligned left */
   .bookView .bookDetailText {
     width: 100%;
@@ -263,12 +244,10 @@
     text-align: left;
   }
 
-
   /* Hide title on mobile */
   .bookView .bookTitle {
     display: none;
   }
-
 
   /* Cancel individual desktop cover positioning */
   .bookView .wraczCover,

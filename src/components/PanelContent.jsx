@@ -48,7 +48,6 @@ export default function PanelContent({
                 <BookView
                     lang={lang}
                     selectedWriting={selectedWriting}
-                    onBack={() => setActivePanel("writings")}
                 />
             )}
 

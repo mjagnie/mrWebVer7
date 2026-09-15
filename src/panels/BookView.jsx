@@ -1,7 +1,6 @@
 export default function BookView({
   lang,
   selectedWriting,
-  onBack,
 }) {
 
   const UI = {
@@ -34,17 +33,6 @@ export default function BookView({
 
   return (
     <div className="bookView">
-
-
-      <button
-        className="viewerBackBtn"
-        type="button"
-        onClick={onBack}
-        aria-label={ui.back}
-        title={ui.back}
-      >
-        ◄
-      </button>
 
       <div className="writingsContent">
 

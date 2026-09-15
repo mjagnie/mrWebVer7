@@ -5,8 +5,6 @@ export function createWritingsData(images) {
     {
       id: "1",
       cover: images.lesniChodciEd1Cover,
-      pages: [
-      ],
       reviews: [
         {
           logo: images.iLiteraturaImg,
@@ -87,8 +85,7 @@ export function createWritingsData(images) {
     {
       id: "3",
       cover: images.lovecTichaCoverImg,
-      pages: [
-      ],
+      coverClassName: "bookCoverFrame",
 
       labels: {
         cs: {
@@ -174,8 +171,6 @@ export function createWritingsData(images) {
     {
       id: "5",
       cover: images.vracCover1ImgCs,
-      pages: [
-      ],
       reviews: [
         {
           logo: images.iDnesLogo,
@@ -223,8 +218,7 @@ export function createWritingsData(images) {
     {
       id: "6",
       cover: images.cestyEd2Cover1ImgCs,
-      pages: [
-      ],
+      coverClassName: "bookCoverFrame",
       reviews: [
         {
           logo: images.iLiteraturaImg,
@@ -273,8 +267,7 @@ export function createWritingsData(images) {
     {
       id: "7",
       cover: images.lesniChodciEd2Cover1Img,
-      pages: [
-      ],
+      coverClassName: "bookCoverFrame",
       reviews: [
         {
           logo: images.iLiteraturaImg,
@@ -314,8 +307,7 @@ export function createWritingsData(images) {
     {
       id: "8",
       cover: images.staniceCover1Img,
-      pages: [
-      ],
+      coverClassName: "bookCoverFrame",
       reviews: [
         {
           logo: images.hospodarskeNovinyLogo,
@@ -356,7 +348,7 @@ export function createWritingsData(images) {
     {
       id: "9",
       cover: images.vracCover1ImgDe,
-      coverClassName: "dimitrijCover",
+      coverClassName: "dimitrijCover bookCoverFrame",
 
       labels: {
         cs: {
