@@ -103,7 +103,6 @@
 
 .bookDetails {
   margin-top: 2px;
-
   font-size: 16px;
 }
 
@@ -117,9 +116,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  gap: 3px;
-
-  margin-top: 40px;
+  margin-top: 25px;
 
   font-size: 16px;
   line-height: 1.4;
@@ -202,7 +199,7 @@
   /* Main content */
   .bookView .writingsContent {
     width: 100%;
-    padding: 40px 20px 60px;
+    padding: 20px 20px 60px;
     margin: 0;
     box-sizing: border-box;
   }
@@ -212,7 +209,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
     align-items: stretch;
   }
 
@@ -228,7 +225,7 @@
   .bookView .bookDetailCover img {
     display: block;
     width: auto;
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
 
     margin: 0;
