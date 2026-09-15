@@ -81,20 +81,37 @@ export default function usePanelNavigation({
 
     if (path === `/${lang}/about`) {
       setActivePanel("about");
+
+    
     
     } else if (path.startsWith(`/${lang}/writings/`)) {
       const bookId = path.split("/").pop();
 
       setSelectedWritingId(bookId);
       setActivePanel("bookView");
-    
+
     } else if (path === `/${lang}/writings`) {
-    setActivePanel("writings");
-      
+      setActivePanel("writings");
+
+    
+    
     } else if (path === `/${lang}/articles`) {
       setActivePanel("articles");
+
+    
+    
+    } else if (path.startsWith(`/${lang}/film/`)) {
+      const filmId = path.split("/").pop();
+
+      setSelectedFilmId(filmId);
+      setActivePanel("filmView");
+
     } else if (path === `/${lang}/film`) {
+      setSelectedFilmId(null);
       setActivePanel("film");
+
+    
+    
     } else if (path === `/${lang}/music`) {
       setActivePanel("music");
     } else if (path === `/${lang}/contact`) {

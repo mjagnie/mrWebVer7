@@ -108,21 +108,47 @@
 }
 
 
-/* =========================================================
-   BACK ARROW
-   ========================================================= */
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
 
-.filmDetail .viewerBackBtn {
-  top: 12px;
-  left: 12px;
+@media (max-width: 600px) and (orientation: portrait) {
 
-  position: absolute;
+   .rightPanel--filmView .closeBtn {
+    display: none;
+  }
   
-  padding: 0;
-  border: none;
-  background: transparent;
+  .filmDetail {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 25px 20px 60px;
+    box-sizing: border-box;
+  }
 
+  .filmDetail .panelTitle {
+    margin: 0 0 0px;
+    text-align: left;
+  }
 
-  font-size: 38px;
-  cursor: pointer;
+  .filmWatchLink {
+    display: block;
+    width: 100%;
+    margin: 0 0 0px;
+  }
+
+  .filmWatchImg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .filmDetail .panelText {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 }

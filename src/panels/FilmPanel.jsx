@@ -1,77 +1,17 @@
 export default function FilmPanel({
   lang,
   films,
-  selectedFilmId,
   setSelectedFilmId,
-  selectedFilm,
+  onOpenFilm,
 }) {
   function getLabels(film) {
     return film?.labels?.[lang] || film?.labels?.cs || {};
   }
 
-  // --------------------------------------------------
-  // DETAIL MODE — keep as before
-  // --------------------------------------------------
-
-  if (selectedFilmId !== null && selectedFilm) {
-    const labels = getLabels(selectedFilm);
-
-    return (
-      <div className="filmDetail">
-
-        <button
-          className="viewerBackBtn"
-          type="button"
-          onClick={() => setSelectedFilmId(null)}
-          aria-label="Back to film list"
-        >
-          ◄
-        </button>
-
-        <h2 className="panelTitle">
-          {labels.title}
-        </h2>
-
-        {labels.movieUrl && (
-          <a
-            className="filmWatchLink"
-            href={labels.movieUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="filmWatchImg"
-              src={selectedFilm.img}
-              alt={labels.title}
-            />
-
-            <span className="filmWatchArrow">
-              ▶
-            </span>
-          </a>
-        )}
-
-        {Array.isArray(labels.description) ? (
-          labels.description.map((paragraph, index) => (
-            <p
-              className="panelText"
-              key={index}
-            >
-              {paragraph}
-            </p>
-          ))
-        ) : (
-          <p className="panelText">
-            {labels.description}
-          </p>
-        )}
-      </div>
-    );
+  function openFilm(filmId) {
+    setSelectedFilmId(filmId);
+    onOpenFilm(filmId);
   }
-
-  // --------------------------------------------------
-  // LIST MODE — new overview
-  // --------------------------------------------------
 
   return (
     <section className="films-panel">
@@ -93,7 +33,7 @@ export default function FilmPanel({
                 <button
                   className="film-link"
                   type="button"
-                  onClick={() => setSelectedFilmId(film.id)}
+                  onClick={() => openFilm(film.id)}
                 >
                   {labels.title}
                 </button>

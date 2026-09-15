@@ -6,6 +6,7 @@ import BookView from "../panels/BookView";
 import ArticlesPanel from "../panels/ArticlesPanel";
 import MusicPanel from "../panels/MusicPanel";
 import FilmPanel from "../panels/FilmPanel";
+import FilmView from "../panels/FilmView";
 import ContactPanel from "../panels/ContactPanel";
 
 export default function PanelContent({
@@ -24,7 +25,7 @@ export default function PanelContent({
 }) {
 
     const nav = useNavigate();
-    
+
     return (
         <>
             {activePanel === "about" && (
@@ -59,8 +60,16 @@ export default function PanelContent({
                 <FilmPanel
                     lang={lang}
                     films={films}
-                    selectedFilmId={selectedFilmId}
                     setSelectedFilmId={setSelectedFilmId}
+                    onOpenFilm={(filmId) => {
+                        nav(`/${lang}/film/${filmId}`);
+                    }}
+                />
+            )}
+
+            {activePanel === "filmView" && (
+                <FilmView
+                    lang={lang}
                     selectedFilm={selectedFilm}
                 />
             )}

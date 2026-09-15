@@ -5,10 +5,10 @@
 .films-panel {
   width: min(780px, 100%);
   margin: 0 auto;
-  padding: 95px 0 0;
+  padding: 55px 0 0;
   box-sizing: border-box;
 
-  transform: translateX(170px);
+  transform: translateX(60px);
 }
 
 .films-list {
@@ -18,14 +18,14 @@
 
 .film-item {
   display: grid;
-  grid-template-columns: 70px 1fr;
-  column-gap: 24px;
-  margin: 0 0 12px 0;
+  grid-template-columns: 65px 1fr;
+  column-gap: 0px;
+  margin: 0 0 9px 0;
   align-items: baseline;
 }
 
 .film-year {
-  text-align: right;
+  text-align: left;
   font-size: 17px;
   font-weight: 600;
 
@@ -72,14 +72,31 @@
    ========================================================= */
 
 .rightPanel--film .closeBtn {
-  top: 12px;
-  right: 12px;
-  position: absolute;
+  display: none;
+}
 
-  padding: 0;
-  border: none;
-  background: transparent;
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
 
-  font-size: 38px;
-  cursor: pointer;
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide panel close button */
+  .rightPanel--films .closeBtn {
+    display: none;
+  }
+
+  /* films list */
+  .films-panel {
+    width: 100%;
+    margin: 0px;
+    padding: 20px 20px;
+    transform: none;
+  }
+
+  .film-item {
+    grid-template-columns: 55px 1fr;
+    margin: 0 0 12px 0;
+    column-gap: 5px;
+  }
 }
