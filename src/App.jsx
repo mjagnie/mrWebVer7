@@ -44,7 +44,9 @@ export default function App() {
     films.find((f) => f.id === selectedFilmId) || null;
 
   const selectedWriting =
-    writings.find((w) => w.id === selectedWritingId) || null;
+    writings.find(
+      (w) => String(w.id) === String(selectedWritingId)
+    ) || null;
 
   const {
     closePanel,
