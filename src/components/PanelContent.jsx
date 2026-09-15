@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import AboutPanel from "../panels/AboutPanel";
 import WritingsPanel from "../panels/WritingsPanel";
 import BookView from "../panels/BookView";
@@ -20,6 +22,9 @@ export default function PanelContent({
     rysavyAboutImg,
     contactImg,
 }) {
+
+    const nav = useNavigate();
+    
     return (
         <>
             {activePanel === "about" && (
@@ -33,7 +38,10 @@ export default function PanelContent({
                 <WritingsPanel
                     writings={writings}
                     setSelectedWritingId={setSelectedWritingId}
-                    onOpenBook={() => setActivePanel("bookView")}
+                    onOpenBook={() => {
+                        nav(`/${lang}/writings/book`);
+                        setActivePanel("bookView");
+                    }}
                 />
             )}
 
