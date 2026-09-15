@@ -39,7 +39,7 @@ export default function PanelContent({
                     writings={writings}
                     setSelectedWritingId={setSelectedWritingId}
                     onOpenBook={() => {
-                        nav(`/${lang}/writings/${bookId}`);
+                        nav(`/${lang}/writings/book`);
                         setActivePanel("bookView");
                     }}
                 />
@@ -49,7 +49,7 @@ export default function PanelContent({
                 <BookView
                     lang={lang}
                     selectedWriting={selectedWriting}
-                    onBack={() => nav(`/${lang}/writings`)}
+                    onBack={() => setActivePanel("writings")}
                 />
             )}
 

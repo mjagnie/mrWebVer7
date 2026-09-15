@@ -7,7 +7,7 @@ export default function WritingsPanel({
 }) {
   function openBook(bookId) {
     setSelectedWritingId(bookId);
-    onOpenBook(bookId);
+    onOpenBook();
   }
 
   return (

@@ -81,18 +81,11 @@ export default function usePanelNavigation({
 
     if (path === `/${lang}/about`) {
       setActivePanel("about");
-    } else if (path.startsWith(`/${lang}/writings`)) {
-
-      const bookId = path.split("/").pop();
-
-      setSelectedWritingId(bookId);
-      setActivePanel("bookView");
-    
-    } else if (path === `/${lang}/writings`) {
-
-      setSelectedWritingId(null);
+    } else if (
+      path === `/${lang}/writings` &&
+      activePanel !== "bookView"
+    ) {
       setActivePanel("writings");
-
     } else if (path === `/${lang}/articles`) {
       setActivePanel("articles");
     } else if (path === `/${lang}/film`) {
