@@ -1,5 +1,6 @@
 .page {
   min-height: 100vh;
+
   position: relative;
 
   background-size: cover;
@@ -389,7 +390,7 @@
 @media (max-width: 600px) and (orientation: portrait) {
 
   .page {
-    background-position: 18% center;
+    background-position: 18% 68%;
     background-size: auto 129%;
   }
 
@@ -413,13 +414,13 @@
 
   .headerBlock {
     left: -155px;
-    top: 60px;
+    top: 40px;
     transform: scale(0.70);
   }
 
   .langBar {
-    left: 10px;
-    bottom: 50px;
+    left: 5px;
+    bottom: 55px;
   }
 
 }

@@ -32,7 +32,7 @@
 }
 
 .writing-year {
-  text-align: right;
+  text-align: left;
   font-size: 17px;
   font-weight: 600;
   font-family:
@@ -68,4 +68,30 @@
 
 .writing-link:hover {
   opacity: 0.45;
+}
+
+
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide panel close button */
+  .rightPanel--writings .closeBtn {
+    display: none;
+  }
+
+  /* Books list */
+  .writings-panel {
+    width: 100%;
+    margin: 0;
+    padding: 50px 20px;
+    transform: none;
+  }
+
+  .writing-item {
+    grid-template-columns: 55px 1fr;
+    column-gap: 15px;
+  }
 }

@@ -198,3 +198,84 @@
 .cestyCover {
   margin-top: 30px;
 }
+
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide navigation */
+  .bookView .viewerBackBtn {
+    display: none;
+  }
+
+  .rightPanel--bookView .closeBtn {
+    display: none;
+  }
+
+
+  /* Main content */
+  .bookView .writingsContent {
+    width: 100%;
+    padding: 40px 20px 60px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* One column */
+  .bookView .bookDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+
+  /* Cover centered */
+  .bookView .bookDetailCover {
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookView .bookDetailCover img {
+    display: block;
+    width: auto;
+    max-width: 75%;
+    height: auto;
+
+    margin: 0;
+  }
+
+
+  /* Text underneath, aligned left */
+  .bookView .bookDetailText {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+  }
+
+
+  /* Hide title on mobile */
+  .bookView .bookTitle {
+    display: none;
+  }
+
+
+  /* Cancel individual desktop cover positioning */
+  .bookView .wraczCover,
+  .bookView .vracBulgarianCover,
+  .bookView .siberiaCover,
+  .bookView .dimitrijCover,
+  .bookView .cestyCover {
+    margin-top: 0;
+  }
+}
