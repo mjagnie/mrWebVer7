@@ -1,7 +1,7 @@
 .writings-panel {
   width: min(780px, 100%);
   margin: 0 auto;
-  padding: 65px 0 0;
+  padding: 35px 0 0;
   box-sizing: border-box;
 
   transform: translateX(60px);
@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 65px 1fr;
   column-gap: 0px;
-  margin: 0 0 7px 0;
+  margin: 0 0 9px 0;
   align-items: baseline;
 }
 
