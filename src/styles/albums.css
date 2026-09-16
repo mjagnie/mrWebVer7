@@ -119,3 +119,51 @@
     right: calc(50% + clamp(520px, 48vh, 580px));
   }
 }
+
+/* =========================================================
+   MOBILE PORTRAIT — ALBUMS
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide back arrow */
+  .musicAlbumsView .viewerBackBtn {
+    display: none;
+  }
+
+  /* Hide RightPanel close button */
+  .rightPanel--music .closeBtn {
+    display: none;
+  }
+
+  /* Hide decorations */
+  .sroubaDecoration,
+  .sroubaDecoration1,
+  .sroubaDecoration2 {
+    display: none;
+  }
+
+  /* Albums in one column */
+  .musicAlbumsGrid {
+    grid-template-columns: 1fr;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+    gap: 0;
+  }
+
+  .musicAlbumTile {
+    width: 100%;
+  }
+
+  .musicAlbumTile img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
