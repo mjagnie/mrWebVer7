@@ -13,7 +13,7 @@
   right: 12px;
 
   position: absolute;
-  
+
   padding: 0;
   border: none;
   background: transparent;
@@ -59,7 +59,7 @@
 
 .contactPanel {
   min-height: 100vh;
-/*
+  /*
   background: linear-gradient(
     to right,
  rgba(255, 255, 255, 0) 0%,
@@ -69,4 +69,28 @@
     rgba(255, 255, 255, 0.01) 80%,
     rgba(255, 255, 255, 0) 100%
   ); */
+}
+
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide panel close button */
+  .rightPanel--contact .closeBtn {
+    display: none;
+  }
+
+  .contactPanelImg {
+    width: 210px;
+    max-width: 80%;
+    margin-top: -270px;
+  }
+
+  .contactEmailImg {
+  width: 300px;
+  max-width: 100%;
+  margin-top: -310px;
+}
 }

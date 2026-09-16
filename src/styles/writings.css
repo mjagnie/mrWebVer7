@@ -79,7 +79,7 @@
   .writings-panel {
     width: 100%;
     margin: 0px;
-    padding: 20px 20px;
+    padding: 20px 20px 20px;
     transform: none;
   }
 
@@ -92,13 +92,13 @@
 
   /* Year */
   .writing-year {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.25;
   }
 
   /* Book title */
   .writing-link {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.25;
   }
 }
