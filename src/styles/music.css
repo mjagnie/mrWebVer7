@@ -153,18 +153,62 @@
   opacity: 0.45;
 }
 
+.musicSocialsMobile {
+  display: none;
+}
 
 /* =========================================================
-   other SCREENS
-   ========================================================= */
+   MOBILE PORTRAIT
+   ========================================================== */
 
-@media (max-width: 800px) {
-  .musicPanelNew {
-    width: calc(100% - 40px);
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Hide panel close button */
+  .rightPanel--music .closeBtn {
+    display: none;
   }
 
+  .musicSocialsDesktop {
+  display: none;
+}
+
+.musicSocialsMobile {
+  display: flex;
+  margin-top: 10px;
+}
+
+  .musicPanel {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 20px 60px;
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+
+  /* Band name fills the available row */
+  .musicBandLogo {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 10px;
+  }
+
+  .musicBandLogo img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Change two columns into one */
   .musicTwoColumns {
+    width: 100%;
+    max-width: none;
+    display: grid;
     grid-template-columns: 1fr;
-    row-gap: 40px;
+    row-gap: 25px;
+  }
+
+  .musicInfoColumn {
+    width: calc(100% - 10px);
+    margin: 0 auto;
   }
 }
+

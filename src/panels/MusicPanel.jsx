@@ -87,7 +87,7 @@ export default function MusicPanel() {
 
 
           {/* SOCIAL MEDIA */}
-          <div className="musicSocials">
+          <div className="musicSocials musicSocialsDesktop">
 
             <a
               href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
@@ -182,6 +182,50 @@ export default function MusicPanel() {
           >
             FOTOGALERIE
           </button>
+
+        </div>
+
+        <div className="musicSocials musicSocialsMobile">
+
+          <a
+            href="https://www.facebook.com/BouchaciSrouby/?locale=cs_CZ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={fbImg} alt="Facebook" />
+          </a>
+
+          <a
+            href="https://open.spotify.com/artist/2Bh05zP7mw0I6y2PqffePi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={spotifyImg} alt="Spotify" />
+          </a>
+
+          <a
+            href="https://bandzone.cz/bouchacisrouby"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={bandzoneImg}
+              className="musicSocialBandzone"
+              alt="Bandzone"
+            />
+          </a>
+
+          <a
+            href="YOUR_VIMEO_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={vimeoImg}
+              className="musicSocialVimeo"
+              alt="Vimeo"
+            />
+          </a>
 
         </div>
 

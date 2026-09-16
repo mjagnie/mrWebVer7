@@ -82,7 +82,7 @@
 @media (max-width: 600px) and (orientation: portrait) {
 
   /* Hide panel close button */
-  .rightPanel--films .closeBtn {
+  .rightPanel--film .closeBtn {
     display: none;
   }
 
