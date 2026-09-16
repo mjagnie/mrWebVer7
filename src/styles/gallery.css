@@ -65,6 +65,10 @@
   right: 24px;
 }
 
+.galleryArrowMobile {
+  display: none;
+}
+
 /* ---------------- GALLERY CLOSE ---------------- */
 
 .rightPanel:has(.galleryFullscreen) .closeBtn {
@@ -80,6 +84,14 @@
   .rightPanel:has(.galleryFullscreen) .closeBtn {
     display: none;
   }
+
+  .galleryArrowDesktop {
+  display: none;
+}
+
+.galleryArrowMobile {
+  display: inline;
+}
 
   .galleryArrowSimple {
     font-size: 14px;
@@ -109,6 +121,14 @@
   .rightPanel:has(.galleryFullscreen) .closeBtn {
     display: none;
   }
+
+  .galleryArrowDesktop {
+  display: none;
+}
+
+.galleryArrowMobile {
+  display: inline;
+}
 
   .galleryArrowSimple {
     font-size: 14px;

@@ -75,7 +75,7 @@
     display: none;
   }
 
-  /* Books list */
+  /* Books list position */
   .writings-panel {
     width: 100%;
     margin: 0px;
@@ -83,9 +83,22 @@
     transform: none;
   }
 
+  /* Space between individual books */
   .writing-item {
-    grid-template-columns: 55px 1fr;
-    margin: 0 0 12px 0;
-    column-gap: 5px;
+    grid-template-columns: 48px 1fr;
+    column-gap: 4px;
+    margin: 0 0 4px 0;
+  }
+
+  /* Year */
+  .writing-year {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  /* Book title */
+  .writing-link {
+    font-size: 15px;
+    line-height: 1.25;
   }
 }

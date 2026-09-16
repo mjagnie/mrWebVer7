@@ -43,7 +43,7 @@ const galleryImages = [
 ];
 
 export default function GalleryView() {
-   const [galleryIndex, setGalleryIndex] = useState(0);
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
   function prevImage() {
     setGalleryIndex((index) =>
@@ -56,33 +56,58 @@ export default function GalleryView() {
       index === galleryImages.length - 1 ? 0 : index + 1
     );
   }
-  
+
+  let touchStartX = 0;
+
+  function handleTouchStart(e) {
+    touchStartX = e.touches[0].clientX;
+  }
+
+  function handleTouchEnd(e) {
+    const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchStartX - touchEndX;
+
+    if (Math.abs(distance) < 50) return;
+
+    if (distance > 0) {
+      nextImage();
+    } else {
+      prevImage();
+    }
+  }
+
   return (
-        <div className="galleryFullscreen">
-                <button
-                  className="galleryArrowSimple galleryArrowLeft"
-                  type="button"
-                  onClick={prevImage}
-                  aria-label="Previous image"
-                >
-                  ◄
-                </button>
-        
-                <img
-                  className="galleryFullscreenImg"
-                  src={galleryImages[galleryIndex]}
-                  alt=""
-                />
-        
-                <button
-                  className="galleryArrowSimple galleryArrowRight"
-                  type="button"
-                  onClick={nextImage}
-                  aria-label="Next image"
-                >
-                  ►
-                </button>
-        
-              </div>
-            );
-          }
+    <div
+      className="galleryFullscreen"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      <button
+        className="galleryArrowSimple galleryArrowLeft"
+        type="button"
+        onClick={prevImage}
+        aria-label="Previous image"
+      >
+        <span className="galleryArrowDesktop">◄</span>
+        <span className="galleryArrowMobile">&lt;</span>
+      </button>
+
+      <img
+        className="galleryFullscreenImg"
+        src={galleryImages[galleryIndex]}
+        alt=""
+      />
+
+      <button
+        className="galleryArrowSimple galleryArrowRight"
+        type="button"
+        onClick={nextImage}
+        aria-label="Next image"
+      >
+        <span className="galleryArrowDesktop">►</span>
+        <span className="galleryArrowMobile">&gt;</span>
+      </button>
+
+    </div>
+  );
+}
