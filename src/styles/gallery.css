@@ -70,3 +70,60 @@
 .rightPanel:has(.galleryFullscreen) .closeBtn {
   color: white;
 }
+
+/* =========================================================
+   GALLERY — MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  .rightPanel:has(.galleryFullscreen) .closeBtn {
+    display: none;
+  }
+
+  .galleryArrowSimple {
+    font-size: 14px;
+  }
+
+  .galleryArrowLeft {
+    left: 6px;
+  }
+
+  .galleryArrowRight {
+    right: 6px;
+  }
+
+  .galleryFullscreenImg {
+    max-width: 92vw;
+    max-height: 92vh;
+  }
+}
+
+
+/* =========================================================
+   GALLERY — MOBILE LANDSCAPE
+   ========================================================== */
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+  .rightPanel:has(.galleryFullscreen) .closeBtn {
+    display: none;
+  }
+
+  .galleryArrowSimple {
+    font-size: 14px;
+  }
+
+  .galleryArrowLeft {
+    left: 6px;
+  }
+
+  .galleryArrowRight {
+    right: 6px;
+  }
+
+  .galleryFullscreenImg {
+    max-width: 92vw;
+    max-height: 92vh;
+  }
+}
