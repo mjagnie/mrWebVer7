@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import AlbumsView from "./AlbumsView";
 import GalleryView from "./GalleryView";
@@ -19,6 +20,20 @@ import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 export default function MusicPanel() {
   const [musicView, setMusicView] = useState("main");
 
+  const nav = useNavigate();
+  const loc = useLocation();
+
+  const lang = loc.pathname.split("/")[1] || "en";
+
+  const isAlbums =
+    loc.pathname === `/${lang}/music/albums`;
+
+  const isVideoclips =
+    loc.pathname === `/${lang}/music/videoclips`;
+
+  const isGallery =
+    loc.pathname === `/${lang}/music/gallery`;
+
   function returnToMain() {
     setMusicView("main");
   }
@@ -27,20 +42,20 @@ export default function MusicPanel() {
   // SUBVIEWS
   // --------------------------------------------------
 
-  if (musicView === "videoclips") {
-    return <VideoclipsView onBack={returnToMain} />;
+  if (isAlbums) {
+    return <AlbumsView />;
   }
 
-  if (musicView === "albums") {
-    return <AlbumsView onBack={returnToMain} />;
+  if (isVideoclips) {
+    return <VideoclipsView />;
+  }
+
+  if (isGallery) {
+    return <GalleryView />;
   }
 
   if (musicView === "texts") {
     return <TextsView onBack={returnToMain} />;
-  }
-
-  if (musicView === "gallery") {
-    return <GalleryView onBack={returnToMain} />;
   }
 
 
@@ -144,7 +159,8 @@ export default function MusicPanel() {
           <button
             className="musicTextLink"
             type="button"
-            onClick={() => setMusicView("albums")}
+            onClick={() =>
+              nav(`/${lang}/music/albums`)}
           >
             ALBA
           </button>
@@ -161,7 +177,8 @@ export default function MusicPanel() {
           <button
             className="musicTextLink"
             type="button"
-            onClick={() => setMusicView("videoclips")}
+            onClick={() =>
+              nav(`/${lang}/music/videoclips`)}
           >
             VIDEOKLIPY
           </button>
@@ -178,7 +195,8 @@ export default function MusicPanel() {
           <button
             className="musicTextLink"
             type="button"
-            onClick={() => setMusicView("gallery")}
+            onClick={() =>
+              nav(`/${lang}/music/gallery`)}
           >
             FOTOGALERIE
           </button>

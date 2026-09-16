@@ -1,4 +1,4 @@
-import { createPortal } from "react-dom";
+
 
 import vracimSeImg from "../assets/videoclips/vracim-se-na-misto-sve-smrti.png";
 import mrtvolaImg from "../assets/videoclips/mrtvola.png";
@@ -46,18 +46,10 @@ const VIDEOS = [
   },
 ];
 
-export default function VideoclipsView({ onBack }) {
-  return createPortal(
+export default function VideoclipsView({ }) {
+  return (
     <div className="videoclipsFullscreen">
-      <button
-        className="viewerBackBtn"
-        type="button"
-        onClick={onBack}
-        aria-label="Back"
-      >
-        ◄
-      </button>
-
+    
       <div className="videoclipsGrid">
         {VIDEOS.map((video) => (
           <a
@@ -79,16 +71,6 @@ export default function VideoclipsView({ onBack }) {
           </a>
         ))}
       </div>
-
-      <button
-        className="videoclipsClose"
-        type="button"
-        onClick={onBack}
-        aria-label="Close"
-      >
-        ✕
-      </button>
-    </div>,
-    document.body
+    </div>
   );
 }

@@ -12,11 +12,11 @@ export default function usePanelNavigation({
   const loc = useLocation();
 
   function closePanel() {
-    nav(`/${lang}`);
-    setActivePanel(null);
-    setSelectedWritingId(null);
-    setSelectedFilmId(null);
-  }
+  nav(`/${lang}`);
+  setActivePanel(null);
+  setSelectedWritingId(null);
+  setSelectedFilmId(null);
+}
 
   function togglePanel(panelName, path, onOpen) {
     if (activePanel === panelName) {
@@ -82,8 +82,8 @@ export default function usePanelNavigation({
     if (path === `/${lang}/about`) {
       setActivePanel("about");
 
-    
-    
+
+
     } else if (path.startsWith(`/${lang}/writings/`)) {
       const bookId = path.split("/").pop();
 
@@ -93,13 +93,13 @@ export default function usePanelNavigation({
     } else if (path === `/${lang}/writings`) {
       setActivePanel("writings");
 
-    
-    
+
+
     } else if (path === `/${lang}/articles`) {
       setActivePanel("articles");
 
-    
-    
+
+
     } else if (path.startsWith(`/${lang}/film/`)) {
       const filmId = path.split("/").pop();
 
@@ -110,10 +110,15 @@ export default function usePanelNavigation({
       setSelectedFilmId(null);
       setActivePanel("film");
 
-    
-    
+
+
+    } else if (path.startsWith(`/${lang}/music/`)) {
+      setActivePanel("music");
+
     } else if (path === `/${lang}/music`) {
       setActivePanel("music");
+
+
     } else if (path === `/${lang}/contact`) {
       setActivePanel("contact");
     } else if (path === `/${lang}`) {

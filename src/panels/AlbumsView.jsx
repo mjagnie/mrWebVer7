@@ -4,18 +4,10 @@ import { musicTiles } from "../data/musicData.js";
 import sroubaImg from "../assets/music/srouba.png";
 import fakirDecorationImg from "../assets/music/fakir3.png";
 
-export default function AlbumsView({ onBack }) {
+export default function AlbumsView() {
     return (
         <div className="musicAlbumsView">
-            <button
-                className="viewerBackBtn"
-                type="button"
-                onClick={onBack}
-                aria-label="Back"
-            >
-                ◄
-            </button>
-
+          
             <div className="musicAlbumsGrid">
                 {musicTiles.map((tile) => (
                     <a

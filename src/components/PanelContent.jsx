@@ -75,7 +75,17 @@ export default function PanelContent({
             )}
 
             {activePanel === "music" && (
-                <MusicPanel />
+                <MusicPanel
+                    onOpenAlbums={() => {
+                        nav(`/${lang}/music/albums`);
+                    }}
+                    onOpenVideoclips={() => {
+                        nav(`/${lang}/music/videoclips`);
+                    }}
+                    onOpenGallery={() => {
+                        nav(`/${lang}/music/gallery`);
+                    }}
+                />
             )}
 
             {activePanel === "contact" && (

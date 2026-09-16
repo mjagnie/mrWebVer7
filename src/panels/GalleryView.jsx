@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createPortal } from "react-dom";
 
 import bs1Img from "../assets/music/concert_pictures/bs1.png";
 import bs2Img from "../assets/music/concert_pictures/bs2.png";
@@ -43,7 +42,7 @@ const galleryImages = [
   fakirImg,
 ];
 
-export default function GalleryView({ onBack }) {
+export default function GalleryView() {
    const [galleryIndex, setGalleryIndex] = useState(0);
 
   function prevImage() {
@@ -58,7 +57,7 @@ export default function GalleryView({ onBack }) {
     );
   }
   
-  return createPortal (
+  return (
         <div className="galleryFullscreen">
                 <button
                   className="galleryArrowSimple galleryArrowLeft"
@@ -84,15 +83,6 @@ export default function GalleryView({ onBack }) {
                   ►
                 </button>
         
-                <button
-                  className="galleryClose"
-                  type="button"
-                  onClick={ onBack }
-                  aria-label="Close"
-                >
-                  ✕
-                </button>
-              </div>,
-              document.body
+              </div>
             );
           }
