@@ -381,10 +381,15 @@
     background-position: center bottom;
   }
 
+  /* Force horizontal layout */
+  .langBar .flagWrap {
+    flex-direction: row;
+    gap: 3px;
+  }
+
   .headerBlock {
     left: -336px;
     top: 150px;
-
     transform: scale(1.2);
     transform-origin: top left;
   }
@@ -395,34 +400,37 @@
   }
 
   /* ENGLISH — MOBILE */
-
   .lang-en .menuBtn--name {
     left: 325px;
-    top: -35px;
+    top: -55px;
   }
 
   .lang-en .menuBtn--film {
-    left: 290px;
-    top: 135px;
+    left: 360px;
+    top: 120px;
   }
 
   .lang-en .menuBtn--articles {
-    left: 335px;
+    left: 342px;
     top: 180px;
   }
 
   .lang-en .menuBtn--writings {
     left: 410px;
-    top: 125px;
+    top: 90px;
   }
 
   .lang-en .menuBtn--music {
-    left: 465px;
-    top: 170px;
+    left: 440px;
+    top: 155px;
+  }
+
+  .lang-en .menuImg--contact {
+    height: 35px;
   }
 
   .lang-en .menuBtn--contact {
-    left: 420px;
+    left: 400px;
     top: 225px;
   }
 
@@ -444,12 +452,12 @@
   .lang-cs .menuBtn--writings {
     left: 400px;
     top: 145px;
-    transform: rotate(0deg);
   }
 
   .lang-cs .menuImg--film {
     height: 41px;
   }
+
   .lang-cs .menuBtn--film {
     left: 405px;
     top: 200px;
@@ -458,6 +466,7 @@
   .lang-cs .menuImg--music {
     height: 39px;
   }
+
   .lang-cs .menuBtn--music {
     left: 400px;
     top: 255px;
@@ -466,6 +475,7 @@
   .lang-cs .menuImg--articles {
     height: 52px;
   }
+
   .lang-cs .menuBtn--articles {
     left: 399px;
     top: 314px;
@@ -474,6 +484,7 @@
   .lang-cs .menuImg--contact {
     height: 40px;
   }
+
   .lang-cs .menuBtn--contact {
     left: 393px;
     top: 375px;
@@ -494,6 +505,7 @@
   .lang-ru .menuImg--contact {
     height: 26px;
   }
+
   .lang-ru .menuBtn--contact {
     left: 425px;
     top: -45px;
@@ -502,6 +514,7 @@
   .lang-ru .menuImg--writings {
     height: 29px;
   }
+
   .lang-ru .menuBtn--writings {
     left: 345px;
     top: 150px;
@@ -510,6 +523,7 @@
   .lang-ru .menuImg--music {
     height: 39px;
   }
+
   .lang-ru .menuBtn--music {
     left: 369px;
     top: 215px;
@@ -518,6 +532,7 @@
   .lang-ru .menuImg--film {
     height: 26px;
   }
+
   .lang-ru .menuBtn--film {
     left: 430px;
     top: 185px;
@@ -526,6 +541,7 @@
   .lang-ru .menuImg--articles {
     height: 29px;
   }
+
   .lang-ru .menuBtn--articles {
     left: 415px;
     top: 115px;
