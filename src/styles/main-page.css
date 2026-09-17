@@ -441,8 +441,8 @@
   }
 
   .lang-cs .menuBtn--name {
-    left: 349px;
-    top: -15px;
+    left: 319px;
+    top: -45px;
   }
 
   .lang-cs .menuImg--writings {
@@ -451,7 +451,7 @@
 
   .lang-cs .menuBtn--writings {
     left: 400px;
-    top: 145px;
+    top: 105px;
   }
 
   .lang-cs .menuImg--film {
@@ -459,17 +459,17 @@
   }
 
   .lang-cs .menuBtn--film {
-    left: 405px;
-    top: 200px;
+    left: 350px;
+    top: 135px;
   }
 
   .lang-cs .menuImg--music {
-    height: 39px;
+    height: 36px;
   }
 
   .lang-cs .menuBtn--music {
-    left: 400px;
-    top: 255px;
+    left: 430px;
+    top: 165px;
   }
 
   .lang-cs .menuImg--articles {
@@ -477,18 +477,17 @@
   }
 
   .lang-cs .menuBtn--articles {
-    left: 399px;
-    top: 314px;
+    left: 335px;
+    top: 190px;
   }
 
   .lang-cs .menuImg--contact {
-    height: 40px;
+    height: 35px;
   }
-
+  
   .lang-cs .menuBtn--contact {
     left: 393px;
-    top: 375px;
-    transform: rotate(0deg);
+    top: 235px;
   }
 
   /* Per-button sizing and position RUSSIAN */
