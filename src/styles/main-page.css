@@ -402,27 +402,27 @@
   /* ENGLISH — MOBILE */
   .lang-en .menuBtn--name {
     left: 325px;
-    top: -55px;
+    top: -65px;
   }
 
   .lang-en .menuBtn--film {
-    left: 360px;
-    top: 120px;
+    left: 355px;
+    top: 110px;
   }
 
   .lang-en .menuBtn--articles {
-    left: 342px;
-    top: 180px;
+    left: 337px;
+    top: 165px;
   }
 
   .lang-en .menuBtn--writings {
-    left: 410px;
-    top: 90px;
+    left: 400px;
+    top: 80px;
   }
 
   .lang-en .menuBtn--music {
-    left: 440px;
-    top: 155px;
+    left: 435px;
+    top: 135px;
   }
 
   .lang-en .menuImg--contact {
@@ -431,7 +431,7 @@
 
   .lang-en .menuBtn--contact {
     left: 400px;
-    top: 225px;
+    top: 205px;
   }
 
   /* Per-button sizing and position CZECH */
