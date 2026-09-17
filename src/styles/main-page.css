@@ -377,7 +377,7 @@
   .page {
     background-image: var(--bg-mobile);
 
-    background-size: 100% auto;
+    background-size: 135% auto;
     background-position: center bottom;
   }
 
@@ -520,7 +520,7 @@
   }
 
   .lang-ru .menuImg--music {
-    height: 39px;
+    height: 36px;
   }
 
   .lang-ru .menuBtn--music {
