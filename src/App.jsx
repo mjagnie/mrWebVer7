@@ -5,6 +5,7 @@ import { createWritingsData } from "./data/writingsData";
 import { createFilmsData } from "./data/filmsData";
 
 import {
+  bgMobileImg,
   bgImg,
   rysavyAboutImg,
   contactImg,
@@ -66,7 +67,10 @@ export default function App() {
   return (
     <div
       className={`page lang-${lang}`}
-      style={{ backgroundImage: `url(${bgImg})` }}
+      style={{
+        "--bg-desktop": `url(${bgImg})`,
+        "--bg-mobile": `url(${bgMobileImg})`,
+      }}
     >
       {!panelOpen && (
         <MainPage

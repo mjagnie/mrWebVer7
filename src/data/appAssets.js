@@ -1,4 +1,5 @@
 import bgImg from "../assets/ui/main-page/background.jpg";
+import bgMobileImg from "../assets/ui/main-page/background100.png";
 
 import starImg from "../assets/ui/main-page/star.png";
 import footprintImg from "../assets/ui/main-page/footprint1.png";
@@ -85,6 +86,7 @@ import patroniteLogo from "../assets/books/logo-rewiev/patronite-logo.png";
 
 
 export {
+  bgMobileImg,
   bgImg,
   starImg,
   footprintImg,
