@@ -397,33 +397,33 @@
   /* ENGLISH — MOBILE */
 
   .lang-en .menuBtn--name {
-    left: 349px;
-    top: -15px;
-  }
-
-  .lang-en .menuBtn--writings {
-    left: 245px;
-    top: 115px;
+    left: 325px;
+    top: -35px;
   }
 
   .lang-en .menuBtn--film {
-    left: 355px;
-    top: 145px;
-  }
-
-  .lang-en .menuBtn--music {
-    left: 445px;
-    top: 145px;
+    left: 290px;
+    top: 135px;
   }
 
   .lang-en .menuBtn--articles {
-    left: 565px;
-    top: 115px;
+    left: 335px;
+    top: 180px;
+  }
+
+  .lang-en .menuBtn--writings {
+    left: 410px;
+    top: 125px;
+  }
+
+  .lang-en .menuBtn--music {
+    left: 465px;
+    top: 170px;
   }
 
   .lang-en .menuBtn--contact {
-    left: 620px;
-    top: 60px;
+    left: 420px;
+    top: 225px;
   }
 
   /* Per-button sizing and position CZECH */
@@ -448,21 +448,19 @@
   }
 
   .lang-cs .menuImg--film {
-    height: 43px;
+    height: 41px;
   }
   .lang-cs .menuBtn--film {
     left: 405px;
     top: 200px;
-    transform: rotate(0deg);
   }
 
   .lang-cs .menuImg--music {
-    height: 40px;
+    height: 39px;
   }
   .lang-cs .menuBtn--music {
     left: 400px;
     top: 255px;
-    transform: rotate(0deg);
   }
 
   .lang-cs .menuImg--articles {
@@ -471,7 +469,6 @@
   .lang-cs .menuBtn--articles {
     left: 399px;
     top: 314px;
-    transform: rotate(0deg);
   }
 
   .lang-cs .menuImg--contact {
@@ -490,58 +487,48 @@
   }
 
   .lang-ru .menuBtn--name {
-    left: 347px;
+    left: 330px;
     top: -5px;
   }
 
   .lang-ru .menuImg--contact {
     height: 26px;
   }
-
   .lang-ru .menuBtn--contact {
-    left: 444px;
+    left: 425px;
     top: -15px;
-    transform: rotate(0deg);
   }
 
   .lang-ru .menuImg--writings {
     height: 29px;
   }
-
   .lang-ru .menuBtn--writings {
-    left: 225px;
-    top: 130px;
-    transform: rotate(0deg);
-  }
-
-  .lang-ru .menuImg--film {
-    height: 27px;
-  }
-
-  .lang-ru .menuBtn--film {
-    left: 349px;
-    top: 152px;
-    transform: rotate(0deg);
+    left: 345px;
+    top: 180px;
   }
 
   .lang-ru .menuImg--music {
-    height: 40px;
+    height: 39px;
+  }
+  .lang-ru .menuBtn--music {
+    left: 369px;
+    top: 245px;
   }
 
-  .lang-ru .menuBtn--music {
-    left: 447px;
-    top: 159px;
-    transform: rotate(1deg);
+  .lang-ru .menuImg--film {
+    height: 26px;
+  }
+  .lang-ru .menuBtn--film {
+    left: 430px;
+    top: 215px;
   }
 
   .lang-ru .menuImg--articles {
-    height: 31px;
+    height: 29px;
   }
-
   .lang-ru .menuBtn--articles {
-    left: 575px;
-    top: 124px;
-    transform: rotate(-2deg);
+    left: 415px;
+    top: 145px;
   }
 
 }
