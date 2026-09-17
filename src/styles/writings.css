@@ -92,13 +92,13 @@
 
   /* Year */
   .writing-year {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.25;
   }
 
   /* Book title */
   .writing-link {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.25;
   }
 }

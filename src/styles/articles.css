@@ -6,20 +6,6 @@
   box-sizing: border-box;
 }
 
-.rightPanel--articles .closeBtn {
-  top: 12px;
-  right: 12px;
-
-  position: absolute;
-
-  padding: 0;
-  border: none;
-  background: transparent;
-
-
-  font-size: 38px;
-  cursor: pointer;
-}
 
 .articles-list {
   margin: 0;
@@ -69,16 +55,17 @@
     sans-serif;
 }
 
+ .rightPanel--articles .closeBtn {
+    display: none;
+  }
+
 /* ==========================================================
    MOBILE PORTRAIT
    ========================================================== */
 
 @media (max-width: 600px) and (orientation: portrait) {
 
-  .rightPanel--articles .closeBtn {
-    display: none;
-  }
-
+  
   .article-link {
     font-size: 14px;
   }
@@ -89,8 +76,11 @@
 
   .article-item {
     grid-template-columns: 60px 1fr;
-
     column-gap: 11px;
+  }
+
+    .articles-panel {
+    padding: 15px 0 30px;
   }
 
 }
