@@ -488,7 +488,7 @@
 
   .lang-ru .menuBtn--name {
     left: 330px;
-    top: -5px;
+    top: -35px;
   }
 
   .lang-ru .menuImg--contact {
@@ -496,7 +496,7 @@
   }
   .lang-ru .menuBtn--contact {
     left: 425px;
-    top: -15px;
+    top: -45px;
   }
 
   .lang-ru .menuImg--writings {
@@ -504,7 +504,7 @@
   }
   .lang-ru .menuBtn--writings {
     left: 345px;
-    top: 180px;
+    top: 150px;
   }
 
   .lang-ru .menuImg--music {
@@ -512,7 +512,7 @@
   }
   .lang-ru .menuBtn--music {
     left: 369px;
-    top: 245px;
+    top: 215px;
   }
 
   .lang-ru .menuImg--film {
@@ -520,7 +520,7 @@
   }
   .lang-ru .menuBtn--film {
     left: 430px;
-    top: 215px;
+    top: 185px;
   }
 
   .lang-ru .menuImg--articles {
@@ -528,7 +528,7 @@
   }
   .lang-ru .menuBtn--articles {
     left: 415px;
-    top: 145px;
+    top: 115px;
   }
 
 }
