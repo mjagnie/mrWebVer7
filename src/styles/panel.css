@@ -1,4 +1,3 @@
-
 .rightPanel {
   position: fixed;
   inset: 0;
@@ -8,7 +7,7 @@
 
   z-index: 5000;
 
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.75);
   overflow: hidden;
 }
 
@@ -17,9 +16,10 @@
   height: 100%;
   overflow: auto;
   padding: 0;
- /* padding: 0px 50px 40px 50px; */
+  /* padding: 0px 50px 40px 50px; */
   box-sizing: border-box;
-  position: relative; /* important: so back button can be top-left */
+  position: relative;
+  /* important: so back button can be top-left */
 }
 
 /* Ensures layout doesn't break after wrapping */
@@ -43,8 +43,10 @@
 }
 
 .panelContent {
-  width: min(780px, 100%);  /* this sets the same width for image+text */
-  margin: 0 auto;           /* centers it */
+  width: min(780px, 100%);
+  /* this sets the same width for image+text */
+  margin: 0 auto;
+  /* centers it */
 }
 
 /*
@@ -56,16 +58,19 @@
 
 /* text lower + narrower */
 .panelTextWrap {
-  width: min(760px, 100%);    /* a bit narrower than image */
-  margin: 18px auto 0 auto;   /* pushes text DOWN and centers it */
+  width: min(760px, 100%);
+  /* a bit narrower than image */
+  margin: 18px auto 0 auto;
+  /* pushes text DOWN and centers it */
   max-width: 70ch;
 }
 
 .panelText {
   margin: 0 0 14px 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, sans-serif;
-  
-  font-size: clamp(16px, 1.1vw, 19px); /* responsive */
+
+  font-size: clamp(16px, 1.1vw, 19px);
+  /* responsive */
   line-height: 1.7;
   text-align: justify;
   text-justify: inter-word;
@@ -77,8 +82,10 @@
 }
 
 .panelImgWrap {
-  width: min(620px, 100%);   /* max width but shrinks on small screens */
-  margin: 0 auto 16px auto;  /* center it */
+  width: min(620px, 100%);
+  /* max width but shrinks on small screens */
+  margin: 0 auto 16px auto;
+  /* center it */
 }
 
 .panelImg {
@@ -86,10 +93,11 @@
   height: clamp(200px, 32vw, 310px);
   border-radius: 22px;
   object-fit: cover;
-  object-position: center 20%; /* moves image up */
+  object-position: center 20%;
+  /* moves image up */
   display: block;
   margin: 0 0 16px 0;
-  }
+}
 
 
 .temporaryImg {
@@ -97,7 +105,8 @@
   height: clamp(200px, 42vw, 460px);
   border-radius: 22px;
   object-fit: cover;
-  object-position: center 20%; /* moves image up */
+  object-position: center 20%;
+  /* moves image up */
   display: block;
   margin: 0 0 16px 0;
 }
@@ -106,5 +115,20 @@
 @media (max-width: 900px) {
   .rightPanel {
     width: 100%;
+  }
+
+  @media (max-width: 600px) and (orientation: portrait) {
+    .rightPanel {
+      position: fixed;
+      inset: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      z-index: 5000;
+
+      background: rgba(255, 255, 255, 0);
+      overflow: hidden;
+    }
   }
 }
