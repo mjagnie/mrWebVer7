@@ -160,4 +160,8 @@
     margin-right: 0;
     text-align: left;
   }
+
+  .filmDetail .panelTitle {
+  font-size: 23px;
+  }
 }

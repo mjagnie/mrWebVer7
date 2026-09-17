@@ -49,8 +49,8 @@
 .aboutPanel .panelText {
   margin: 0 0 14px;
 
-  font-size: 18px;
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.45;
   font-weight: 600;
 
 
@@ -59,7 +59,7 @@
 }
 
 .aboutPanel .panelText strong {
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: 0.1em;
   font-weight: 600;
 }
@@ -74,8 +74,8 @@
 
 .aboutPanel .panelImg {
   display: block;
-  width: 100%;
-  margin: 0;
+  width: calc(100% - 0px);
+  margin: 0 auto;
 }
 
 
@@ -117,4 +117,85 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   font-size: 17px;
+}
+
+/* ==========================================================
+   ABOUT — MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  .aboutPanel {
+    width: 100%;
+    min-height: auto;
+    padding: 20px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  /* Hide X on mobile */
+  .rightPanel--about .closeBtn {
+    display: none;
+  }
+
+  /* Text area */
+  .aboutPanel .panelTextWrap {
+    width: 100%;
+    max-width: none;
+  }
+
+  .aboutPanel .panelText {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .aboutPanel .panelText strong {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Image */
+  .aboutPanel .panelImgWrap {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 14px;
+  }
+
+  .aboutPanel .panelImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  /* Headings */
+  .aboutPanel .panelText--heading {
+    margin: 16px 0 4px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    border-bottom-width: 2px;
+  }
+
+  .aboutPanel .panelText--subheading {
+    margin: 7px 0 0;
+    font-size: 14px;
+  }
+
+  /* Lists */
+  .aboutPanel .panelList {
+    margin: 0 0 14px 1em;
+    padding: 0;
+  }
+
+  .aboutPanel .panelListItem {
+    margin: 0 0 3px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .aboutPanel .panelListItem strong {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
 }

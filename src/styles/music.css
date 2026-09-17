@@ -179,7 +179,7 @@
 }
 
 .musicTextLink {
-  font-size: 18px;
+  font-size: 17px;
 }
 
   .musicSocialsDesktop {
@@ -216,7 +216,6 @@
     min-height: 100vh;
     padding: 22px 0px 60px;
     box-sizing: border-box;
-    align-items: ;
   }
 
   /* Band name fills the available row */
@@ -228,8 +227,9 @@
 
   .musicBandLogo img {
     display: block;
-    width: 100%;
+    width: 94%;
     height: auto;
+    margin: 0 auto;
   }
 
   /* Change two columns into one */
