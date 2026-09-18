@@ -9,34 +9,34 @@ export function createWritingsData(images) {
       ],
       labels: {
         cs: {
-          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          titleMain: "Morgenstern v Čechách",
           description:
             "21 proslulých básní ve 179 českých překladech 36 autorů.",
-          edition: "Vydání první",
-          publisher: "Nakladatel: Vida vida",
-          year: "Rok vydání: 1996",
+          edition: "",
+          publisher: "Vida vida",
+          year: "1996",
 
         },
         en: {
-          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          titleMain: "Morgenstern v Čechách",
           description:
             "21 proslulých básní ve 179 českých překladech 36 autorů.",
-          edition: "First edition",
-          publisher: "Publishing house: Vida vida",
-          year: "Prague 1996",
+          edition: "",
+          publisher: "Vida vida",
+          year: "1996",
         },
         ru: {
-          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          titleMain: "Morgenstern v Čechách",
           description:
             "21 proslulých básní ve 179 českých překladech 36 autorů.",
-            
-          edition: "Первое издание",
-          publisher: "Издательство: Vida vida",
-          year: "Прага 1996",
+
+          edition: "",
+          publisher: "Vida vida",
+          year: "1996",
         },
       },
     },
-    
+
     {
       id: "1.1",
       cover: images.lesniChodciEd1Cover,
@@ -53,9 +53,9 @@ export function createWritingsData(images) {
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. " +
             "Tematizuje konflikt mezi touhou hlavních postav po „tulácké“ nezávislosti a osudovými následky, k nimž je jejich spříznění volbou dovádí.",
-          edition: "Vydání první",
-          publisher: "Nakladatelství: Eva Babická",
-          year: "Rok vydání: 2001",
+          edition: "",
+          publisher: "Eva Babická",
+          year: "2001",
 
         },
         en: {
@@ -63,18 +63,18 @@ export function createWritingsData(images) {
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. " +
             "Tematizuje konflikt mezi touhou hlavních postav po „tulácké“ nezávislosti a osudovými následky, k nimž je jejich spříznění volbou dovádí.",
-          edition: "First edition",
-          publisher: "Publishing house: Eva Babická",
-          year: "Prague 2001",
+          edition: "",
+          publisher: "Eva Babická",
+          year: "2001",
         },
         ru: {
           titleMain: "Lesní chodci",
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. " +
             "Tematizuje konflikt mezi touhou hlavních postav po „tulácké“ nezávislosti a osudovými následky, k nimž je jejich spříznění volbou dovádí.",
-          edition: "Первое издание",
-          publisher: "Издательство: Eva Babická",
-          year: "Прага 2001",
+          edition: "",
+          publisher: "Eva Babická",
+          year: "2001",
         },
       },
     },
@@ -92,8 +92,8 @@ export function createWritingsData(images) {
           description:
             "Kniha obsahuje 52 nápadů doprovázených krátkými pohádkami pro dětské výtvarné dílny. Kromě kresby a malby tu najdeme prostorovou práci s papírem, koláž, práci s textilem, se sádrou a s přírodninami, mozaiku, výrobu ozdob, dekorací a drobných dárků. U každého nápadu je upřesněn věk, od něhož ho lze využít, potřebný materiál a podrobný popis pracovního postupu. ",
           edition: "",
-          publisher: "Nakladatelství: Portál",
-          year: "Rok vydání: 2005, 2013",
+          publisher: "Portál",
+          year: "2005, 2013",
         },
         en: {
           titleMain: "Výtvarné práce s pohádkami",
@@ -101,8 +101,8 @@ export function createWritingsData(images) {
           description:
             "Kniha obsahuje 52 nápadů doprovázených krátkými pohádkami pro dětské výtvarné dílny. Kromě kresby a malby tu najdeme prostorovou práci s papírem, koláž, práci s textilem, se sádrou a s přírodninami, mozaiku, výrobu ozdob, dekorací a drobných dárků. U každého nápadu je upřesněn věk, od něhož ho lze využít, potřebný materiál a podrobný popis pracovního postupu. ",
           edition: "",
-          publisher: "Publishing house: Portál",
-          year: "Praha 2005, 2013",
+          publisher: "Portál",
+          year: "2005, 2013",
         },
         ru: {
           titleMain: "Výtvarné práce s pohádkami",
@@ -110,8 +110,8 @@ export function createWritingsData(images) {
           description:
             "Kniha obsahuje 52 nápadů doprovázených krátkými pohádkami pro dětské výtvarné dílny. Kromě kresby a malby tu najdeme prostorovou práci s papírem, koláž, práci s textilem, se sádrou a s přírodninami, mozaiku, výrobu ozdob, dekorací a drobných dárků. U každého nápadu je upřesněn věk, od něhož ho lze využít, potřebný materiál a podrobný popis pracovního postupu. ",
           edition: "",
-          publisher: "Издательство: Portál",
-          year: "Прага 2005, 2013",
+          publisher: "Portál",
+          year: "2005, 2013",
         },
       },
     },
@@ -129,8 +129,8 @@ export function createWritingsData(images) {
           description:
             "Kniha přináší v českém překladu Martina Ryšavého básně evenského lovce Michaila Kolesova (nar. 1965 v Jakutsku).",
           edition: "",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2006",
+          publisher: "Revolver Revue",
+          year: "2006",
         },
         en: {
           authorMain: "Mikhail KOLESOV",
@@ -138,8 +138,8 @@ export function createWritingsData(images) {
           description:
             "Kniha přináší v českém překladu Martina Ryšavého básně evenského lovce Michaila Kolesova (nar. 1965 v Jakutsku).",
           edition: "",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2006",
+          publisher: "Revolver Revue",
+          year: "2006",
         },
         ru: {
           authorMain: "Mikhail KOLESOV",
@@ -147,8 +147,8 @@ export function createWritingsData(images) {
           description:
             "Kniha přináší v českém překladu Martina Ryšavého básně evenského lovce Michaila Kolesova (nar. 1965 v Jakutsku).",
           edition: "",
-          publisher: "Издательство: Revolver Revue",
-          year: "Прага 2006",
+          publisher: "Revolver Revue",
+          year: "2006",
         },
       },
     },
@@ -177,18 +177,18 @@ export function createWritingsData(images) {
           additionalInfo: "",
           description:
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
-          edition: "Vydání první",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2008",
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2008",
         },
         en: {
           titleMain: "Cesty na Sibiř",
           additionalInfo: "",
           description:
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
-          edition: "First Edition",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2008",
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2008",
         },
         ru: {
           titleMain: "Cesty na Sibiř",
@@ -196,9 +196,9 @@ export function createWritingsData(images) {
           description:
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
 
-          edition: "Первое издание",
-          publisher: "Издательство: Revolver Revue",
-          year: "Praha 2008",
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2008",
         },
       },
     },
@@ -225,8 +225,8 @@ export function createWritingsData(images) {
           description:
             "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
           edition: "",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2010, 2013",
+          publisher: "Revolver Revue",
+          year: "2010, 2013",
         },
         en: {
           titleMain: "Vrač ",
@@ -234,8 +234,8 @@ export function createWritingsData(images) {
             "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
 
           edition: "",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2010, 2013",
+          publisher: "Revolver Revue",
+          year: "2010, 2013",
         },
         ru: {
           titleMain: "Vrač",
@@ -243,8 +243,8 @@ export function createWritingsData(images) {
             "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
 
           edition: "",
-          publisher: "Издательство: Revolver Revue",
-          year: "Praha 2010, 2013",
+          publisher: "Revolver Revue",
+          year: "2010",
         },
       },
     },
@@ -273,8 +273,8 @@ export function createWritingsData(images) {
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
 
           edition: "Vydání druhé",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         en: {
           titleMain: "Cesty na Sibiř",
@@ -282,8 +282,8 @@ export function createWritingsData(images) {
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
 
           edition: "Second Edition",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         ru: {
           titleMain: "Cesty na Sibiř",
@@ -291,8 +291,8 @@ export function createWritingsData(images) {
             "Hrdinou románu je mladík, který rezignuje na vědeckou kariéru i rodinný život a vydává se na dalekou pouť, v jejíž zdánlivě chaotické trajektorii pozvolna rozpoznává logiku hlubšího řádu. Kniha, kterou lze číst jako cestopis, jako milostný příběh, nebo třeba i jako dokument o současných životních podmínkách na ruském Dálném Východě, se ve svém celku stává „klasickou“ románovou skladbou o smyslu lidské touhy po dosažení duchovních jistot. ",
 
           edition: "Второе издание",
-          publisher: "Издательство: Revolver Revue",
-          year: "Praha 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
       },
     },
@@ -317,24 +317,24 @@ export function createWritingsData(images) {
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. Tematizuje konflikt mezi touhou hlavních postav po „tulácké“ nezávislosti a osudovými následky, k nimž je jejich spříznění volbou dovádí.",
           edition: "Vydání druhé",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         en: {
           titleMain: "Lesní chodci",
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. ",
           edition: "Second Edition",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         ru: {
           titleMain: "Lesní chodci",
           description:
             "Kapesní sága Lesní chodci vznikla přepracováním původního filmového scénáře, který se stal podkladem pro stejnojmenný film režiséra Ivana Vojnára. ",
           edition: "Второе издание",
-          publisher: "Издательство: Revolver Revue",
-          year: "Прага 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
       },
     },
@@ -356,16 +356,16 @@ export function createWritingsData(images) {
           description:
             "Textová koláž z textů nalezených na opuštěné ruské polární základně. Kniha vyšla jako samostatně neprodejná příloha Revolver Revue č. 82.",
           edition: "",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         en: {
           titleMain: "Stanice Čtyřsloupový ostrov",
           description:
             "Textová koláž z textů nalezených na opuštěné ruské polární základně. Kniha vyšla jako samostatně neprodejná příloha Revolver Revue č. 82.",
           edition: "",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
         },
         ru: {
           titleMain: "Stanice Čtyřsloupový ostrov",
@@ -373,8 +373,53 @@ export function createWritingsData(images) {
             "Textová koláž z textů nalezených na opuštěné ruské polární základně. Kniha vyšla jako samostatně neprodejná příloha Revolver Revue č. 82.",
 
           edition: "",
-          publisher: "Издательство: Revolver Revue",
-          year: "Прага 2011",
+          publisher: "Revolver Revue",
+          year: "2011",
+        },
+      },
+    },
+
+    {
+      id: "8.5",
+      cover: images.vracCover1ImgCs,
+      reviews: [
+        {
+          logo: images.iDnesLogo,
+          href: "https://www.idnes.cz/zpravy/archiv/rysaveho-roman-vrac-leci-ceskeho-ctenare-z-nevylecitelne-choroby-postsovetske-ery.A101119_103508_kavarna_chu",
+          alt: "iDnes.cz",
+        },
+        {
+          logo: images.iLiteraturaImg,
+          href: "https://www.iliteratura.cz/clanek/27715-rysavy-martin-vrac",
+          alt: "iLiteratura.cz",
+        },
+      ],
+      labels: {
+        cs: {
+          titleMain: "Vrač ",
+          description:
+            "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2013",
+        },
+        en: {
+          titleMain: "Vrač ",
+          description:
+            "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
+
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2013",
+        },
+        ru: {
+          titleMain: "Vrač",
+          description:
+            "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
+
+          edition: "",
+          publisher: "Revolver Revue",
+          year: "2013",
         },
       },
     },
@@ -384,7 +429,6 @@ export function createWritingsData(images) {
       id: "9",
       cover: images.vracCover1ImgDe,
       coverClassName: "dimitrijCover bookCoverFrame",
-
       labels: {
         cs: {
           titleMain: "Dimitrij der Heiler",
@@ -392,8 +436,8 @@ export function createWritingsData(images) {
           description:
             "Der Held, der Heiler, russisch als Vrac bezeichnet, kommt aus dem Theatermilieu, in dem szenische Fantasien sehr leicht zur Lebensphilosophie werden. Hauptfigur ist der frühere Theaterregisseur Dmitrij Gusev, der an einer Reihe von regionalen experimentellen Bühnen tätig war und zur Zeit des Geschehens als Dispatcher bei der Moskauer Kommunalverwaltung arbeitet. In grotesker und tragikomischer Weise werden hier stalinistische Vergangenheit und postkommunistisches Chaos in einem endlosen Monolog dargestellt. So auch eine Premiere der tabuisierten „Marquise de Sade“. Der vor Lebensenergie sprühende Erzähler verfügt über die Fähigkeit, das Wesen aller Dinge und Geschehnisse in ihrem Kern zu erfassen – seine Lebens-Inszenierung entfaltet sich nach und nach in einem faszinierenden, frei assoziierenden, kathartischen Redestrom, einem dahinfließenden tragikomischen Monolog, der Ereignisse, Erinnerungen, Erzählungen und Gedanken auf bizarre Weise verwebt.",
           translation: "Přeložila Kristina Kallert",
-          publisher: "Nakladatelství: Wieser Verlag Klagenfurt",
-          year: "Rok vydání: 2014",
+          publisher: "Wieser Verlag Klagenfurt",
+          year: "2014",
         },
         en: {
           titleMain: "Dimitrij der Heiler",
@@ -402,7 +446,7 @@ export function createWritingsData(images) {
             "Der Held, der Heiler, russisch als Vrac bezeichnet, kommt aus dem Theatermilieu, in dem szenische Fantasien sehr leicht zur Lebensphilosophie werden. Hauptfigur ist der frühere Theaterregisseur Dmitrij Gusev, der an einer Reihe von regionalen experimentellen Bühnen tätig war und zur Zeit des Geschehens als Dispatcher bei der Moskauer Kommunalverwaltung arbeitet. In grotesker und tragikomischer Weise werden hier stalinistische Vergangenheit und postkommunistisches Chaos in einem endlosen Monolog dargestellt. So auch eine Premiere der tabuisierten „Marquise de Sade“. Der vor Lebensenergie sprühende Erzähler verfügt über die Fähigkeit, das Wesen aller Dinge und Geschehnisse in ihrem Kern zu erfassen – seine Lebens-Inszenierung entfaltet sich nach und nach in einem faszinierenden, frei assoziierenden, kathartischen Redestrom, einem dahinfließenden tragikomischen Monolog, der Ereignisse, Erinnerungen, Erzählungen und Gedanken auf bizarre Weise verwebt.",
 
           translation: "Translated by Kristina Kallert",
-          publisher: "Publishing house: Wieser Verlag Klagenfurt",
+          publisher: "Wieser Verlag Klagenfurt",
           year: "2014",
         },
         ru: {
@@ -412,8 +456,53 @@ export function createWritingsData(images) {
             "Der Held, der Heiler, russisch als Vrac bezeichnet, kommt aus dem Theatermilieu, in dem szenische Fantasien sehr leicht zur Lebensphilosophie werden. Hauptfigur ist der frühere Theaterregisseur Dmitrij Gusev, der an einer Reihe von regionalen experimentellen Bühnen tätig war und zur Zeit des Geschehens als Dispatcher bei der Moskauer Kommunalverwaltung arbeitet. In grotesker und tragikomischer Weise werden hier stalinistische Vergangenheit und postkommunistisches Chaos in einem endlosen Monolog dargestellt. So auch eine Premiere der tabuisierten „Marquise de Sade“. Der vor Lebensenergie sprühende Erzähler verfügt über die Fähigkeit, das Wesen aller Dinge und Geschehnisse in ihrem Kern zu erfassen – seine Lebens-Inszenierung entfaltet sich nach und nach in einem faszinierenden, frei assoziierenden, kathartischen Redestrom, einem dahinfließenden tragikomischen Monolog, der Ereignisse, Erinnerungen, Erzählungen und Gedanken auf bizarre Weise verwebt.",
 
           translation: "Перевод Kristina Kallert",
-          publisher: "Издательство: Wieser Verlag Klagenfurt",
+          publisher: "Wieser Verlag Klagenfurt",
           year: "2014",
+        },
+      },
+    },
+    {
+      id: "9.5",
+      cover: images.evropaRuskoTeroristeCoverImg,
+      reviews: [
+        {
+          logo: images.iLiteraturaImg,
+          href: "https://www.iliteratura.cz/clanek/36827-hvizdala-karel-evropa-rusko-teroriste-a-bezenci",
+          alt: "iLiteratura.cz",
+        },
+      ],
+      labels: {
+        cs: {
+          authorMain: "Karel HVÍŽD̕ALA",
+          otherAuthors: "Schwarzenberg, Ryšavý, Kraus, Glanc, Přibáň, Romancov, Robejšek, Dobrovský, Rubeš, Steiner, Rupnik, Petříček, Pithart",
+          titleMain: "Evropa, Rusko, teroristé a běženci",
+          description:
+            "Interviews with thirteen prominent intellectuals, political scientists, and commentators of Czech origin by Czech journalist and author Karel Hvížďala.",
+          edition: "",
+          publisher: "Mladá fronta",
+          year: "2016",
+
+        },
+        en: {
+          authorMain: "Karel HVÍŽD̕ALA",
+          titleMain: "Evropa, Rusko, teroristé a běženci",
+          otherAuthors: "Schwarzenberg, Ryšavý, Kraus, Glanc, Přibáň, Romancov, Robejšek, Dobrovský, Rubeš, Steiner, Rupnik, Petříček, Pithart",
+          description:
+            "Interviews with thirteen prominent intellectuals, political scientists, and commentators of Czech origin by Czech journalist and author Karel Hvížďala.",
+          edition: "",
+          publisher: "Mladá fronta",
+          year: "2016",
+        },
+        ru: {
+          authorMain: "Karel HVÍŽD̕ALA",
+          otherAuthors: "Schwarzenberg, Ryšavý, Kraus, Glanc, Přibáň, Romancov, Robejšek, Dobrovský, Rubeš, Steiner, Rupnik, Petříček, Pithart",
+          titleMain: "Evropa, Rusko, teroristé a běženci",
+          description:
+            "Interviews with thirteen prominent intellectuals, political scientists, and commentators of Czech origin by Czech journalist and author Karel Hvížďala.",
+
+          edition: "",
+          publisher: "Mladá fronta",
+          year: "2016",
         },
       },
     },
@@ -431,8 +520,8 @@ export function createWritingsData(images) {
           description:
             "En Siberia, también merecedora del premio Magnesia Litera, traducida por Jorge Simón, un científico en ciernes es embelesado por la temperatura política de europea del momento y parte rumbo a la revolución rumana. A partir de ahí comenzará una mirada directa a lo ocurrido en algunas regiones de Europa central u oriental inmediatamente después de la debacle del mundo comunista en 1989. Este estado político-emocional será la puerta a la inmensidad de las estepas rusas. Ahí se romperán los prejuicios sobre el territorio y los pueblos de la lejana Siberia, de tradiciones añejas. Ryšavý se propone pulverizar cualquier tipo de estereotipo que el lector lleve consigo sobre un lugar que posee una imprecisa, por no decir nula, definición dentro de nuestras concepciones etnogeográficas.",
           translation: "Přeložil Jorge Simon",
-          publisher: "Nakladatelství: Elefanta Editorial",
-          year: "Rok vydání: 2018",
+          publisher: "Elefanta Editorial",
+          year: "2018",
         },
         en: {
           titleMain: "Siberia",
@@ -441,7 +530,7 @@ export function createWritingsData(images) {
             "En Siberia, también merecedora del premio Magnesia Litera, traducida por Jorge Simón, un científico en ciernes es embelesado por la temperatura política de europea del momento y parte rumbo a la revolución rumana. A partir de ahí comenzará una mirada directa a lo ocurrido en algunas regiones de Europa central u oriental inmediatamente después de la debacle del mundo comunista en 1989. Este estado político-emocional será la puerta a la inmensidad de las estepas rusas. Ahí se romperán los prejuicios sobre el territorio y los pueblos de la lejana Siberia, de tradiciones añejas. Ryšavý se propone pulverizar cualquier tipo de estereotipo que el lector lleve consigo sobre un lugar que posee una imprecisa, por no decir nula, definición dentro de nuestras concepciones etnogeográficas.",
 
           translation: "Translated by Jorge Simon",
-          publisher: "Publishing house: Elefanta Editorial",
+          publisher: "Elefanta Editorial",
           year: "2018",
         },
         ru: {
@@ -451,7 +540,7 @@ export function createWritingsData(images) {
             "En Siberia, también merecedora del premio Magnesia Litera, traducida por Jorge Simón, un científico en ciernes es embelesado por la temperatura política de europea del momento y parte rumbo a la revolución rumana. A partir de ahí comenzará una mirada directa a lo ocurrido en algunas regiones de Europa central u oriental inmediatamente después de la debacle del mundo comunista en 1989. Este estado político-emocional será la puerta a la inmensidad de las estepas rusas. Ahí se romperán los prejuicios sobre el territorio y los pueblos de la lejana Siberia, de tradiciones añejas. Ryšavý se propone pulverizar cualquier tipo de estereotipo que el lector lleve consigo sobre un lugar que posee una imprecisa, por no decir nula, definición dentro de nuestras concepciones etnogeográficas.",
 
           translation: "Перевод Jorge Simon",
-          publisher: "Издательство: Elefanta Editorial",
+          publisher: "Elefanta Editorial",
           year: "2018",
         },
       },
@@ -471,8 +560,8 @@ export function createWritingsData(images) {
           description:
             "Централният персонаж в романа на Мартин Ришави „Врач“, включващ всъщност две самостойни, но сходни като стилистика и литературна стойност повести, е бивш театрален режисьор, преминал през редица регионални и експериментални театри, който понастоящем работи като диспечер в московските комунални услуги. Пречистващият поток на речта, непрекъснатият трагикомичен монолог за абсурдността, която постоянно режисира човешките съдби на житейската сцена не само в Русия, а и по света, спонтанно се превръща в „постановката на живота му“.",
           translation: "Přeložila Margarita Rumenova",
-          publisher: "Nakladatelství: ЕРГО",
-          year: "Rok vydání: 2018",
+          publisher: "ЕРГО",
+          year: "2018",
         },
         en: {
           titleMain: "Врач",
@@ -481,7 +570,7 @@ export function createWritingsData(images) {
             "Централният персонаж в романа на Мартин Ришави „Врач“, включващ всъщност две самостойни, но сходни като стилистика и литературна стойност повести, е бивш театрален режисьор, преминал през редица регионални и експериментални театри, който понастоящем работи като диспечер в московските комунални услуги. Пречистващият поток на речта, непрекъснатият трагикомичен монолог за абсурдността, която постоянно режисира човешките съдби на житейската сцена не само в Русия, а и по света, спонтанно се превръща в „постановката на живота му“.",
 
           translation: "Translated by Margarita Rumenova",
-          publisher: "Publishing house: ЕРГО",
+          publisher: "ЕРГО",
           year: "2018",
         },
         ru: {
@@ -491,7 +580,7 @@ export function createWritingsData(images) {
             "Централният персонаж в романа на Мартин Ришави „Врач“, включващ всъщност две самостойни, но сходни като стилистика и литературна стойност повести, е бивш театрален режисьор, преминал през редица регионални и експериментални театри, който понастоящем работи като диспечер в московските комунални услуги. Пречистващият поток на речта, непрекъснатият трагикомичен монолог за абсурдността, която постоянно режисира човешките съдби на житейската сцена не само в Русия, а и по света, спонтанно се превръща в „постановката на живота му“.",
 
           translation: "Перевод Margarita Rumenova",
-          publisher: "Издателство: ЕРГО",
+          publisher: "ЕРГО",
           year: "2018",
         },
       },
@@ -523,24 +612,24 @@ export function createWritingsData(images) {
           description:
             "Román v odeslaných dopisech, jejichž pisatelka, po celý život spjatá s drsným a přízračně působícím severočeským regionem, se v nich ze svých životních zkušeností zpovídá muži, jenž v ní údajně vzbudil důvěru po jediném letmém setkání. Na místě adresáta se ale ocitá čtenář, který kromě jiného stojí před otázkou, zda protagonistka trpí fatální nezakotveností pro svou zásadovost a hrdý vzdor vůči autoritám a běžným očekáváním, anebo zda on sám se nakonec nestává obětí její manipulativní hry. ",
           edition: "",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2019",
+          publisher: "Revolver Revue",
+          year: "2019",
         },
         en: {
           titleMain: "Zlaté vidění",
           description:
             "Román v odeslaných dopisech, jejichž pisatelka, po celý život spjatá s drsným a přízračně působícím severočeským regionem, se v nich ze svých životních zkušeností zpovídá muži, jenž v ní údajně vzbudil důvěru po jediném letmém setkání. Na místě adresáta se ale ocitá čtenář, který kromě jiného stojí před otázkou, zda protagonistka trpí fatální nezakotveností pro svou zásadovost a hrdý vzdor vůči autoritám a běžným očekáváním, anebo zda on sám se nakonec nestává obětí její manipulativní hry. ",
           edition: "",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2019",
+          publisher: "Revolver Revue",
+          year: "2019",
         },
         ru: {
           titleMain: "Zlaté vidění",
           description:
             "Román v odeslaných dopisech, jejichž pisatelka, po celý život spjatá s drsným a přízračně působícím severočeským regionem, se v nich ze svých životních zkušeností zpovídá muži, jenž v ní údajně vzbudil důvěru po jediném letmém setkání. Na místě adresáta se ale ocitá čtenář, který kromě jiného stojí před otázkou, zda protagonistka trpí fatální nezakotveností pro svou zásadovost a hrdý vzdor vůči autoritám a běžným očekáváním, anebo zda on sám se nakonec nestává obětí její manipulativní hry. ",
           edition: "",
-          publisher: "Издательство: Revolver Revue",
-          year: "Прага 2019",
+          publisher: "Revolver Revue",
+          year: "2019",
         },
       },
     },
@@ -564,24 +653,24 @@ export function createWritingsData(images) {
           description:
             "Autobiografický hrdina se vydává na dobrodružnou výpravu k doposud neprobádaným končinám lidské existence a cesta se mu stává příležitostí k rekapitulaci životních zkušeností. Na horizontu jeho pouti se pozorování a vyprávění prolínají s úvahami o smyslu vysněných, dosažených i nenaplněných životních cílů. Nedohledné sibiřské a arktické dálavy se proměňují v symbolickou trajektorii lidského údělu. ",
           edition: "",
-          publisher: "Nakladatelství: Revolver Revue",
-          year: "Rok vydání: 2021",
+          publisher: "Revolver Revue",
+          year: "2021",
         },
         en: {
           titleMain: "Tundra a smrt",
           description:
             "Autobiografický hrdina se vydává na dobrodružnou výpravu k doposud neprobádaným končinám lidské existence a cesta se mu stává příležitostí k rekapitulaci životních zkušeností. Na horizontu jeho pouti se pozorování a vyprávění prolínají s úvahami o smyslu vysněných, dosažených i nenaplněných životních cílů. Nedohledné sibiřské a arktické dálavy se proměňují v symbolickou trajektorii lidského údělu. ",
           edition: "",
-          publisher: "Publishing house: Revolver Revue",
-          year: "Prague 2021",
+          publisher: "Revolver Revue",
+          year: "2021",
         },
         ru: {
           titleMain: "Tundra a smrt",
           description:
             "Autobiografický hrdina se vydává na dobrodružnou výpravu k doposud neprobádaným končinám lidské existence a cesta se mu stává příležitostí k rekapitulaci životních zkušeností. Na horizontu jeho pouti se pozorování a vyprávění prolínají s úvahami o smyslu vysněných, dosažených i nenaplněných životních cílů. Nedohledné sibiřské a arktické dálavy se proměňují v symbolickou trajektorii lidského údělu. ",
           edition: "",
-          publisher: "Издательство: Revolver Revue",
-          year: "Прага 2021",
+          publisher: "Revolver Revue",
+          year: "2021",
         },
       },
     },
@@ -607,8 +696,8 @@ export function createWritingsData(images) {
           description:
             "Poznajcie Gusiewa – kwintesencję Rosji. Tylko tam przedstawiciel kultury najwyższych lotów, twórca wybitnych spektakli teatralnych i filozof, może być zarazem prostakiem. Rosja jest ciężko zaburzona, potrzebuje terapeuty – wracza. Wracz jest Rosją, lecz Rosja nie jest wraczem. ",
           translation: "Přeložila Anna Wanik",
-          publisher: "Nakladatelství: KEW",
-          year: "Rok vydání: 2022",
+          publisher: "KEW",
+          year: "2022",
         },
         en: {
           titleMain: "Wracz",
@@ -616,8 +705,8 @@ export function createWritingsData(images) {
           description:
             "Poznajcie Gusiewa – kwintesencję Rosji. Tylko tam przedstawiciel kultury najwyższych lotów, twórca wybitnych spektakli teatralnych i filozof, może być zarazem prostakiem. Rosja jest ciężko zaburzona, potrzebuje terapeuty – wracza. Wracz jest Rosją, lecz Rosja nie jest wraczem. ",
           translation: "Translation by Anna Wanik",
-          publisher: "Publishing house: KEW",
-          year: "Wojnowice 2022",
+          publisher: "KEW",
+          year: "2022",
         },
         ru: {
           titleMain: "Wracz",
@@ -625,8 +714,8 @@ export function createWritingsData(images) {
           description:
             "Poznajcie Gusiewa – kwintesencję Rosji. Tylko tam przedstawiciel kultury najwyższych lotów, twórca wybitnych spektakli teatralnych i filozof, może być zarazem prostakiem. Rosja jest ciężko zaburzona, potrzebuje terapeuty – wracza. Wracz jest Rosją, lecz Rosja nie jest wraczem. ",
           translation: "Перевод Anna Wanik",
-          publisher: "Издательство: KEW",
-          year: "Wojnowice 2022",
+          publisher: "KEW",
+          year: "2022",
         },
       },
     },

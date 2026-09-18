@@ -64,6 +64,11 @@ export default function BookView({
               </div>
             )}
 
+            {labels.otherAuthors && (
+              <div className="bookOtherAuthors">
+                {labels.otherAuthors}
+              </div>
+            )}
 
             {labels.additionalInfo && (
               <div className="bookInfo">

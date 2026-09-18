@@ -1,10 +1,6 @@
 import bgImg from "../assets/ui/main-page/background.jpg";
 import bgMobileImg from "../assets/ui/main-page/background100.png";
 
-import starImg from "../assets/ui/main-page/star.png";
-import footprintImg from "../assets/ui/main-page/footprint1.png";
-import footprintLeftImg from "../assets/ui/main-page/footprint-left.png";
-import bearImg from "../assets/ui/main-page/bear.png";
 
 // Menu images (EN)
 import menuRysavyImgEn from "../assets/ui/main-page/menu/en/menu-rysavy.png";
@@ -51,7 +47,7 @@ import zemeSnuImg from "../assets/films/zeme-snu.png";
 import panPovolnyImg from "../assets/films/pan-povolny.png";
 
 // Writing images
-import morgensternCoverImg from "../assets/books/morgenstern/morgenstern.png";
+
 import lesniChodciEd1Cover from "../assets/books/lesni-chodci-ed1/lesni-chodci-ed1.jpg";
 import vytvarnePraceCover from "../assets/books/vytvarne-prace/vytvarne-prace.webp";
 import lesniChodciEd2Cover1Img from "../assets/books/lesni-chodci/lesni-chodci-cover1.jpg";
@@ -61,6 +57,9 @@ import cestyCover2ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-c
 import cestyEd2Cover1ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-ed2-cover1.jpg";
 
 import cestyCover1ImgEs from "../assets/books/cesty-na-sibir/es/cesty-na-sibir-cover1.jpg";
+
+import morgensternCoverImg from "../assets/books/other-authors/morgenstern.png";
+import evropaRuskoTeroristeCoverImg from "../assets/books/other-authors/evropa-rusko-teroriste.webp";
 
 import vracCover1ImgCs from "../assets/books/vrac/cs/vrac-cover1.jpg";
 import vracCover1ImgPl from "../assets/books/vrac/pl/vrac-cover1.jpg";
@@ -89,10 +88,6 @@ import patroniteLogo from "../assets/books/logo-rewiev/patronite-logo.png";
 export {
   bgMobileImg,
   bgImg,
-  starImg,
-  footprintImg,
-  footprintLeftImg,
-  bearImg,
   rysavyAboutImg,
   contactImg,
 };
@@ -128,6 +123,7 @@ export const menuImages = {
 
 export const writingImages = {
   morgensternCoverImg,
+  evropaRuskoTeroristeCoverImg,
   lesniChodciEd1Cover,
   vytvarnePraceCover,
   lesniChodciEd2Cover1Img,
