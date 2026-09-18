@@ -6,6 +6,7 @@ import denPobedyImg from "../assets/videoclips/den-pobedy.png";
 import landmannschaftImg from "../assets/videoclips/landsmannschaft-aus-breitenbach.png";
 import papinakImg from "../assets/videoclips/papinak-benzinem.png";
 import prvniKoncertImg from "../assets/videoclips/prvni-koncert.png";
+import renatImg from "../assets/videoclips/renat.png";
 
 const VIDEOS = [
   {
@@ -40,6 +41,12 @@ const VIDEOS = [
   },
   {
     id: 6,
+    title: "Renat",
+    image: renatImg,
+    url: "https://www.youtube.com/watch?v=8HHr-rKd-Es&list=RD8HHr-rKd-Es&start_radio=1",
+  },
+  {
+    id: 7,
     title: "První koncert Bouchacích šroubů",
     image: prvniKoncertImg,
     url: "https://vimeo.com/manage/videos/1165444591",
