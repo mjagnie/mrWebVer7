@@ -51,6 +51,7 @@ import zemeSnuImg from "../assets/films/zeme-snu.png";
 import panPovolnyImg from "../assets/films/pan-povolny.png";
 
 // Writing images
+import morgensternCoverImg from "../assets/books/morgenstern/morgenstern.png";
 import lesniChodciEd1Cover from "../assets/books/lesni-chodci-ed1/lesni-chodci-ed1.jpg";
 import vytvarnePraceCover from "../assets/books/vytvarne-prace/vytvarne-prace.webp";
 import lesniChodciEd2Cover1Img from "../assets/books/lesni-chodci/lesni-chodci-cover1.jpg";
@@ -126,6 +127,7 @@ export const menuImages = {
 };
 
 export const writingImages = {
+  morgensternCoverImg,
   lesniChodciEd1Cover,
   vytvarnePraceCover,
   lesniChodciEd2Cover1Img,

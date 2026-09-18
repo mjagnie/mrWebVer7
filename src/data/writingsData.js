@@ -4,6 +4,41 @@ export function createWritingsData(images) {
   return [
     {
       id: "1",
+      cover: images.morgensternCoverImg,
+      reviews: [
+      ],
+      labels: {
+        cs: {
+          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          description:
+            "21 proslulých básní ve 179 českých překladech 36 autorů.",
+          edition: "Vydání první",
+          publisher: "Nakladatel: Vida vida",
+          year: "Rok vydání: 1996",
+
+        },
+        en: {
+          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          description:
+            "21 proslulých básní ve 179 českých překladech 36 autorů.",
+          edition: "First edition",
+          publisher: "Publishing house: Vida vida",
+          year: "Prague 1996",
+        },
+        ru: {
+          titleMain: "Morgenstern v Čechách: 21 proslulých básní ve 179 českých překladech 36 autorů",
+          description:
+            "21 proslulých básní ve 179 českých překladech 36 autorů.",
+            
+          edition: "Первое издание",
+          publisher: "Издательство: Vida vida",
+          year: "Прага 1996",
+        },
+      },
+    },
+    
+    {
+      id: "1.1",
       cover: images.lesniChodciEd1Cover,
       reviews: [
         {
