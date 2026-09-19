@@ -220,9 +220,14 @@
     margin-bottom: 8px;
   }
 
+  .bookOtherAuthors {
+    font-size: 16px;
+    margin-top: -7px;
+    margin-bottom: 15px;
+  }
+
   .bookInfo {
     margin-bottom: 12px;
-
     font-size: 16px;
     text-align: left;
   }
@@ -281,6 +286,10 @@
   .bookView .bookTitle {
     display: none;
   }
+
+  .bookReviewsInline {
+  margin-top: 10px;
+}
 
   /* Cancel individual desktop cover positioning */
   .bookView .wraczCover,
