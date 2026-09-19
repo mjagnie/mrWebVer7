@@ -51,7 +51,7 @@ import lesniChodciEd1Cover from "../assets/books/lesni-chodci-ed1/lesni-chodci-e
 import vytvarnePraceCover from "../assets/books/vytvarne-prace/vytvarne-prace.webp";
 import lesniChodciEd2Cover1Img from "../assets/books/lesni-chodci/lesni-chodci-cover1.jpg";
 
-import cestyCover1ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-cover1.jpg";
+import cestyCover1ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-cover1a2.webp";
 import cestyCover2ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-cover2.png";
 import cestyEd2Cover1ImgCs from "../assets/books/cesty-na-sibir/cs/cesty-na-sibir-ed2-cover1.jpg";
 
