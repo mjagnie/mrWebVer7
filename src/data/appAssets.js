@@ -1,7 +1,6 @@
 import bgImg from "../assets/ui/main-page/background.jpg";
 import bgMobileImg from "../assets/ui/main-page/background100.png";
 
-
 // Menu images (EN)
 import menuRysavyImgEn from "../assets/ui/main-page/menu/en/menu-rysavy.png";
 import menuWritingsImgEn from "../assets/ui/main-page/menu/en/menu-writings.png";

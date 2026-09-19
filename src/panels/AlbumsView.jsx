@@ -1,8 +1,6 @@
 import { createPortal } from "react-dom";
 
 import { musicTiles } from "../data/musicData.js";
-import sroubaImg from "../assets/music/srouba.png";
-import fakirDecorationImg from "../assets/music/fakir3.png";
 
 export default function AlbumsView() {
     return (
@@ -24,23 +22,6 @@ export default function AlbumsView() {
                     </a>
                 ))}
             </div>
-
-
-            <img
-                src={sroubaImg}
-                alt=""
-                className="sroubaDecoration"
-            />
-            <img
-                src={sroubaImg}
-                alt=""
-                className="sroubaDecoration1"
-            />
-            <img
-                src={sroubaImg}
-                alt=""
-                className="sroubaDecoration2"
-            />
         </div>
     );
 }

@@ -4,12 +4,6 @@ import nocnyMurImg from "../assets/music/albums/nocny-mur-2015.jpg";
 import kdyzJsemVrtalCihlyImg from "../assets/music/albums/kdyz-jsem-vrtal-cihly-2019.jpg";
 import gatyarandasImg from "../assets/music/albums/gatyarandas.png";
 
-import textyImg from "../assets/music/bouchaci-srouby-texty-cerveny.png";
-import fakirLongImg from "../assets/music/fakir3.png";
-import fakir2Img from "../assets/music/fakir2.png";
-
-import texty1Img from "../assets/music/bouchaci-srouby-texty-cerveny2.png";
-
 import bouchaciSroubyTextyPdf from "../assets/music/bouchaci-srouby-texty.pdf";
 
 export const musicTiles = [
@@ -48,13 +42,5 @@ export const musicTiles = [
     image: gatyarandasImg,
     url: "YOUR_ALBUM_LINK_5",
   },
-  /* {
-    id: "texty-fakir",
-    type: "jpg",
-    title: "Texty",
-    image: fakir2Img,
-    url: bouchaciSroubyTextyPdf,
-  },
-*/
- 
+
 ];

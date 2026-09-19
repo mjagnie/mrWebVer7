@@ -85,13 +85,13 @@
 .bookTitle {
   margin-bottom: 15px;
 
-  font-size: 30px;
+  font-size: 28px;
   text-align: left;
 }
 
 .bookInfo {
   margin-bottom: 12px;
-
+  margin-top: -10px;
   font-size: 17px;
   text-align: left;
 }
@@ -175,7 +175,7 @@
    SIBERIA ADJUSTMENT
    ========================================================== */
 .siberiaCover {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 
 /* ==========================================================
@@ -200,6 +200,13 @@
 
   .rightPanel--bookView .closeBtn {
     display: none;
+  }
+
+    .rightPanel--bookView {
+    background-image: url("../assets/ui/main-page/background-plane.webp");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
 
   .bookDescription {
@@ -304,14 +311,17 @@
     right: 0;
     bottom: 0;
 
-    height: 50vh;
+    height: 60vh;
 
-    background: linear-gradient(to bottom,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.4) 25%,
-        rgba(255, 255, 255, 0.65) 35%,
-        rgba(255, 255, 255, 0.76) 70%,
-        rgba(255, 255, 255, 0.8) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.2) 10%,
+      rgba(255, 255, 255, 0.3) 25%,
+      rgba(255, 255, 255, 0.4) 35%,
+      rgba(255, 255, 255, 0.5) 70%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
 
     pointer-events: none;
     z-index: 0;

@@ -4,8 +4,8 @@
 
   position: relative;
   background-image: var(--bg-desktop);
-  background-size: 100% auto;
-  background-position: left top;
+  background-size: auto 100%;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
