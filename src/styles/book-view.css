@@ -287,10 +287,6 @@
     display: none;
   }
 
-  .bookReviewsInline {
-  margin-top: 10px;
-}
-
   /* Cancel individual desktop cover positioning */
   .bookView .wraczCover,
   .bookView .vracBulgarianCover,

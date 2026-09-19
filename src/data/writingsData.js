@@ -226,7 +226,7 @@ export function createWritingsData(images) {
             "Ústřední postavou prózy je bývalý režisér, který prošel řadou regionálních i experimentálních divadel a v současnosti je zaměstnán jako dispečer moskevských komunálních služeb. Jeho „životní inscenací“ se stává očistný proud řeči, nepřetržitý tragikomický monolog o absurditě, která na scéně Ruska trvale režíruje lidské osudy. ",
           edition: "",
           publisher: "Revolver Revue",
-          year: "2010, 2013",
+          year: "2010",
         },
         en: {
           titleMain: "Vrač ",
@@ -235,7 +235,7 @@ export function createWritingsData(images) {
 
           edition: "",
           publisher: "Revolver Revue",
-          year: "2010, 2013",
+          year: "2010",
         },
         ru: {
           titleMain: "Vrač",
