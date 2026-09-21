@@ -2,10 +2,10 @@
   min-height: 100vh;
   min-height: 100dvh;
 
-  position: relative;
+  background-color: white;
   background-image: var(--bg-desktop);
   background-size: auto 100%;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -138,13 +138,13 @@
 
 /* Per-button sizing and position CZECH */
 .lang-cs .menuImg--name {
-  width: 220px;
+  width: 230px;
   height: auto;
 }
 
 .lang-cs .menuBtn--name {
-  left: 349px;
-  top: -15px;
+  left: 540px;
+  bottom: 255px;
 }
 
 .lang-cs .menuImg--writings {
@@ -152,8 +152,8 @@
 }
 
 .lang-cs .menuBtn--writings {
-  left: 235px;
-  top: 115px;
+  left: 635px;
+  bottom: 200px;
   transform: rotate(0deg);
 }
 
@@ -162,28 +162,28 @@
 }
 
 .lang-cs .menuBtn--film {
-  left: 345px;
-  top: 145px;
+  left: 565px;
+  bottom: 180px;
   transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--music {
-  height: 41px;
+  height: 39px;
 }
 
 .lang-cs .menuBtn--music {
-  left: 447px;
-  top: 155px;
+  left: 650px;
+  bottom: 150px;
   transform: rotate(0deg);
 }
 
 .lang-cs .menuImg--articles {
-  height: 51px;
+  height: 53px;
 }
 
 .lang-cs .menuBtn--articles {
-  left: 565px;
-  top: 124px;
+  left: 545px;
+  bottom: 110px;
   transform: rotate(0deg);
 }
 
@@ -192,8 +192,8 @@
 }
 
 .lang-cs .menuBtn--contact {
-  left: 610px;
-  top: 70px;
+  left: 600px;
+  bottom: 75px;
   transform: rotate(0deg);
 }
 
