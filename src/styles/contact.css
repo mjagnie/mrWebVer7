@@ -1,11 +1,20 @@
 .contactPanel {
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
-  gap: 18px;
-  padding-top: 0px;
+  padding-bottom: 330px;
+  box-sizing: border-box;
+}
+
+.rightPanel--contact {
+  background: transparent;
+}
+
+.rightPanel--contact .panelInner {
+  background: transparent;
 }
 
 .rightPanel--contact .closeBtn {
@@ -14,10 +23,8 @@
 
   position: absolute;
 
-  padding: 0;
   border: none;
   background: transparent;
-
 
   font-size: 38px;
   cursor: pointer;
@@ -25,10 +32,9 @@
 
 .contactPanelImg {
   width: 360px;
-  max-width: 40%;
+  max-width: 15%;
   height: auto;
   display: block;
-  margin-top: 10px;
 }
 
 .contactEmail {
@@ -36,40 +42,24 @@
   font-size: 22px;
   color: #1f1f1f;
   text-decoration: none;
+  margin-bottom: 15px;
+
 }
 
 .contactEmail:hover {
   opacity: 0.5;
 }
 
-.contactEmail {
-  display: block;
-}
-
 .contactEmailImg {
   display: block;
-  width: 450px;
+  width: 350px;
   height: auto;
-  margin-top: -65px;
 }
 
 .contactEmailImg:hover {
   opacity: 0.7;
 }
 
-.contactPanel {
-  min-height: 100vh;
-  /*
-  background: linear-gradient(
-    to right,
- rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.01) 20%,
-    rgba(255, 255, 255, 1) 42%,
-    rgba(255, 255, 255, 1) 58%,
-    rgba(255, 255, 255, 0.01) 80%,
-    rgba(255, 255, 255, 0) 100%
-  ); */
-}
 
 /* ==========================================================
    MOBILE PORTRAIT

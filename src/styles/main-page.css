@@ -73,24 +73,23 @@
 
 /* Per-button sizing and position ENGLISH */
 
-.menuImg--name {
-  width: 220px;
+.lang-en .menuImg--name {
+  width: 230px;
   height: auto;
 }
 
 .lang-en .menuBtn--name {
-  left: 349px;
-  top: -15px;
+  left: 540px;
+  bottom: 255px;
 }
 
 .menuImg--contact {
-  height: 38px;
+  height: 36px;
 }
 
 .lang-en .menuBtn--contact {
-  left: 620px;
-  top: 60px;
-  transform: rotate(0deg);
+  left: 600px;
+  bottom: 73px;
 }
 
 .menuImg--writings {
@@ -98,9 +97,8 @@
 }
 
 .lang-en .menuBtn--writings {
-  left: 245px;
-  top: 115px;
-  transform: rotate(0deg);
+  left: 615px;
+  bottom: 205px;
 }
 
 
@@ -109,30 +107,27 @@
 }
 
 .lang-en .menuBtn--articles {
-  left: 565px;
-  top: 115px;
-  transform: rotate(0deg);
+  left: 535px;
+  bottom: 110px;
 }
 
 
 .menuImg--film {
-  height: 41px;
+  height: 43px;
 }
 
 .lang-en .menuBtn--film {
-  left: 355px;
-  top: 145px;
-  transform: rotate(0deg);
+  left: 555px;
+  bottom: 170px;
 }
 
 .menuImg--music {
-  height: 31px;
+  height: 32px;
 }
 
 .lang-en .menuBtn--music {
-  left: 445px;
-  top: 145px;
-  transform: rotate(0deg);
+  left: 650px;
+  bottom: 145px;
 }
 
 
@@ -199,13 +194,13 @@
 
 /* Per-button sizing and position RUSSIAN */
 .lang-ru .menuImg--name {
-  width: 215px;
+  width: 220px;
   height: auto;
 }
 
 .lang-ru .menuBtn--name {
-  left: 347px;
-  top: -5px;
+  left: 545px;
+  bottom: 235px;
 }
 
 .lang-ru .menuImg--contact {
@@ -213,8 +208,8 @@
 }
 
 .lang-ru .menuBtn--contact {
-  left: 444px;
-  top: -15px;
+  left: 645px;
+  bottom: 353px;
   transform: rotate(0deg);
 }
 
@@ -223,9 +218,8 @@
 }
 
 .lang-ru .menuBtn--writings {
-  left: 225px;
-  top: 130px;
-  transform: rotate(0deg);
+  left: 560px;
+  bottom: 140px;
 }
 
 .lang-ru .menuImg--film {
@@ -233,9 +227,8 @@
 }
 
 .lang-ru .menuBtn--film {
-  left: 349px;
-  top: 152px;
-  transform: rotate(0deg);
+  left: 649px;
+  bottom: 105px;;
 }
 
 .lang-ru .menuImg--music {
@@ -243,18 +236,18 @@
 }
 
 .lang-ru .menuBtn--music {
-  left: 447px;
-  top: 159px;
+  left: 580px;
+  bottom: 60px;
   transform: rotate(1deg);
 }
 
 .lang-ru .menuImg--articles {
-  height: 31px;
+  height: 30px;
 }
 
 .lang-ru .menuBtn--articles {
-  left: 575px;
-  top: 124px;
+  left: 635px;
+  bottom: 178px;
   transform: rotate(-2deg);
 }
 
