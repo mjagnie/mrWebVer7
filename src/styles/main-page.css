@@ -4,7 +4,7 @@
 
   background-color: white;
   background-image: var(--bg-desktop);
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
