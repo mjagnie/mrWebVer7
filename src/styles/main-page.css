@@ -361,8 +361,8 @@
 
 @media (min-width: 1024px) {
   .headerBlock {
-    top: 120px;
-    left: -230px;
+    top: 100px;
+    left: -190px;
   }
   .page {
     background-color: white;
@@ -373,13 +373,13 @@
 
   /* Per-button sizing and position CZECH */
 .lang-cs .menuImg--name {
-  width: 350px;
+  width: 410px;
   height: auto;
 }
 
 .lang-cs .menuBtn--name {
-  left: 480px;
-  bottom: 235px;
+  left: 500px;
+  bottom: 225px;
 }
 
 .lang-cs .menuImg--writings {
@@ -388,7 +388,7 @@
 
 .lang-cs .menuBtn--writings {
   left: 610px;
-  bottom: 120px;
+  bottom: 130px;
 }
 
 .lang-cs .menuImg--film {
@@ -397,7 +397,7 @@
 
 .lang-cs .menuBtn--film {
   left: 500px;
-  bottom: 70px;
+  bottom: 90px;
 }
 
 .lang-cs .menuImg--music {
@@ -406,7 +406,7 @@
 
 .lang-cs .menuBtn--music {
   left: 650px;
-  bottom: 20px;
+  bottom: 30px;
 }
 
 .lang-cs .menuImg--articles {
@@ -415,16 +415,17 @@
 
 .lang-cs .menuBtn--articles {
   left: 440px;
-  bottom: -55px;
+  bottom: -25px;
 }
 
 .lang-cs .menuImg--contact {
-  height: 72px;
+  height: 65px;
 }
 
 .lang-cs .menuBtn--contact {
-  left: 650px;
-  bottom: -125px;
+  left: 750px;
+  bottom: -435px;
+  transform: rotate(-1deg);
 }
 
 /* Per-button sizing and position RUSSIAN */
