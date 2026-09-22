@@ -13,7 +13,7 @@
 
 .headerBlock {
   position: absolute;
-  top: clamp(50px, 7vh, 120px);
+  top: clamp(50px, 7vh, 520px);
   left: 120px;
 
   width: 700px;
@@ -361,8 +361,139 @@
 
 @media (min-width: 1024px) {
   .headerBlock {
-    top: 240px;
+    top: 120px;
+    left: -300px;
   }
+  .page {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  /* Per-button sizing and position CZECH */
+.lang-cs .menuImg--name {
+  width: 350px;
+  height: auto;
+}
+
+.lang-cs .menuBtn--name {
+  left: 480px;
+  bottom: 235px;
+}
+
+.lang-cs .menuImg--writings {
+  height: 89px;
+}
+
+.lang-cs .menuBtn--writings {
+  left: 610px;
+  bottom: 120px;
+}
+
+.lang-cs .menuImg--film {
+  height: 73px;
+}
+
+.lang-cs .menuBtn--film {
+  left: 500px;
+  bottom: 70px;
+}
+
+.lang-cs .menuImg--music {
+  height: 72px;
+}
+
+.lang-cs .menuBtn--music {
+  left: 650px;
+  bottom: 20px;
+}
+
+.lang-cs .menuImg--articles {
+  height: 93px;
+}
+
+.lang-cs .menuBtn--articles {
+  left: 440px;
+  bottom: -55px;
+}
+
+.lang-cs .menuImg--contact {
+  height: 72px;
+}
+
+.lang-cs .menuBtn--contact {
+  left: 650px;
+  bottom: -125px;
+}
+
+/* Per-button sizing and position RUSSIAN */
+.lang-ru .menuImg--name {
+  width: 220px;
+  height: auto;
+}
+
+.lang-ru .menuBtn--name {
+  left: 545px;
+  bottom: 235px;
+}
+
+.lang-ru .menuImg--contact {
+  height: 26px;
+}
+
+.lang-ru .menuBtn--contact {
+  left: 645px;
+  bottom: 353px;
+  transform: rotate(0deg);
+}
+
+.lang-ru .menuImg--writings {
+  height: 29px;
+}
+
+.lang-ru .menuBtn--writings {
+  left: 560px;
+  bottom: 140px;
+}
+
+.lang-ru .menuImg--film {
+  height: 27px;
+}
+
+.lang-ru .menuBtn--film {
+  left: 649px;
+  bottom: 105px;;
+}
+
+.lang-ru .menuImg--music {
+  height: 40px;
+}
+
+.lang-ru .menuBtn--music {
+  left: 580px;
+  bottom: 60px;
+  transform: rotate(1deg);
+}
+
+.lang-ru .menuImg--articles {
+  height: 30px;
+}
+
+.lang-ru .menuBtn--articles {
+  left: 635px;
+  bottom: 178px;
+  transform: rotate(-2deg);
+}
+
+.menuBtn,
+.contactBtn {
+  position: absolute;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 }
 /* ==========================================================
    RESPONSIVE MAIN PAGE
