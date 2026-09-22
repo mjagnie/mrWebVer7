@@ -362,10 +362,12 @@
 @media (min-width: 1024px) {
   .headerBlock {
     top: 120px;
-    left: -300px;
+    left: -230px;
   }
   .page {
-    background-position: left bottom;
+    background-color: white;
+    background-size: 85% auto;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
 
