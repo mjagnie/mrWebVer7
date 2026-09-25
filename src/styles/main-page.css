@@ -4,24 +4,22 @@
 
   background-color: white;
   background-image: var(--bg-desktop);
-  background-size: 100% auto;
+  background-size:85% auto;
   background-position: center bottom;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-
 .headerBlock {
   position: absolute;
-  top: clamp(50px, 7vh, 520px);
-  left: 120px;
+  bottom: 300px;
+  left: -275px;
 
-  width: 700px;
+  width: 400px;
   height: 420px;
 
   z-index: 999;
 }
-
 
 .langBar {
   position: absolute;
@@ -35,7 +33,6 @@
   flex-direction: column;
   gap: 5px;
 }
-
 
 .menuBtn {
   position: absolute;
@@ -101,7 +98,6 @@
   bottom: 205px;
 }
 
-
 .menuImg--articles {
   height: 45px;
 }
@@ -110,7 +106,6 @@
   left: 535px;
   bottom: 110px;
 }
-
 
 .menuImg--film {
   height: 43px;
@@ -129,7 +124,6 @@
   left: 650px;
   bottom: 145px;
 }
-
 
 /* Per-button sizing and position CZECH */
 .lang-cs .menuImg--name {
@@ -261,56 +255,6 @@
   cursor: pointer;
 }
 
-/* ---------------- LANGUAGE TUNING ---------------- 
-
-.lang-en .menuRow {
-  gap: 3px;
-  margin-top: -21px;
-  transform: none;
-}
-
-.lang-en .contactRow {
-  transform: translate(119px, -3px);
-}
-
-
-.lang-cs .menuRow {
-  gap: 0px;
-  margin-top: -28px;
-  transform: none;
-}
-
-.lang-cs .contactRow {
-  transform: translate(145px, 0px);
-}
-
-
-.lang-ru .menuRow {
-  margin-top: -22px;
-  gap: 8px;
-}
-
-.lang-ru .contactRow {
-  transform: translate(129px, 12px);
-}
-
-
-
-.menuBtn:hover .menuImg {
-  opacity: 0.5;
-  transform: scale(1.05);
-}
-
-.nameImg {
-  width: clamp(140px, 18vw, 300px);
-  height: auto;
-
-  max-height: 16vh;
-  object-fit: contain;
-
-  transition: opacity 0.2s ease, transform 0.2s ease;
-} */
-
 /* make the name behave like a button but look like an image */
 .nameLink {
   background: transparent;
@@ -325,7 +269,6 @@
   opacity: 0.5;
   transform: scale(1.02);
 }
-
 
 .contactBtn {
   background: transparent;
@@ -359,7 +302,7 @@
   height: 26px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1920px) {
   .headerBlock {
     top: 100px;
     left: -190px;
