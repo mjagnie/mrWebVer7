@@ -11,7 +11,8 @@ export default function FlagSwitcher({ lang }) {
 
   function switchLang(newLang) {
     // replace "/en" or "/cs" or "/ru" in the URL, keep the rest
-    const newPath = loc.pathname.replace(/^\/(en|cs|ru)/, `/${newLang}`);
+    const newPath = loc.pathname.replace(
+      /^\/(en|cs|ru)/, `/${newLang}`);
     nav(newPath);
   }
 

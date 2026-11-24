@@ -62,20 +62,17 @@
 .writing-link:hover {
   opacity: 0.45;
 }
+
+/*
 @media (min-width: 601px) {
 
-  .page:has(.rightPanel--music) {
+  .rightPanel--writings {
     background-image: url("../assets/ui/main-page/background-plane.webp");
-    background-size: auto 100%;
+    background-size: 85%;
     background-position: center bottom;
     background-repeat: no-repeat;
   }
 
-  .rightPanel--music,
-  .rightPanel--music .panelInner,
-  .rightPanel--music .musicPanel {
-    background: transparent;
-  }
 }
 
 

@@ -24,15 +24,6 @@ export default function AboutPanel({ rysavyAboutImg, lang }) {
       </div>
 
 
-      {/* ---------------- IMAGE ---------------- */}
-
-      <div className="panelImgWrap">
-        <img
-          className="panelImg"
-          src={rysavyAboutImg}
-          alt="Martin Ryšavý"
-        />
-      </div>
 
 
       {/* ---------------- CONTENT ---------------- */}
@@ -98,7 +89,15 @@ export default function AboutPanel({ rysavyAboutImg, lang }) {
         ))}
 
       </div>
+      {/* ---------------- IMAGE ---------------- */}
 
+      <div className="panelImgWrap">
+        <img
+          className="panelImg"
+          src={rysavyAboutImg}
+          alt="Martin Ryšavý"
+        />
+      </div>
     </div>
   );
 }

@@ -161,12 +161,12 @@
 /* =========================================================
    MUSIC MAIN PANEL — DESKTOP BACKGROUND
    ========================================================= */
-
+/*
 @media (min-width: 601px) {
 
   .page:has(.rightPanel--music) {
     background-image: url("../assets/ui/main-page/background-plane.webp");
-    background-size: auto 100%;
+    background-size: 85%;
     background-position: center bottom;
     background-repeat: no-repeat;
   }

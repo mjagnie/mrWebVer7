@@ -4,19 +4,17 @@
 
   background-color: white;
   background-image: var(--bg-desktop);
-  background-size:85% auto;
-  background-position: center bottom;
+  background-size: 125%;
+  background-position: center calc(100% + 70px);
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .headerBlock {
   position: absolute;
-  bottom: 300px;
-  left: -275px;
 
-  width: 400px;
-  height: 420px;
+  width: 100%;
+  height: 100%;
 
   z-index: 999;
 }
@@ -25,7 +23,7 @@
   position: absolute;
   bottom: 5px;
   left: 20px;
-  z-index: 999;
+  z-index: 2999;
 }
 
 /* Force vertical layout */
@@ -71,177 +69,178 @@
 /* Per-button sizing and position ENGLISH */
 
 .lang-en .menuImg--name {
-  width: 230px;
+  width: 600px;
   height: auto;
 }
 
 .lang-en .menuBtn--name {
-  left: 540px;
-  bottom: 255px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 615px;
 }
 
-.menuImg--contact {
-  height: 36px;
+.lang-en .menuImg--contact {
+  height: 55px;
 }
 
 .lang-en .menuBtn--contact {
-  left: 600px;
-  bottom: 73px;
+  left: 995px;
+  bottom: 50px;
 }
 
-.menuImg--writings {
-  height: 38px;
+.lang-en .menuImg--writings {
+  height: 95px;
 }
 
 .lang-en .menuBtn--writings {
-  left: 615px;
-  bottom: 205px;
+  left: 350px;
+  bottom: 45px;
 }
 
-.menuImg--articles {
-  height: 45px;
+.lang-en .menuImg--articles {
+  height: 55px;
 }
 
 .lang-en .menuBtn--articles {
-  left: 535px;
-  bottom: 110px;
+  left: 660px;
+  bottom: 45px;
 }
 
-.menuImg--film {
-  height: 43px;
+.lang-en .menuImg--film {
+  height: 60px;
 }
 
 .lang-en .menuBtn--film {
-  left: 555px;
-  bottom: 170px;
+  left: 530px;
+  bottom: 30px;
 }
 
-.menuImg--music {
-  height: 32px;
+.lang-en .menuImg--music {
+  height: 50px;
 }
 
 .lang-en .menuBtn--music {
-  left: 650px;
-  bottom: 145px;
+  left: 830px;
+  bottom: 65px;
 }
 
 /* Per-button sizing and position CZECH */
 .lang-cs .menuImg--name {
-  width: 230px;
+  width: 600px;
   height: auto;
 }
 
 .lang-cs .menuBtn--name {
-  left: 540px;
-  bottom: 255px;
-}
-
-.lang-cs .menuImg--writings {
-  height: 49px;
-}
-
-.lang-cs .menuBtn--writings {
-  left: 635px;
-  bottom: 200px;
-  transform: rotate(0deg);
-}
-
-.lang-cs .menuImg--film {
-  height: 43px;
-}
-
-.lang-cs .menuBtn--film {
-  left: 565px;
-  bottom: 180px;
-  transform: rotate(0deg);
-}
-
-.lang-cs .menuImg--music {
-  height: 39px;
-}
-
-.lang-cs .menuBtn--music {
-  left: 650px;
-  bottom: 150px;
-  transform: rotate(0deg);
-}
-
-.lang-cs .menuImg--articles {
-  height: 53px;
-}
-
-.lang-cs .menuBtn--articles {
-  left: 545px;
-  bottom: 110px;
-  transform: rotate(0deg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 615px;
 }
 
 .lang-cs .menuImg--contact {
-  height: 39px;
+  height: 55px;
 }
 
 .lang-cs .menuBtn--contact {
-  left: 600px;
-  bottom: 75px;
-  transform: rotate(0deg);
+  left: 995px;
+  bottom: 85px;
 }
+
+.lang-cs .menuImg--writings {
+  height: 85px;
+}
+
+.lang-cs .menuBtn--writings {
+  left: 350px;
+  bottom: 65px;
+}
+
+.lang-cs .menuImg--articles {
+  height: 60px;
+}
+
+.lang-cs .menuBtn--articles {
+  left: 660px;
+  bottom: 40px;
+}
+
+.lang-cs .menuImg--film {
+  height: 60px;
+}
+
+.lang-cs .menuBtn--film {
+  left: 520px;
+  bottom: 30px;
+}
+
+.lang-cs .menuImg--music {
+  height: 55px;
+}
+
+.lang-cs .menuBtn--music {
+  left: 830px;
+  bottom: 40px;
+}
+
 
 /* Per-button sizing and position RUSSIAN */
 .lang-ru .menuImg--name {
-  width: 220px;
+  width: 640px;
   height: auto;
 }
 
 .lang-ru .menuBtn--name {
-  left: 545px;
-  bottom: 235px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 600px;
 }
 
 .lang-ru .menuImg--contact {
-  height: 26px;
-}
-
-.lang-ru .menuBtn--contact {
-  left: 645px;
-  bottom: 353px;
-  transform: rotate(0deg);
-}
-
-.lang-ru .menuImg--writings {
-  height: 29px;
-}
-
-.lang-ru .menuBtn--writings {
-  left: 560px;
-  bottom: 140px;
-}
-
-.lang-ru .menuImg--film {
-  height: 27px;
-}
-
-.lang-ru .menuBtn--film {
-  left: 649px;
-  bottom: 105px;;
-}
-
-.lang-ru .menuImg--music {
   height: 40px;
 }
 
+.lang-ru .menuBtn--contact {
+  left: 1020px;
+  bottom: 90px;
+}
+
+.lang-ru .menuImg--writings {
+  height: 55px;
+}
+
+.lang-ru .menuBtn--writings {
+  left: 350px;
+  bottom: 70px;
+}
+
+.lang-ru .menuImg--film {
+  height: 40px;
+}
+
+.lang-ru .menuBtn--film {
+  left: 570px;
+  bottom: 45px;
+}
+
+.lang-ru .menuImg--music {
+  height: 58px;
+}
+
 .lang-ru .menuBtn--music {
-  left: 580px;
-  bottom: 60px;
+  left: 850px;
+  bottom: 28px;
   transform: rotate(1deg);
 }
 
 .lang-ru .menuImg--articles {
-  height: 30px;
+  height: 37px;
 }
 
 .lang-ru .menuBtn--articles {
-  left: 635px;
-  bottom: 178px;
+  left: 720px;
+  bottom: 65px;
   transform: rotate(-2deg);
 }
 
@@ -304,149 +303,157 @@
 
 @media (min-width: 1920px) {
   .headerBlock {
-    top: 100px;
+    top: 100 px;
+    bottom: auto;
     left: -190px;
   }
+
   .page {
-    background-color: white;
+    background-color: whitesmoke;
     background-size: 85% auto;
     background-position: center bottom;
     background-repeat: no-repeat;
   }
 
   /* Per-button sizing and position CZECH */
-.lang-cs .menuImg--name {
-  width: 410px;
-  height: auto;
+  .lang-cs .menuImg--name {
+    width: 410px;
+    height: auto;
+  }
+
+  .lang-cs .menuBtn--name {
+    left: 500px;
+    bottom: 225px;
+  }
+
+  .lang-cs .menuImg--writings {
+    height: 89px;
+  }
+
+  .lang-cs .menuBtn--writings {
+    left: 610px;
+    bottom: 130px;
+  }
+
+  .lang-cs .menuImg--film {
+    height: 73px;
+  }
+
+  .lang-cs .menuBtn--film {
+    left: 500px;
+    bottom: 90px;
+  }
+
+  .lang-cs .menuImg--music {
+    height: 72px;
+  }
+
+  .lang-cs .menuBtn--music {
+    left: 650px;
+    bottom: 30px;
+  }
+
+  .lang-cs .menuImg--articles {
+    height: 93px;
+  }
+
+  .lang-cs .menuBtn--articles {
+    left: 440px;
+    bottom: -25px;
+  }
+
+  .lang-cs .menuImg--contact {
+    height: 65px;
+  }
+
+  .lang-cs .menuBtn--contact {
+    left: 750px;
+    bottom: -435px;
+    transform: rotate(-1deg);
+  }
+
+  /* Per-button sizing and position RUSSIAN */
+  .lang-ru .menuImg--name {
+    width: 220px;
+    height: auto;
+  }
+
+  .lang-ru .menuBtn--name {
+    left: 545px;
+    bottom: 235px;
+  }
+
+  .lang-ru .menuImg--contact {
+    height: 26px;
+  }
+
+  .lang-ru .menuBtn--contact {
+    left: 645px;
+    bottom: 353px;
+    transform: rotate(0deg);
+  }
+
+  .lang-ru .menuImg--writings {
+    height: 29px;
+  }
+
+  .lang-ru .menuBtn--writings {
+    left: 560px;
+    bottom: 140px;
+  }
+
+  .lang-ru .menuImg--film {
+    height: 27px;
+  }
+
+  .lang-ru .menuBtn--film {
+    left: 649px;
+    bottom: 105px;
+    ;
+  }
+
+  .lang-ru .menuImg--music {
+    height: 40px;
+  }
+
+  .lang-ru .menuBtn--music {
+    left: 580px;
+    bottom: 60px;
+    transform: rotate(1deg);
+  }
+
+  .lang-ru .menuImg--articles {
+    height: 30px;
+  }
+
+  .lang-ru .menuBtn--articles {
+    left: 635px;
+    bottom: 178px;
+    transform: rotate(-2deg);
+  }
+
+  .menuBtn,
+  .contactBtn {
+    position: absolute;
+
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
 }
 
-.lang-cs .menuBtn--name {
-  left: 500px;
-  bottom: 225px;
-}
 
-.lang-cs .menuImg--writings {
-  height: 89px;
-}
-
-.lang-cs .menuBtn--writings {
-  left: 610px;
-  bottom: 130px;
-}
-
-.lang-cs .menuImg--film {
-  height: 73px;
-}
-
-.lang-cs .menuBtn--film {
-  left: 500px;
-  bottom: 90px;
-}
-
-.lang-cs .menuImg--music {
-  height: 72px;
-}
-
-.lang-cs .menuBtn--music {
-  left: 650px;
-  bottom: 30px;
-}
-
-.lang-cs .menuImg--articles {
-  height: 93px;
-}
-
-.lang-cs .menuBtn--articles {
-  left: 440px;
-  bottom: -25px;
-}
-
-.lang-cs .menuImg--contact {
-  height: 65px;
-}
-
-.lang-cs .menuBtn--contact {
-  left: 750px;
-  bottom: -435px;
-  transform: rotate(-1deg);
-}
-
-/* Per-button sizing and position RUSSIAN */
-.lang-ru .menuImg--name {
-  width: 220px;
-  height: auto;
-}
-
-.lang-ru .menuBtn--name {
-  left: 545px;
-  bottom: 235px;
-}
-
-.lang-ru .menuImg--contact {
-  height: 26px;
-}
-
-.lang-ru .menuBtn--contact {
-  left: 645px;
-  bottom: 353px;
-  transform: rotate(0deg);
-}
-
-.lang-ru .menuImg--writings {
-  height: 29px;
-}
-
-.lang-ru .menuBtn--writings {
-  left: 560px;
-  bottom: 140px;
-}
-
-.lang-ru .menuImg--film {
-  height: 27px;
-}
-
-.lang-ru .menuBtn--film {
-  left: 649px;
-  bottom: 105px;;
-}
-
-.lang-ru .menuImg--music {
-  height: 40px;
-}
-
-.lang-ru .menuBtn--music {
-  left: 580px;
-  bottom: 60px;
-  transform: rotate(1deg);
-}
-
-.lang-ru .menuImg--articles {
-  height: 30px;
-}
-
-.lang-ru .menuBtn--articles {
-  left: 635px;
-  bottom: 178px;
-  transform: rotate(-2deg);
-}
-
-.menuBtn,
-.contactBtn {
-  position: absolute;
-
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-}
 /* ==========================================================
    RESPONSIVE MAIN PAGE
    ========================================================== */
 
 /* Phones portrait*/
 @media (max-width: 600px) and (orientation: portrait) {
+  .desktopAbout {
+    display: none;
+  }
 
   .page {
     background-image: var(--bg-mobile);
@@ -558,7 +565,7 @@
   .lang-cs .menuImg--contact {
     height: 35px;
   }
-  
+
   .lang-cs .menuBtn--contact {
     left: 393px;
     top: 200px;
@@ -621,3 +628,65 @@
   }
 
 }
+
+
+
+/* TEST */
+/* ==========================================
+   ENGLISH — RESPONSIVE HORIZONTAL SCREENS
+   ========================================== 
+
+@media (min-width: 601px) and (orientation: landscape) {
+
+  .lang-en .menuBtn--name {
+    top: 3%;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lang-en .menuImg--name {
+    width: min(660px, 50vw);
+    height: auto;
+  }
+
+  .lang-en .menuBtn--writings {
+    left: 26%;
+    bottom: 7%;
+  }
+
+  .lang-en .menuBtn--film {
+    left: 44%;
+    bottom: 3%;
+  }
+
+  .lang-en .menuBtn--articles {
+    left: 54%;
+    bottom: 5%;
+  }
+
+  .lang-en .menuBtn--music {
+    left: 67%;
+    bottom: 7%;
+  }
+
+  .lang-en .menuBtn--contact {
+    left: 80%;
+    bottom: 4%;
+  }
+}
+
+
+
+
+@media (min-width: 1920px) and (orientation: landscape) {
+  .lang-en .headerBlock {
+    left: 0;
+    top: 0;
+  }
+
+  .lang-en.page {
+    background-size: cover;
+    background-position: center center;
+  }
+} */

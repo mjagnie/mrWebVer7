@@ -33,7 +33,7 @@
 /* ---------------- TEXT ---------------- */
 
 .aboutPanel .panelTextWrap {
-  max-width: 68ch;
+  max-width: 63ch;
 }
 
 .aboutPanel .panelText {
@@ -57,9 +57,9 @@
 /* ---------------- IMAGE ---------------- */
 
 .aboutPanel .panelImgWrap {
-  width: 68ch;
+  width: 60ch;
   max-width: 100%;
-  margin: 0 auto 16px;
+  margin: 30px auto 420px;
 }
 
 .aboutPanel .panelImg {
@@ -75,8 +75,6 @@
   margin: 20px 0 4px;
   padding-bottom: 2px;
 
-  border-bottom: 3px solid black;
-
   font-size: 20px;
 
   font-weight: 600;
@@ -84,10 +82,8 @@
 }
 
 .aboutPanel .panelText--subheading {
-  margin: 8px 0 0px;
-
+  margin: ;
   font-weight: 600;
-  opacity: 1;
 }
 
 
@@ -99,27 +95,27 @@
 }
 
 .aboutPanel .panelListItem {
-  margin: 0 0 3px;
-  line-height: 1.6;
+  margin: 0 0 2px;
+  line-height: 1.4;
 }
 
 .aboutPanel .panelListItem strong {
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.0em;
   font-size: 17px;
 }
 
 /* ==========================================================
    ABOUT — DESKTOP BACKGROUND
    ========================================================== */
-
+/*
 @media (min-width: 601px) {
   .page:has(.rightPanel--about) {
     min-height: 100vh;
     min-height: 100dvh;
 
     background-image: url("../assets/ui/main-page/background-plane.webp");
-    background-size: cover;
+    background-size: 85%;
     background-position: center bottom;
     background-repeat: no-repeat;
   }
@@ -131,10 +127,15 @@
   }
 
 }
+*/
+
+
+
 
 /* ==========================================================
    ABOUT — MOBILE PORTRAIT
    ========================================================== */
+
 
 @media (max-width: 600px) and (orientation: portrait) {
 

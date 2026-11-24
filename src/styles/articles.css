@@ -38,6 +38,8 @@
   margin-bottom: 12px;
 
   align-items: baseline;
+
+  color: black;
 }
 
 .article-year {
@@ -58,7 +60,16 @@
  .rightPanel--articles .closeBtn {
     display: none;
   }
+/*
+@media (min-width: 601px) {
 
+  .rightPanel--articles {
+    background-image: url("../assets/ui/main-page/background-plane.webp");
+    background-size: 85%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+}
 /* ==========================================================
    MOBILE PORTRAIT
    ========================================================== */

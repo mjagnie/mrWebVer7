@@ -30,7 +30,7 @@ export const ABOUT_CONTENT = {
 
         subsections: [
           {
-            heading: "Režie",
+            heading: "Režie:",
 
             items: [
               {
@@ -97,7 +97,7 @@ export const ABOUT_CONTENT = {
           },
 
           {
-            heading: "Scénář",
+            heading: "Scénář:",
 
             items: [
               {
@@ -183,7 +183,7 @@ export const ABOUT_CONTENT = {
 
         subsections: [
           {
-            heading: "Directing",
+            heading: "Directing:",
 
             items: [
               {
@@ -250,7 +250,7 @@ export const ABOUT_CONTENT = {
           },
 
           {
-            heading: "Screenplay",
+            heading: "Screenplay:",
 
             items: [
               {
@@ -336,7 +336,7 @@ export const ABOUT_CONTENT = {
 
         subsections: [
           {
-            heading: "Режиссура",
+            heading: "Режиссура:",
 
             items: [
               {
@@ -395,7 +395,7 @@ export const ABOUT_CONTENT = {
           },
 
           {
-            heading: "Сценарий",
+            heading: "Сценарий:",
 
             items: [
               {

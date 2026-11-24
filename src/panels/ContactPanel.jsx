@@ -4,6 +4,12 @@ import emailImg from "../assets/contact/email.png";
 export default function ContactPanel() {
   return (
     <div className="contactPanel">
+      <img
+        className="contactPanelImg"
+        src={rysavyPlayingOnRadioImg}
+        alt="Martin Ryšavý"
+      />
+      
       <a
         className="contactEmail"
         href="mailto:martin-rysavy@volny.cz"
@@ -15,11 +21,7 @@ export default function ContactPanel() {
         />
       </a>
       
-      <img
-        className="contactPanelImg"
-        src={rysavyPlayingOnRadioImg}
-        alt="Martin Ryšavý"
-      />
+      
 
       
     </div>

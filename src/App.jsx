@@ -76,6 +76,7 @@ export default function App() {
         <MainPage
           lang={lang}
           ui={ui}
+          rysavyAboutImg={rysavyAboutImg}
           onOpenAbout={openAbout}
           onOpenWritings={openWritings}
           onOpenArticles={openArticles}

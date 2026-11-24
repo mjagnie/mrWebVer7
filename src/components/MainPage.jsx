@@ -1,6 +1,8 @@
 import FlagSwitcher from "./FlagSwitcher";
 import HeaderBlock from "./HeaderBlock";
 
+
+
 export default function MainPage({
   lang,
   ui,
@@ -11,6 +13,8 @@ export default function MainPage({
   onOpenMusic,
   onOpenContact,
 }) {
+  
+
   return (
     <>
       <div className="langBar">
@@ -32,6 +36,16 @@ export default function MainPage({
         onOpenContact={onOpenContact}
         lang={lang}
       />
+      {/*
+      <div className="desktopAbout">
+        <AboutPanel
+          rysavyAboutImg={rysavyAboutImg}
+          lang={lang}
+        />
+      </div>*/}
+
+
+
     </>
   );
 }
