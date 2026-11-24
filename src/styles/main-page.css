@@ -690,3 +690,58 @@
     background-position: center center;
   }
 } */
+
+
+.mainPageCanvas {
+  display: contents;
+}
+
+/* ==========================================
+   ENGLISH — SCALABLE HORIZONTAL LAYOUT
+   ========================================== */
+
+@media (orientation: landscape) {
+
+  .page.lang-en.mainPage {
+    position: relative;
+    height: 100dvh;
+
+    background-image: var(--bg-desktop);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #b7bfae;
+
+    overflow: hidden;
+  }
+
+  .lang-en .mainPageCanvas {
+    display: block;
+    position: absolute;
+
+    width: 1536px;
+    height: 742px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%) scale(var(--canvas-scale, 1));
+    transform-origin: center center;
+
+    background-color: white;
+    background-image: var(--bg-desktop);
+    background-size: 125%;
+    background-position: center calc(100% + 70px);
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+  }
+
+  .lang-en .mainPageCanvas .headerBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

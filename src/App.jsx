@@ -66,7 +66,7 @@ export default function App() {
   // ---------------- RENDER ----------------
   return (
     <div
-      className={`page lang-${lang}`}
+      className={`page lang-${lang} ${!panelOpen ? "mainPage" : ""}`}
       style={{
         "--bg-desktop": `url(${bgImg})`,
         "--bg-mobile": `url(${bgMobileImg})`,
