@@ -86,7 +86,7 @@
 
 .lang-en .menuBtn--contact {
   left: 995px;
-  bottom: 50px;
+  bottom: 35px;
 }
 
 .lang-en .menuImg--writings {
@@ -95,7 +95,7 @@
 
 .lang-en .menuBtn--writings {
   left: 350px;
-  bottom: 45px;
+  bottom: 30px;
 }
 
 .lang-en .menuImg--articles {
@@ -104,7 +104,7 @@
 
 .lang-en .menuBtn--articles {
   left: 660px;
-  bottom: 45px;
+  bottom: 30px;
 }
 
 .lang-en .menuImg--film {
@@ -113,7 +113,7 @@
 
 .lang-en .menuBtn--film {
   left: 530px;
-  bottom: 30px;
+  bottom: 15px;
 }
 
 .lang-en .menuImg--music {
@@ -122,7 +122,7 @@
 
 .lang-en .menuBtn--music {
   left: 830px;
-  bottom: 65px;
+  bottom: 50px;
 }
 
 /* Per-button sizing and position CZECH */
@@ -139,21 +139,21 @@
 }
 
 .lang-cs .menuImg--contact {
-  height: 55px;
+  height: 50px;
 }
 
 .lang-cs .menuBtn--contact {
-  left: 995px;
-  bottom: 85px;
+  left: 980px;
+  bottom: 65px;
 }
 
 .lang-cs .menuImg--writings {
-  height: 85px;
+  height: 80px;
 }
 
 .lang-cs .menuBtn--writings {
-  left: 350px;
-  bottom: 65px;
+  left: 375px;
+  bottom: 80px;
 }
 
 .lang-cs .menuImg--articles {
@@ -161,8 +161,8 @@
 }
 
 .lang-cs .menuBtn--articles {
-  left: 660px;
-  bottom: 40px;
+  left: 665px;
+  bottom: 25px;
 }
 
 .lang-cs .menuImg--film {
@@ -170,17 +170,17 @@
 }
 
 .lang-cs .menuBtn--film {
-  left: 520px;
-  bottom: 30px;
+  left: 530px;
+  bottom: 25px;
 }
 
 .lang-cs .menuImg--music {
-  height: 55px;
+  height: 53px;
 }
 
 .lang-cs .menuBtn--music {
-  left: 830px;
-  bottom: 40px;
+  left: 825px;
+  bottom: 20px;
 }
 
 
@@ -203,7 +203,7 @@
 
 .lang-ru .menuBtn--contact {
   left: 1020px;
-  bottom: 90px;
+  bottom: 70px;
 }
 
 .lang-ru .menuImg--writings {
@@ -212,7 +212,7 @@
 
 .lang-ru .menuBtn--writings {
   left: 350px;
-  bottom: 70px;
+  bottom: 50px;
 }
 
 .lang-ru .menuImg--film {
@@ -221,7 +221,7 @@
 
 .lang-ru .menuBtn--film {
   left: 570px;
-  bottom: 45px;
+  bottom: 25px;
 }
 
 .lang-ru .menuImg--music {
@@ -230,7 +230,7 @@
 
 .lang-ru .menuBtn--music {
   left: 850px;
-  bottom: 28px;
+  bottom: 8px;
   transform: rotate(1deg);
 }
 
@@ -240,7 +240,7 @@
 
 .lang-ru .menuBtn--articles {
   left: 720px;
-  bottom: 65px;
+  bottom: 45px;
   transform: rotate(-2deg);
 }
 
@@ -301,148 +301,7 @@
   height: 26px;
 }
 
-@media (min-width: 1920px) {
-  .headerBlock {
-    top: 100 px;
-    bottom: auto;
-    left: -190px;
-  }
 
-  .page {
-    background-color: whitesmoke;
-    background-size: 85% auto;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-  }
-
-  /* Per-button sizing and position CZECH */
-  .lang-cs .menuImg--name {
-    width: 410px;
-    height: auto;
-  }
-
-  .lang-cs .menuBtn--name {
-    left: 500px;
-    bottom: 225px;
-  }
-
-  .lang-cs .menuImg--writings {
-    height: 89px;
-  }
-
-  .lang-cs .menuBtn--writings {
-    left: 610px;
-    bottom: 130px;
-  }
-
-  .lang-cs .menuImg--film {
-    height: 73px;
-  }
-
-  .lang-cs .menuBtn--film {
-    left: 500px;
-    bottom: 90px;
-  }
-
-  .lang-cs .menuImg--music {
-    height: 72px;
-  }
-
-  .lang-cs .menuBtn--music {
-    left: 650px;
-    bottom: 30px;
-  }
-
-  .lang-cs .menuImg--articles {
-    height: 93px;
-  }
-
-  .lang-cs .menuBtn--articles {
-    left: 440px;
-    bottom: -25px;
-  }
-
-  .lang-cs .menuImg--contact {
-    height: 65px;
-  }
-
-  .lang-cs .menuBtn--contact {
-    left: 750px;
-    bottom: -435px;
-    transform: rotate(-1deg);
-  }
-
-  /* Per-button sizing and position RUSSIAN */
-  .lang-ru .menuImg--name {
-    width: 220px;
-    height: auto;
-  }
-
-  .lang-ru .menuBtn--name {
-    left: 545px;
-    bottom: 235px;
-  }
-
-  .lang-ru .menuImg--contact {
-    height: 26px;
-  }
-
-  .lang-ru .menuBtn--contact {
-    left: 645px;
-    bottom: 353px;
-    transform: rotate(0deg);
-  }
-
-  .lang-ru .menuImg--writings {
-    height: 29px;
-  }
-
-  .lang-ru .menuBtn--writings {
-    left: 560px;
-    bottom: 140px;
-  }
-
-  .lang-ru .menuImg--film {
-    height: 27px;
-  }
-
-  .lang-ru .menuBtn--film {
-    left: 649px;
-    bottom: 105px;
-    ;
-  }
-
-  .lang-ru .menuImg--music {
-    height: 40px;
-  }
-
-  .lang-ru .menuBtn--music {
-    left: 580px;
-    bottom: 60px;
-    transform: rotate(1deg);
-  }
-
-  .lang-ru .menuImg--articles {
-    height: 30px;
-  }
-
-  .lang-ru .menuBtn--articles {
-    left: 635px;
-    bottom: 178px;
-    transform: rotate(-2deg);
-  }
-
-  .menuBtn,
-  .contactBtn {
-    position: absolute;
-
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-
-}
 
 
 /* ==========================================================
@@ -630,79 +489,18 @@
 }
 
 
-
-/* TEST */
-/* ==========================================
-   ENGLISH — RESPONSIVE HORIZONTAL SCREENS
-   ========================================== 
-
-@media (min-width: 601px) and (orientation: landscape) {
-
-  .lang-en .menuBtn--name {
-    top: 3%;
-    bottom: auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .lang-en .menuImg--name {
-    width: min(660px, 50vw);
-    height: auto;
-  }
-
-  .lang-en .menuBtn--writings {
-    left: 26%;
-    bottom: 7%;
-  }
-
-  .lang-en .menuBtn--film {
-    left: 44%;
-    bottom: 3%;
-  }
-
-  .lang-en .menuBtn--articles {
-    left: 54%;
-    bottom: 5%;
-  }
-
-  .lang-en .menuBtn--music {
-    left: 67%;
-    bottom: 7%;
-  }
-
-  .lang-en .menuBtn--contact {
-    left: 80%;
-    bottom: 4%;
-  }
-}
-
-
-
-
-@media (min-width: 1920px) and (orientation: landscape) {
-  .lang-en .headerBlock {
-    left: 0;
-    top: 0;
-  }
-
-  .lang-en.page {
-    background-size: cover;
-    background-position: center center;
-  }
-} */
-
-
 .mainPageCanvas {
   display: contents;
 }
 
 /* ==========================================
-   ENGLISH — SCALABLE HORIZONTAL LAYOUT
+   ALL LANGUAGES — SCALABLE HORIZONTAL LAYOUT
    ========================================== */
 
 @media (orientation: landscape) {
-
-  .page.lang-en.mainPage {
+  .page.lang-en.mainPage,
+  .page.lang-cs.mainPage,
+  .page.lang-ru.mainPage {
     position: relative;
     height: 100dvh;
 
@@ -715,7 +513,9 @@
     overflow: hidden;
   }
 
-  .lang-en .mainPageCanvas {
+  .lang-en .mainPageCanvas,
+  .lang-cs .mainPageCanvas,
+  .lang-ru .mainPageCanvas {
     display: block;
     position: absolute;
 
@@ -730,14 +530,16 @@
 
     background-color: white;
     background-image: var(--bg-desktop);
-    background-size: 125%;
-    background-position: center calc(100% + 70px);
+    background-size: 120%;
+    background-position: center calc(100% + 55px);
     background-repeat: no-repeat;
 
     overflow: hidden;
   }
 
-  .lang-en .mainPageCanvas .headerBlock {
+  .lang-en .mainPageCanvas .headerBlock,
+  .lang-cs .mainPageCanvas .headerBlock,
+  .lang-ru .mainPageCanvas .headerBlock {
     position: absolute;
     top: 0;
     left: 0;

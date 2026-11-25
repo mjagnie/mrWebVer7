@@ -8,7 +8,7 @@ export default function ArticlesPanel() {
 
       <div className="articles-list">
         {articles.map((article) => (
-          <p key={article.id} className="article-item">
+          <div key={article.id} className="article-item">
             <div className="article-year">
               {article.year}
             </div>
@@ -20,7 +20,7 @@ export default function ArticlesPanel() {
             >
               {article.title}
             </a>
-          </p>
+          </div>
         ))}
       </div>
     </section>
